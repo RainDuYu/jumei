@@ -1,0 +1,444 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+.w {
+    width: 960px;
+    margin: 0 auto;
+}
+/*logo部分开始*/
+.top1 {
+    height: 86px;
+    position: relative;
+}
+.logo_right {
+    display: inline-block;
+    padding-top: 35px;
+    float: right;
+}
+.img_a,
+.img_b,
+.img_c{
+    width: 110px;
+    height: 31px;
+    overflow: hidden;
+    margin-right: 45px;
+    float: right;
+}
+.img_c {
+    background: url("../images/header_corn_new_v2.png")no-repeat;
+    background-position: -6px 0px;
+}.img_b {
+     background: url("../images/header_corn_new_v2.png")no-repeat;
+     background-position: -4px -33px;
+ }.img_a {
+      background: url("../images/header_corn_new_v2.png")no-repeat;
+      background-position: -1px -64px;
+  }
+
+
+/*logo部分结束*/
+
+/*中间部分开始*/
+/*中间左面部分开始*/
+.pref {
+    width: 960px;
+    height: 360px;
+    margin-top: 35px;
+
+}
+.pref-l {
+    width: 596px;
+    height: 350px;
+    position: absolute;
+    background: url("../images/loginPic.jpg") no-repeat;
+}
+/*中间左面部分结束*/
+
+/*中间右面部分开始*/
+.pref-r {
+    width: 364px;
+    height: 418px;
+    float: right;
+    position: relative;
+}
+.top {
+    /*margin: 400px;*/
+    /*width: 346px;*/
+    /*height: 476px;*/
+    /*border: 1px solid #e31256;*/
+    display: none;
+}
+.pref-r {
+    width: 364px;
+    height: 418px;
+    float: right;
+
+}
+.pref-t {
+    width: 300px;
+    height: 60px;
+    margin: auto;
+}
+
+.pref-t h1 {
+    color: red;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #e31256;
+    float: left;
+
+}
+.pref-t-r {
+
+    float: right;
+}
+.pref-t-r span {
+    font-size: 12px;
+    color: #969696;
+    margin-bottom: 15px;
+    line-height: 60px;
+
+}
+.pref-t-r a {
+    font-size: 12px;
+    color: #ed145b;
+    text-decoration: none;
+}
+.pref-t-r a:hover {
+    text-decoration: underline;
+}
+.button {
+    height: 20px;
+    float: left;
+    font-size: 14px;
+    padding-right: 40px;
+    margin-top: 10px;
+    color: #aaa;
+}
+.button input {
+    width: 15px;
+    height: 15px;
+}
+.dtma button {
+    width: 130px;
+    height: 43px;
+    float: right;
+    background:#f2f2f2;
+    color: #666;
+    border: 1px solid #d9d9d9;
+}
+.sc input{
+    box-shadow: none;
+    border: 1px solid #CFCFCF;
+    background-color: #fff;
+    vertical-align: middle;
+    padding: 10px 8px;
+    line-height: 1.5;
+    font-size: 14px;
+    height: auto;
+    width: 260px;
+    background: url("../images/sign.png") no-repeat 5px 0px;
+    padding-left: 40px;
+    margin-top: 20px;
+}
+.sc .kbb {
+    background: url("../images/sign.png") no-repeat 5px -50px;
+}
+.yc,.yz {
+    height: 30px;
+    font-size: 12px;
+    color: #ccc;
+    display: none;
+}
+.kb {
+    height: 15px;
+    margin-top: 5px;
+}
+.hdm {
+    width: 300px;
+    height: 32px;
+    border: 1px solid   #cccccc;
+    margin-top: 20px;
+}
+.zddl {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+.zddl a {
+    float: right;
+    font-size: 14px;
+    color: red;
+    text-decoration: none;
+}
+.zddl a:hover {
+    text-decoration: underline;
+}
+.spch {
+    display: block;
+    width: 300px;
+    height: 40px;
+    background-color: #e31256;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.spch:hover {
+    background:  #f91256;
+}
+.p1 {
+    font-size: 12px;
+    margin-top: 15px;
+}
+.s1,.s2,.s3,.s4,.s5{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: cornflowerblue;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.s1 {
+    background: url("../images/icon.jpg") no-repeat 2px 0px;
+}
+.s2 {
+    background: url("../images/icon.jpg") no-repeat -55px 0px;
+}
+.s3 {
+    background: url("../images/icon.jpg") no-repeat -112px 0px;
+}
+.s4 {
+    background: url("../images/icon.jpg") no-repeat -168px 0px;
+}
+.s5 {
+    background: url("../images/icon.jpg") no-repeat -222px 0px;
+}
+
+/*手机动态登录部分*/
+
+.btn {
+    position: absolute;
+    top: -1px;
+    left: 8px;
+    width: 346px;
+    height: 418px;
+
+}
+.pref-r {
+    width: 364px;
+    height: 418px;
+    float: right;
+}
+.pref-t {
+    width: 300px;
+    height: 60px;
+    margin: auto;
+}
+
+.pref-t h1 {
+    color: red;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #e31256;
+    float: left;
+}
+.pref-t-r {
+    float: right;
+}
+.pref-t-r span {
+    font-size: 12px;
+    color: #969696;
+    margin-bottom: 15px;
+    line-height: 60px;
+}
+.pref-t-r a {
+    font-size: 12px;
+    color: #ed145b;
+    text-decoration: none;
+}
+.pref-t-r a:hover {
+    text-decoration: underline;
+}
+.sjhm input  {
+    width: 266px;
+    height: 38px;
+    margin-top: 11px;
+    padding-left: 39px;
+    background: url("../images/sign.png") no-repeat 5px -2px;
+    border: 1px solid #ccc;
+}
+.sjhm div {
+    width: 300px;
+    height: 20px;
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 10px;
+}
+.dtma input {
+    width: 116px;
+    height: 43px;
+    margin-top: 3px;
+    padding-left: 40px;
+    background: url("../images/sign.png") no-repeat 5px -50px;
+    border: 1px solid #ccc;
+
+}
+.dtma div {
+    width: 300px;
+    height: 20px;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 20px;
+    margin-top: 5px;
+}
+#sjhm,#dtma {
+    display: none;
+}
+.dtma button {
+    width: 130px;
+    height: 43px;
+    margin-left: 10px;
+}
+.zddl {
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px;
+}
+.zddl a {
+    float: right;
+    font-size: 14px;
+    color: red;
+    text-decoration: none;
+}
+.zddl a:hover {
+    text-decoration: underline;
+}
+.spch {
+    display: block;
+    width: 300px;
+    height: 35px;
+    background-color: #e31256;
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.spch:hover {
+    background:  #f91256;
+}
+.p1 {
+    font-size: 12px;
+    margin-top: 15px;
+}
+.grug {
+    width: 300px;
+    height: 32px;
+    border: 1px solid lightgrey;
+    position: relative;
+    z-index: 99;
+    overflow: hidden;
+}
+
+.grup_box {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    border: 1px solid lightgrey;
+    font: 900 30px/26px "agency fb";
+    text-align: center;
+    color: #666;
+    background: lightgrey;
+    cursor: pointer;
+    float: left;
+}
+
+.grup_box .box_green {
+    position: absolute;
+    width: 400px;
+    height: 32px;
+    background: lightgreen;
+    left: -401px;
+    float: left;
+    top: -1px;
+}
+.s1,.s2,.s3,.s4,.s5{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: cornflowerblue;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.s1 {
+    background: url("../images/icon.jpg") no-repeat 2px 0px;
+}
+.s2 {
+    background: url("../images/icon.jpg") no-repeat -55px 0px;
+}
+.s3 {
+    background: url("../images/icon.jpg") no-repeat -112px 0px;
+}
+.s4 {
+    background: url("../images/icon.jpg") no-repeat -168px 0px;
+}
+.s5 {
+    background: url("../images/icon.jpg") no-repeat -222px 0px;
+}
+/*中间右面部分结束*/
+/*中间部分结束*/
+.bot {
+    margin: 150px auto;
+    color: #aaa;
+}
+.bot p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+}
+.bol {
+    width: 680px;
+    height: 96px;
+    margin: 0 auto;
+}
+.bol ul {
+
+    float: left;
+}
+.bol li {
+    float: left;
+    width: 126px;
+    height: 56px;
+    margin-right: 10px;
+}
+.bol li a {
+    display: inline-block;
+    width: 126px;
+    height: 56px;
+    background: url("../images/footer_btm_icon.png");
+}
+.bol .a1 {
+    background: url("../images/footer_btm_icon.png")no-repeat;
+}
+.bol .a2 {
+    background: url("../images/footer_btm_icon.png")no-repeat -126px 2px;
+}
+.bol .a3 {
+    background: url("../images/footer_btm_icon.png")no-repeat -252px 2px;
+}
+.bol .a4 {
+    background: url("../images/footer_btm_icon.png")no-repeat -378px 2px;
+}
+.bol .a5 {
+    background: url("../images/footer_btm_icon.png")no-repeat -504px 2px;
+}

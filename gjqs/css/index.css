@@ -1,0 +1,336 @@
+.w{
+    width: 960px;
+    margin: 0 auto;
+}
+body{
+    background-color: #f7f7f7;
+    font: 13px/1.5 arial,'Hiragino Sans GB','\5FAE\8F6F\96C5\9ED1',sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ol,ul{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+    vertical-align: bottom;
+}
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 0;
+}
+/*.clearfix:before,.clear:after{*/
+    /*content:" ";*/
+    /*display: table;*/
+/*}*/
+/*.clearfix:after{*/
+    /*clear: both;*/
+/*}*/
+/*.clearfix{*/
+    /**zoon: 1;*/
+/*}*/
+/*�����ֲ�ͼ���λ*/
+.banner{
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+.screen{
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+.screen .img li{
+    float: left;
+    display: none;
+}
+.screen img{
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left:50%;
+    margin-left: -960px;
+}
+
+ol.circle{
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 20px;
+}
+ol.circle li{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 10px;
+    float: left;
+    text-align: center;
+    line-height: 15px;
+    cursor: pointer;
+}
+ol.circle li.active{
+    background-color: gray;
+}
+/*Ʒ�ƹ��λ*/
+.brand-ad{
+    overflow: hidden;
+    margin-top: 20px;
+    width: 960px;
+}
+.brand{
+    width: 984px;
+    margin: 0;
+    padding: 0;
+}
+.brand a{
+    display:inline-block;
+    margin-right: 16px;
+    margin-bottom: 10px;
+}
+
+/*ÿ�ձؿ�*/
+.main_ad{
+    width: 960px;
+    margin: 20px auto 0;
+    display: block;
+}
+.main_look{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.main_top_title{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000;
+}
+.main_top_title h2{
+    text-indent: -9999px;
+    height: 30px;
+    background: url(../images/trans_new.png) center top no-repeat;
+    font-size: 100%;
+    font-weight: 400;
+    display: block;
+}
+.main_top_title p{
+    display: block;
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: arial, "Hiragino Sans GB", ΢���ź�, sans-serif;
+}
+.product{
+    width: 700px;
+    float: left;
+    display: block;
+}
+.product_list{
+    position: relative;
+    border: 1px solid #ededed;
+    background: #ffffff;
+    margin-bottom: 15px;
+}
+.product_list .img_box {
+    display: block;
+    margin-left: 200px;
+    overflow: hidden;
+    height: 245px;
+    width: 500px;
+}
+.product_list .sale_product {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 58px;
+    height: 58px;
+    background: url(../images/trans_new.png) no-repeat  -58px -31px;;
+}
+.product_list .sale_ending {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 58px;
+    height: 58px;
+    background: url(../images/trans_new.png) no-repeat  0px -31px;;
+}
+.product_list .info_box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 204px;
+    text-align: center;
+    display: inline;
+    padding-top: 38px;
+}
+.product_list .logo img{
+    height: 40px;
+    width: auto;
+    overflow: hidden;
+}
+.product_list .info_title {
+    padding: 12px 0;
+}
+.product_list .discount{
+    color: #474747;
+    height: 28px;
+    line-height: 28px;
+}
+.product_list .info_box .act_time{
+    height: 50px;
+    line-height: 50px;
+}
+.product_list .count_down_box{
+    width: 700px;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 1px solid #bdbcbc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 2;
+    font-size: 12px;
+    background: rgba(0,0,0,.32);
+}
+.product_list .count_down_box .count_down{
+    float: right;
+    font-size: 12px;
+    background: url(../images/clock.png) no-repeat 15px 6px;
+}
+.product_list .today_end_time{
+    color: #fff;
+    font-weight: 400;
+    text-indent: 30px;
+    font-size: 14px;
+    background: #333;
+    height: 26px;
+    line-height: 26px;
+    margin-top: -1px;
+    text-align: center;
+    display: inline-block;
+    min-width: 174px;
+}
+.product_list .today_time {
+    font-style: normal;
+    font-weight: 400;
+    display: block;
+    width: 175px;
+    height: 26px;
+}
+.product_list .title{
+    float: left;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    line-height: 24px;
+    font-weight: 400;
+}
+.product_list .info_link {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+/*Ʒ��Ԥ��*/
+.secret{
+    width: 242px;
+    float: right;
+}
+.secret .secret_ad{
+    margin-bottom: 20px;
+}
+.secret_ad ul li img{
+    width: 240px;
+    height: 176px;
+}
+
+/*��������*/
+.product_comming_soon{
+    overflow: hidden;
+    display: block;
+}
+.product_comming_soon .comming_title{
+    display: block;
+    text-indent: -9999px;
+    height: 30px;
+    background: url("../images/baby.png") no-repeat center -78px ;
+    font-size: 100%;
+    font-weight: 400;
+}
+.comming_soon_part{
+    width: 976px;
+    display: block;
+}
+.comming_soon_list{
+    margin: 0 15px 15px 0;
+    position: relative;
+    background: #fff;
+    z-index: 1;
+    color: #000;
+    border: 1px solid #ededed;
+    width: 308px;
+    overflow: hidden;
+    height: 261px;
+    float: left;
+}
+.comming_soon_list .picture{
+    position: relative;
+    height: 200px;
+    display: block;
+}
+.comming_soon_list .picture img{
+    width: 308px;
+    height: 200px;
+}
+.comming_soon_list .picture .introduce{
+    color: #fff;
+    width: 288px;
+    padding: 0 10px;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 1px solid #bdbcbc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 2;
+    background: rgba(0,0,0,.32);
+    display: block;
+}
+.comming_soon_list.product_box{
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #d3d3d3;
+    overflow: hidden;
+}
+.comming_soon_list .logo{
+    float: left;
+    margin: 10px;
+    height: 40px;
+    width: auto;
+}
+.comming_soon_list .logo img{
+    height: 40px;
+    width: auto;
+    overflow: hidden;
+    vertical-align: top;
+}
+.comming_soon_list .product_box .price{
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+    float: right;
+    margin-right: 15px;
+}
+.comming_soon_list .link_pictures{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}

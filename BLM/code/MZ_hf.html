@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="hf_index.css"/>
+    <title></title>
+    <!--头部-->
+    <link rel="stylesheet" href="css/comment.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <script src="js/jquery-1.12.2.min.js"></script>
+    <script src="js/comment.js"></script>
+    <!--展开-->
+    <script src="jquery.min.js"></script>
+    <script src="hf_index.js"></script>
+
+</head>
+<body>
+<aside>
+    <div class="middle">
+        <div id="Person">
+            <span class="person"></span>
+            <div class="personMessage">
+                <div class="headImg">
+                    <img src="img/avatar_nonesign.jpg" alt="" />
+                </div>
+                <div class="login">
+                    你好，请
+                    <a href="#">登录</a>
+                    |
+                    <a href="#">注册</a>
+                </div>
+                <div class="buttonbox">
+                    <a href="#">我的收藏</a>
+                    <a href="#">我的订单</a>
+                </div>
+                <i></i>
+                <a href="#" class="exitBtn"></a>
+            </div>
+        </div>
+        <i></i>
+        <div id="shopCar">
+            <span class="car"></span>
+            <p>购物车</p>
+            <div class="number MsgNum">0</div>
+        </div>
+        <i>
+        </i>
+        <div>
+            <span class="money"></span>
+            <div class="tab">
+                <i></i> 我的财产
+            </div>
+        </div>
+        <div>
+            <span class="like"></span>
+            <div class="tab">
+                <i></i> 我的心愿单
+            </div>
+        </div>
+        <div>
+            <span class="foot"></span>
+            <div class="tab">
+                <i></i> 我的足迹
+            </div>
+        </div>
+        <!--bottom-->
+    </div>
+    <div class="bottom">
+        <div id="erweiImg">
+            <span class="erwei"></span>
+            <div class="erweiImg">
+                <img src="img/qrcode.png" alt="" />
+                <i></i>
+            </div>
+        </div>
+        <div>
+            <span class="self"></span>
+            <div class="tab">
+                <i></i> 客服中心
+            </div>
+
+        </div>
+        <div>
+          <div id="reTop">
+					<span class="re_top"></span>
+				</div>
+        </div>
+    </div>
+</aside>
+
+<!--购物车窗体-->
+<div class="shopCarBox">
+    <h4 class="title">购物车</h4>
+    <a href="#" class="exitBtn"></a>
+    <div class="main">
+        <h4 class="title">聚美优品</h4>
+        <ul>
+        </ul>
+        <div class="final">
+            <div>
+                <div>￥<span class="showPrice">0</span></div>
+                <div>共 <span class="MsgNum">0</span> 件商品</div>
+            </div>
+            <p class="payBtn">
+                去购物车结算
+            </p>
+        </div>
+    </div>
+</div>
+
+<!--导航-->
+<header>
+    <div class="top">
+        <div>
+            <ul>
+                <li>
+                    <a>欢迎来到聚美！</a>
+                </li>
+                <li>
+                    <a href="#">请登录</a>
+                </li>
+                <li>
+                    <a href="#">快速注册</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">正品保证</a>
+                </li>
+                <li>
+                    <a href="#">订单查询</a>
+                </li>
+                <li>
+                    <a href="#"><span id="head_heart"></span>收藏的品牌</a>
+                </li>
+                <!--下拉菜单切换-->
+                <div class="change fl">
+                    <a href="#">我的聚美 <i class="fa fa-angle-down fa-lg"></i></a>
+
+                    <div class="bg">
+                        <div></div>
+                        <ul>
+                            <li>
+                                <a href="">我的产品</a>
+                            </li>
+                            <li>
+                                <a href="">我的现金券</a>
+                            </li>
+                            <li>
+                                <a href="">我的红包</a>
+                            </li>
+                            <li>
+                                <a href="">我的余额</a>
+                            </li>
+                            <li>
+                                <a href="">我的提现退款</a>
+                            </li>
+                            <li>
+                                <a href="">我的收藏</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--切换结束-->
+                <div class="phone"><i class="fa fa-mobile-phone fa-lg"></i> 手机聚美 </div>
+                <!--下拉菜单切换-->
+                <div class="change fl more">
+                    <a href="#">更多 <i class="fa fa-angle-down fa-lg"></i></a>
+
+                    <div class="bg">
+                        <div></div>
+                        <ul>
+                            <li>
+                                <a href="">邀请好友</a>
+                            </li>
+                            <li>
+                                <a href="">加入收藏</a>
+                            </li>
+                            <li>
+                                <a href="">新浪微博</a>
+                            </li>
+                            <li>
+                                <a href="">聚美微信</a>
+                            </li>
+                            <li>
+                                <a href="">百度贴吧</a>
+                            </li>
+                            <li>
+                                <a href="">腾讯微博</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--切换结束-->
+            </ul>
+        </div>
+    </div>
+    <div class="middle">
+        <div>
+            <div class="shop">
+                <div class="car-logo">
+                    <img src="img/cart.gif" alt="" />
+                </div>
+                <div class="shop-txt">
+                    云购物车结算
+                </div>
+                <div id="number_icon" class="MsgNum">0</div>
+            </div>
+            <div class="icon fl">
+                <img src="img/logo_new_v1.jpg" alt="" />
+            </div>
+            <div class="search">
+                <div class="search_box fl">
+                    <input type="text" id="searchIpt" />
+                    <input type="button" value="搜索" />
+                    <div class="search_keyword" id="keyWord">
+                        <ul>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="search_more">
+                    <ul>
+                        <li>
+                            <a href="#">保湿</a>|</li>
+                        <li>
+                            <a href="#">面膜</a>|</li>
+                        <li>
+                            <a href="#">洗面奶</a>|</li>
+                        <li>
+                            <a href="#">补水</a>|</li>
+                        <li>
+                            <a href="#">香水</a>|</li>
+                        <li>
+                            <a href="#">眼霜</a>|</li>
+                        <li>
+                            <a href="#">口红</a>|</li>
+                        <li>
+                            <a href="#">护肤套装</a>|
+                        </li>
+                        <li>
+                            <a href="#">BB霜</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div>
+            <div class="nav_icon"></div>
+            <div class="nav_icon"></div>
+            <div class="nav_icon"></div>
+            <ul>
+                <li class="active">
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="">极速免税店</a>
+                </li>
+                <li>
+                    <a href="">母婴特卖</a>
+                </li>
+                <li id="nav_shop">
+                    <a href="">美妆商店 <i class="fa fa-angle-down fa-lg"></i></a>
+                    <div class="show_box">
+                        <div class="left fl">
+                            <a href="#"><img src="img/30573_254_135_003-web.jpg" alt="" /></a>
+                            <a href="#">
+                                <img src="img/30573_254_135_005-web.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="right fl">
+                            <dl>
+                                <dt><i></i>国际大牌</dt>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><i></i>护肤</dt>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><i></i>彩妆</dt>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><i></i>香氛</dt>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><i></i>男士专区</dt>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><i></i>热门搜索</dt>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">兰蔻</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">国际轻奢</a>
+                </li>
+                <li>
+                    <a href="">服装运动</a>
+                </li>
+                <li>
+                    <a href="">鞋包配饰</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</header>
+
+  <div id="bbbbb_box">
+    <div id="in_1">
+        <a href="">化妆品首页></a>
+        <input type="text" value="护肤"/>
+    </div>
+    <div id="box_2">
+        <div id="choose">
+            <p>在<span>护肤</span>护肤中筛选
+            </p>
+        </div>
+    </div>
+    <div id="box_3">
+        <div id="brand">
+            <div class="head">
+                品牌：
+            </div>
+            <div class="link_r">
+                <button>+多选</button>
+                <a class="q" href="javascript:;">展开</a>
+
+            </div>
+            <div class="link_1">
+                <ul>
+                    <li>
+                        <a href="#">AHC</a><br/>
+                        <a href="#">Shining Nature Purity</a>
+                    </li>
+                    <li>
+                        <a href="">御泥坊 </a><br/>
+                        <a href="">芙丽芳丝 </a>
+                    </li>
+                    <li>
+                        <a href="">美迪惠尔 </a><br/>
+                        <a href="">丽得姿 </a>
+                    </li>
+                    <li>
+                        <a href="">悦诗风吟</a><br/>
+                        <a href="">雪花秀</a>
+                    </li>
+                    <li>
+                        <a href="">一叶子 </a><br/>
+                        <a href="">森田药妆 </a>
+                    </li>
+                    <li>
+                        <a href="">雅漾</a><br/>
+                        <a href=""> JAYJUN </a>
+                    </li>
+                    <li>
+                        <a href="">城野医生</a><br/>
+                        <a href="">ROSETTE </a>
+                    </li>
+                    <li>
+                        <a href="">自然堂 </a><br/>
+                        <a href="">Beauty Buffet </a>
+                    </li>
+                    <li>
+                        <a href="">雅诗兰黛 </a><br/>
+                        <a href="">菲诗小铺 </a>
+                    </li>
+                    <li>
+                        <a href="">伊思</a><br/>
+                        <a href="">ULUKA </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="sort">
+            <div class="head">
+                分类：
+            </div>
+            <div class="link_1">
+                <ul>
+                    <li>
+                        <a href="#">化妆品</a><br/>
+                    </li>
+                    <li>
+                        <a href="">母婴健康 </a><br/>
+                    </li>
+                    <li>
+                        <a href="">3C </a>
+                    </li>
+                    <li>
+                        <a href="">食品保健</a>
+                    </li>
+                    <li>
+                        <a href="">家居 </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+        <div id="effect">
+            <div class="head">
+                功效：
+            </div>
+            <div class="link_1">
+                <ul>
+                    <li>
+                        <a href="#">保湿</a><br/>
+                        <a href="#">净肤</a>
+                    </li>
+                    <li>
+                        <a href="">补水 </a><br/>
+                        <a href="">清爽 </a>
+                    </li>
+                    <li>
+                        <a href="">滋润 </a><br/>
+                        <a href="">均匀肤色 </a>
+                    </li>
+                    <li>
+                        <a href="">清洁</a><br/>
+                        <a href="">嫩肤</a>
+                    </li>
+                    <li>
+                        <a href="">紧致 </a><br/>
+                        <a href="">柔肤 </a>
+                    </li>
+                    <li>
+                        <a href="">修护肌肤</a><br/>
+                        <a href=""> 收敛毛孔 </a>
+                    </li>
+                    <li>
+                        <a href="">舒缓</a><br/>
+                        <a href="">美白 </a>
+                    </li>
+                    <li>
+                        <a href="">温和 </a><br/>
+                        <a href="">改善肤质 </a>
+                    </li>
+                    <li>
+                        <a href="">控油 </a><br/>
+                        <a href="">持久 </a>
+                    </li>
+                    <li>
+                        <a href="">修护</a><br/>
+                        <a href="">祛痘 </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="link_r">
+                <button>+多选</button>
+                <a class="b" href="javascript:;">展开</a>
+            </div>
+        </div>
+        <div id="price">
+            <div class="head">
+                品牌：
+            </div>
+            <div class="link_1">
+                <ul>
+                    <li>
+                        <a href="#"> 0-149元</a>
+                    </li>
+                    <li>
+                        <a href="">150-329元 </a><br/>
+                    </li>
+                    <li>
+                        <a href="">330-699元 </a>
+                    </li>
+                    <li>
+                        <a href=""> 700-1299元</a><br/>
+                    </li>
+                    <li>
+                        <a href="">1300元以上</a><br/>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="link_r">
+                <button>+多选</button>
+                <a class="o" href="javascript:;">展开</a>
+            </div>
+        </div>
+    </div>
+    <!--//产品展示-->
+    <div id="box_main">
+        <div class="box_main_top">
+            <div class="head">
+                排序:
+            </div>
+            <ul class="sort_1">
+                <li><a type="color:#ED145B" class="now" href="#">默认</a></li>
+                <li><a href="#">价格</a></li>
+                <li><a href="#">销量</a></li>
+                <li><a href="#">人气</a></li>
+                <li><a href="#">上架时间</a></li>
+                <li><a href="#">只看特卖</a></li>
+            </ul>
+            <div class="top_right">
+                <span class="top_ri_1">共<span>9184</span>个商品</span>
+                <span class="top_ri_2"><span>1</span>/256页</span>
+                <span class="top_ri_3"><a href="#">上一页</a></span>
+                <span class="top_ri_4"><a href="#">下一页</a></span>
+            </div>
+        </div>
+        <div class="box_main_main">
+            <div class="box_main_first">
+                <div class="box_f_f">
+                    <div  class="back"></div>
+
+                    <img src="../hufu_index-images/3365132_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">韩国•AHC 高浓缩B5玻尿酸水乳套装</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 198</span>
+                        <del> ¥455</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>2352人已购买 </p>
+                    </div>
+                    <div class="aaa">
+                        <span></span>
+                    </div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>持久</li>
+                            <li>保湿</li>
+                            <li>滋润</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <div  class="go"></div>
+                    <img src="../hufu_index-images/1648697_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">韩国•悦诗风吟（innisfree）绿茶精萃平衡护肤二重套装(平衡柔肤水</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 230 </span>
+                        <del> ¥280</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销27134 |</p><p class="dingshiqi">定时器</p>
+                    </div>
+                    <div class="bbb">
+                        <span></span><span class="tt"></span>
+                    </div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>保湿</li>
+                            <li>补水</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <div  class="go"></div>
+                    <a href="product_detail.html"><img src="../hufu_index-images/1748503_350_350.jpg" alt=""/></a>
+                    <div class="box_describe"><a href="#">中国•御泥坊美白嫩肤补水淡斑护肤套装（洁面+水+乳+玫瑰旅行套装）</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 109.9 </span>
+                        <del> ¥337</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销9088|</p>
+                        <p class="dingshiqi">定时器</p>
+                    </div>
+                    <div class="bbb">
+                        <span></span>
+                        <span class="tt"></span>
+                    </div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>持久</li>
+                            <li>保湿</li>
+                            <li>滋润</li>
+                            <li>清洁</li>
+                            <li>美白</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <div  class="go"></div>
+                    <img src="../hufu_index-images/3016938_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">日本•无印良品高保湿型 水乳套组</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 106</span>
+                        <del> ¥157</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>18人已购买 |</p>
+                        <p class="dingshiqi" ></p>
+                    </div>
+                    <div class="bbb">
+                        <span></span>
+                        <span class="tt"></span>
+                    </div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>均匀肤色</li>
+                            <li>保湿</li>
+                            <li>滋润</li>
+                            <li>清洁</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box_main_first">
+                <div class="box_f_f">
+
+                    <img src="../hufu_index-images/1098605_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">中国•欧诗漫(OSM)营养美肤晶采无瑕礼盒(珍珠美白洁面乳100g+润颜美白活肤水100ml+珍珠晶润紧致眼精华20ml+珍珠透白水嫩平衡露
+                        100ml+珍珠轻透无瑕修颜霜(BB霜)30ml)
+                    </a></div>
+
+                    <div class="box_price">
+                        <span>¥ 159</span>
+                        <del> ¥396</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销6542 </p>
+                    </div>
+                    <div class="bbb">
+                        <span></span>
+                        <span class="tt"></span>
+                    </div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>祛痘</li>
+                            <li>修复肌肤</li>
+                            <li>保湿</li>
+                            <li>补水</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <div  class="you"></div>
+                    <img src="../hufu_index-images/725746_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">中国•韩束 (KanS)芦荟修护凝胶35g</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 19 </span>
+                        <del> ¥59</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销2026 </p>
+                    </div>
+                    <div class="aaa">
+                        <span></span>
+                    </div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>持久</li>
+                            <li>去黑头</li>
+                            <li>滋润</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <div  class="back"></div>
+                    <img src="../hufu_index-images/28491_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">中国•温碧泉(WETHERM)力透白臻白凝润四件套( 雪肌霜50g+柔肤水</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 199 </span>
+                        <del> ¥269</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销887 |</p>
+                        <p class="dingshiqi"></p>
+                    </div>
+                    <div class="aaa">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <img src="../hufu_index-images/655132_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">韩国•菲诗小铺 (The Face
+                        Shop)金盏花水乳两件套(润泽精华水150ml+柔嫩精华乳150ml)</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 139.9</span>
+                        <del> ¥178</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销5515 </p>
+                    </div>
+                    <div class="bbb">
+                        <span></span><span class="tt"></span>
+                    </div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>持久</li>
+                            <li>保湿</li>
+                            <li>滋润</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box_main_first">
+                <div class="box_f_f">
+                    <div  class="back"></div>
+                    <img src="../hufu_index-images/230856_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">中国•珀莱雅(PROYA)新柔皙亮肤补水套装（洗颜霜120ml+保湿水120ml+保湿乳100ml
+                        ）</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 119</span>
+                        <del> ¥192</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销3310 |</p>
+                        <p class="dingshiqi"></p>
+                    </div>
+                    <div class="bbb"><span></span><span class="tt"></span></div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>持久</li>
+                            <li>保湿</li>
+                            <li>滋润</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <div  class="you"></div>
+                    <img src="../hufu_index-images/296602_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">韩国•菲诗小铺 (The Face
+                        Shop)大米调理水乳两件套(持久保湿水150ml+保湿乳液150ml)</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 106 </span>
+                        <del> ¥136</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销5114 </p>
+                    </div>
+                    <div class="aaa">
+                        <span></span>
+                    </div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>持久</li>
+                            <li>保湿</li>
+                            <li>滋润</li>
+                            <li>紧致</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <img src="../hufu_index-images/3321126_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">中国•【周年庆特供】相宜本草红景天养白三件套+四倍蚕丝面膜25g*7片+护肤3件套（随机）</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 148 </span>
+                        <del> ¥312</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销1750</p>
+                    </div>
+                    <div class="bbb">
+                        <span></span><span class="tt"></span>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <img src="../hufu_index-images/1750689_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#"> 日本•资生堂豪华级嘉美艳容露150ml</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 48</span>
+
+                    </div>
+                    <div class="box_interval">
+                        <p>621人已购买 </p>
+                    </div>
+                    <div class="bbb">
+                        <span></span>
+                        <span class="tt"></span>
+                    </div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>持久</li>
+                            <li>保湿</li>
+                            <li>滋润</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box_main_first">
+                <div class="box_f_f">
+                    <img src="../hufu_index-images/2477004_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">韩国•Itsskin晶钻蜗牛1号水乳套装</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 249</span>
+                        <del> ¥409</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销13829 </p>
+                    </div>
+
+                    <div class="bbb">
+                        <span></span>
+                        <span class="tt"></span>
+                    </div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>持久</li>
+                            <li>保湿</li>
+                            <li>滋润</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <img src="../hufu_index-images/2978053_350_350.jpg" alt=""/>
+                    <span class="box_describe"><a href="#">中国•自然堂(CHANDO)纯粹滋润冰肌水（清润型） 90ml</a></span>
+
+                    <div class="box_price">
+                        <span>¥ 79 </span>
+                        <del> ¥95</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销548 </p>
+                    </div>
+                    <div class="bbb">
+                        <span></span>
+                        <span class="tt"></span>
+                    </div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>持久</li>
+                            <li>保湿</li>
+                            <li>滋润</li>
+                            <li>美白</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <img src="../hufu_index-images/10796_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">中国•MISSFACE豆乳保水柔和两件套（化妆水180ml+乳液180ml）</a></div>
+
+                    <div class="box_price">
+                        <span>¥66 </span>
+                        <del> ¥138</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销939 </p>
+                    </div>
+                    <div class="bbb">
+                        <span></span>
+                        <span class="tt"></span>
+                    </div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>持久</li>
+                            <li>保湿</li>
+                            <li>滋润</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <div  class="go"></div>
+                    <img src="../hufu_index-images/3317700_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">韩国•兰芝(LANEIGE)水衡透润礼盒</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 430</span>
+
+                    </div>
+                    <div class="box_interval">
+                        <p>570人已购买 |</p>
+                        <p class="dingshiqi_1"></p>
+                    </div>
+                    <div class="bbb">
+                        <span></span>
+                        <span class="tt"></span>
+                    </div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>持久</li>
+                            <li>保湿</li>
+                            <li>滋润</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box_main_first">
+                <div class="box_f_f">
+                    <img src="../hufu_index-images/2116025_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">法国•欧莱雅 (L'Oreal) 清润葡萄籽清爽保湿2件套（膜力水130ml+保湿乳液110ml）</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 249</span>
+                        <del> ¥300</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销4222 </p>
+                    </div>
+                    <div class="bbb">
+                        <span></span>
+                        <span class="tt"></span>
+                    </div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>持久</li>
+                            <li>保湿</li>
+                            <li>滋润</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <img src="../hufu_index-images/3752618_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">中国•自然堂水润保湿基础护肤特惠套装（洗颜霜（各种肌）100g+柔肤水 </a></div>
+
+                    <div class="box_price">
+                        <span>¥ 249 </span>
+                        <del> ¥292</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销4831 </p>
+                    </div>
+                    <div class="bbb">
+                        <span></span>
+                        <span class="tt"></span>
+                    </div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>持久</li>
+                            <li>保湿</li>
+                            <li>滋润</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <img src="../hufu_index-images/2347651_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">中国•小迷糊玻尿酸补水亮颜面膜套装21片（玻尿酸7片+黑米14片）</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 79.9 </span>
+                        <del> ¥ 356</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销22628</p>
+                    </div>
+                    <div class="bbb">
+                        <span></span>
+                        <span class="tt"></span>
+                    </div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>持久</li>
+                            <li>保湿</li>
+                            <li>滋润</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <div  class="go"></div>
+                    <img src="../hufu_index-images/2070658_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">日本•Platinum Label大瓶薏仁水1000ML</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 58</span>
+                    </div>
+                    <div class="box_interval">
+                        <p>90人已购买 |</p>
+                        <p class="dingshiqi_1"></p>
+                    </div>
+                    <div class="bbb">
+                        <span></span>
+                        <span class="tt"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box_main_first">
+                <div class="box_f_f">
+                    <img src="../hufu_index-images/2509876_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">韩国•自然乐园葡萄籽护肤4件套+赠品</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 119</span>
+                        <del> ¥299</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>647人已购买 </p>
+                    </div>
+                    <div class="bbb">
+                        <span></span>
+                        <span class="tt"></span>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <div  class="go"></div>
+                    <img src="../hufu_index-images/2429837_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">中国•欧诗漫珍珠白闪耀透白套装（珍珠白丝润亮采柔肤水150ml+珍珠白净</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 299 </span>
+                        <del> ¥528</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销1832 |</p>
+                        <p class="dingshiqi"></p>
+                    </div>
+                    <div class="bbb">
+                        <span></span>
+                        <span class="tt"></span>
+                    </div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>持久</li>
+                            <li>保湿</li>
+                            <li>滋润</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <div  class="back"></div>
+                    <img src="../hufu_index-images/2453550_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">韩国•AHC B5玻尿酸爽肤水</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 88 </span>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销31422</p>
+                    </div>
+                    <div class="aaa">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <div  class="back"></div>
+                    <img src="../hufu_index-images/2247251_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">中国•韩束巨补水宠爱之心礼盒</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 239</span>
+                        <del> ¥ 699</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销3822</p>
+                    </div>
+                    <div class="aaa">
+                        <span></span>
+                    </div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>持久</li>
+                            <li>保湿</li>
+                            <li>滋润</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box_main_first">
+                <div class="box_f_f">
+                    <img src="../hufu_index-images/936695_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">韩国•滋盈肌本平衡乳/润颜乳</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 42</span>
+                        <del> ¥49.9</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>4人已购买 </p>
+                    </div>
+                    <div class="aaa">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <img src="../hufu_index-images/2702256_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">美国•科颜氏高保湿水霜套装</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 369 </span>
+                        <del> ¥ 510</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销2402 |</p>
+                        <p class="dingshiqi_1"></p>
+                    </div>
+                    <div class="bbb">
+                        <span></span>
+                        <span class="tt"></span>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <img src="../hufu_index-images/1761389_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">韩国•雪花秀滋阴润燥五件套</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 129</span>
+                        <del> ¥ 179</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销8399 </p>
+                    </div>
+                    <div class="aaa">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <div  class="go"></div>
+                    <img src="../hufu_index-images/3324_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">美国•科颜氏金盏花爽肤水40ml</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 59.9</span>
+
+                    </div>
+                    <div class="box_interval">
+
+                    </div>
+                    <div class="bbb">
+                        <span></span>
+                        <span class="tt"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box_main_first">
+                <div class="box_f_f">
+                    <img src="../hufu_index-images/20504_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">多媚卡雅清洁冻膜225g</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 118</span>
+                        <del> ¥148</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>2人已购买 </p>
+                    </div>
+                <div class="bbb"><span></span><span class="tt">    </span></div>
+                </div>
+                <div class="box_f_f">
+                    <img src="../hufu_index-images/10795_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">中国•MISSFACE豆乳保水柔和三件套（洗面奶150g+化妆水180ml+乳液</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 99 </span>
+                        <del> ¥ 177</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销1203 </p>
+                    </div>
+                    <div class="bbb"><span></span><span class="tt"></span></div>
+
+                </div>
+                <div class="box_f_f">
+                    <div  class="go"></div>
+                    <img src="../hufu_index-images/1164_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">中国•片仔癀(pientzehuang)皇后牌珍珠膏 20g）</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 56</span>
+                        <del> ¥82</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销3102</p>
+                    </div>
+                    <div class="aaa">
+                        <span></span>
+                    </div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>持久</li>
+                            <li>保湿</li>
+                            <li>滋润</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <div  class="go"></div>
+                    <img src="../hufu_index-images/3016938_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">中国•相宜本草八倍凝水霜 50g</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 36</span>
+
+                    </div>
+                    <div class="box_interval">
+                        <p>月销1751 |</p>
+                        <p class="dingshiqi"></p>
+                    </div>
+                    <div class="bbb"><span></span><span class="tt"></span></div>
+
+                </div>
+            </div>
+
+            <div class="box_main_first">
+                <div class="box_f_f">
+                    <img src="../hufu_index-images/1333651_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">美国•雅诗兰黛肌透修护眼部精华霜5ml</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 89</span>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销10088</p>
+                    </div>
+                    <div class="bbb"><span></span><span class="tt"></span></div>
+
+                </div>
+                <div class="box_f_f">
+                    <div  class="go"></div>
+                    <img src="../hufu_index-images/2112116_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">日本•ROSETTE 去角质啫哩水120g</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 38 </span>
+                        <del> ¥ 48</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>6人已购买 |</p>
+                        <p class="dingshiqi"></p>
+                    </div>
+                    <div class="bbb"><span></span><span class="tt"></span></div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>持久</li>
+                            <li>保湿</li>
+                            <li>滋润</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_f_f">
+                    <img src="../hufu_index-images/474546_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">雅漾舒护组合</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 39.9 </span>
+                    </div>
+                    <div class="box_interval">
+                        <p>303人已购买 </p>
+                    </div>
+                    <div class="bbb"><span></span><span class="tt"></span></div>
+
+                </div>
+                <div class="box_f_f">
+                    <div  class="you"></div>
+                    <img src="../hufu_index-images/2291887_350_350.jpg" alt=""/>
+                    <div class="box_describe"><a href="#">韩国•AHC 玻尿酸B5补水洗面奶</a></div>
+
+                    <div class="box_price">
+                        <span>¥ 88</span>
+                        <del> ¥ 192</del>
+                    </div>
+                    <div class="box_interval">
+                        <p>月销47338</p>
+                    </div>
+                    <div class="aaa">
+                        <span></span>
+                    </div>
+                    <div class="ggg">
+                        <ul class="hhh">
+                            <li>持久</li>
+                            <li>保湿</li>
+                            <li>滋润</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box_main_bottom">
+            <div>
+                <span class="curent_div">1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>……</span>
+                <span>255</span>
+                <span>256</span>
+                <span>下一页</span>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="all_search">
+        <div class="all_search_top">
+            <span>搜索全部</span><input type="text"/>
+            <span class="all_search_top_search"></span>
+        </div>
+
+        <div class="all_search_bottom"><a href="#">去口碑中心搜索</a></div>
+    </div>
+    <!--近期浏览记录-->
+    <div id="nearly_history">
+
+        <div class="nearly_history_top">
+            <span>您最近查看的商品RECENTLY VIEWD ITEMS</span>
+        </div>
+        <div class="nearly_history_main">
+            <div class="nearly_history_main_1">
+                <div class="nearly_history_main_top">
+                    <span>查看记录</span>
+                </div>
+                <div class="nearly_history_main_main_1">
+                    <span>
+                        <img src="../hufu_index-images/1748503_60_60.jpg" alt=""/>
+                    </span>
+                    <div>
+                        <a href="product_detail.html">中国•御泥坊美白嫩肤补水淡斑护肤套装</a>
+                        <p>￥109.9</p>
+                        <div>10424篇评价</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="nearly_history_main_2">
+                <div class="nearly_history_main_top">
+                    <span>根据查看记录推荐</span>
+                    <span  class="link_top">
+                        <a href="#">共0页</a>
+                    </span>
+                    <span class="link_top">
+                        <a href="">第0页，</a>
+                    </span >
+
+                </div>
+                <div class="nearly_history_main_main2">
+                    <p>对不起，暂时没有数据！</p>
+                </div>
+                <div class="nearly_history_main_2_all">
+                    <div class="left">
+                        <img src="../hufu_index-images/search_bread_l_r_new_l.jpg" alt=""/>
+                    </div>
+                    <div class="right">
+                        <img src="../hufu_index-images/search_bread_l_r_new_r.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+        <ol >
+            <li><a href="">去角质</a></li>
+            <li><a href="">去角质</a></li>
+            <li><a href="">去角质</a></li>
+            <li><a href=""> 去黑眼圈 遮</a></li>
+            <li><a href=""> 遮瑕</a></li>
+            <li><a href=""> 去黑眼圈 </a></li>
+            <li><a href="">抗皱</a></li>
+            <li><a href="">抗皱</a></li>
+            <li><a href="">抗皱</a></li>
+            <li><a href="">抗皱</a></li>
+            <li><a href="">抗皱</a></li>
+            <li><a href="">抗衰老</a></li>
+            <li><a href="">抗衰老</a></li>
+            <li><a href="">抗衰老</a></li>
+            <li><a href="">抗衰老</a></li>
+            <li><a href="">抗衰老</a></li>
+            <li><a href="">抗衰老</a></li>
+            <li><a href="">抗衰老</a></li>
+            <li><a href="">抗衰老</a></li>
+            <li><a href="">抗衰老</a></li>
+            <li><a href="">抗衰老</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">缩小毛孔</a></li>
+            <li><a href="">净化 </a></li>
+            <li><a href="">净化 </a></li>
+            <li><a href="">净化 </a></li>
+            <li><a href="">净化 </a></li>
+            <li><a href="">净化 </a></li>
+            <li><a href="">净化 </a></li>
+            <li><a href="">净化 </a></li>
+        </ol>
+  </div>
+
+    <!--尾部-->
+    <footer>
+        <div>
+            <div class="fImg">
+                <ul>
+                    <li>
+                        <span class="img"></span>
+							<span>
+								值得信赖美妆电商
+							</span>
+                        <a href="">
+                            四千万用户信赖
+                        </a>
+                    </li>
+                    <li>
+                        <span class="img"></span>
+							<span>
+								成功在美上市
+							</span>
+                        <a href="">
+                            股票代码NYSE:JMEI
+                        </a>
+                    </li>
+                    <li>
+                        <span class="img"></span>
+							<span>
+								品牌防伪码
+							</span>
+                        <a href="">
+                            支持品牌官网验真
+                        </a>
+                    </li>
+                    <li>
+                        <span class="img"></span>
+							<span>
+								30天无理由退货
+							</span>
+                        <a href="">
+                            只要不满意无理由退货
+                        </a>
+                    </li>
+                    <li>
+                        <span class="img"></span>
+							<span>
+								百万用户口碑
+							</span>
+                        <a href="">
+                            帮你只选对的,不选贵的
+                        </a>
+                    </li>
+                    <li>
+                        <span class="img"></span>
+							<span>
+								订单闪电发货
+							</span>
+                        <a href="">
+                            1.5小时订单急速出库
+                        </a>
+                    </li>
+                    <li>
+                        <span class="img"></span>
+							<span>
+								大牌明星热荐
+							</span>
+                        <a href="">
+                            打造精致明星脸
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="middle">
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd>
+                        <a href="">正品承诺</a>
+                    </dd>
+                    <dd>
+                        <a href="">售后咨询</a>
+                    </dd>
+                    <dd>
+                        <a href="">退货政策</a>
+                    </dd>
+                    <dd>
+                        <a href="">退货办理</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>服务保障</dt>
+                    <dd>
+                        <a href="">品牌真品防伪码</a>
+                    </dd>
+                    <dd>
+                        <a href="">正品保证</a>
+                    </dd>
+                    <dd>
+                        <a href="">30天无条件退货</a>
+                    </dd>
+                    <dd>
+                        <a href="">7×24小时客服服务</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>使用帮助</dt>
+                    <dd>
+                        <a href="">新手指南</a>
+                    </dd>
+                    <dd>
+                        <a href="">常见问题</a>
+                    </dd>
+                    <dd>
+                        <a href="">帮助中心</a>
+                    </dd>
+                    <dd>
+                        <a href="">用户协议</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd>
+                        <a href="">货到付款</a>
+                    </dd>
+                    <dd>
+                        <a href="">在线支付</a>
+                    </dd>
+                    <dd>
+                        <a href="">余额支付</a>
+                    </dd>
+                    <dd>
+                        <a href="">现金券支付</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd>
+                        <a href="">包邮政策</a>
+                    </dd>
+                    <dd>
+                        <a href="">配送说明</a>
+                    </dd>
+                    <dd>
+                        <a href="">运费说明</a>
+                    </dd>
+                    <dd>
+                        <a href="">验货签收</a>
+                    </dd>
+                </dl>
+                <div class="erwei">
+                    <dl>
+                        <dt>手机聚美</dt>
+                        <center>
+                            <span class="erwei1"></span>
+                        </center>
+                        <p>下载移动客户端</p>
+                    </dl>
+                    <dl>
+                        <dt>聚美微信</dt>
+                        <center>
+                            <span class="erwei2"></span>
+                        </center>
+                        <p>聚美官方微信</p>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="middleImg"></div>
+        <div class="bottomlasttwo">
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">关于聚美优品</a>
+                    </li>
+                    <li>
+                        <a href="#">INVESTOR </a>
+                    </li>
+                    <li>
+                        <a href="#">RELATIONS </a>
+                    </li>
+                    <li>
+                        <a href="#">获取更新</a>
+                    </li>
+                    <li>
+                        <a href="#">加入聚美</a>
+                    </li>
+                    <li>
+                        <a href="#">品牌合作专区</a>
+                    </li>
+                    <li>
+                        <a href="#">网站联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">媒体报道</a>
+                    </li>
+                    <li>
+                        <a href="#">商务合作</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bottomlastone">
+            <div>
+                <span>COPYRIGHT © 2010-2017 北京创锐文化传媒有限公司 JUMEI.COM 保留一切权利。 客服热线：400-123-8888 </span><br />
+                <span>京公网安备 11010102001226 | 京ICP证111033号 | 食品流通许可证 SP1101051110165515（1-1） | 营业执照</span><br />
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

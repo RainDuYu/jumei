@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--头部-->
+    <link rel="stylesheet" href="css/comment.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <script src="js/jquery-1.12.2.min.js"></script>
+    <script src="js/comment.js"></script>
+    <!--主体-->
+    <link rel="stylesheet" href="product_detail.css"/>
+    <script src="jquery.min.js"></script>
+    <script src="product_detail.js"></script>
+</head>
+<body>
+
+    <aside>
+        <div class="middle">
+            <div id="Person">
+                <span class="person"></span>
+                <div class="personMessage">
+                    <div class="headImg">
+                        <img src="img/avatar_nonesign.jpg" alt="" />
+                    </div>
+                    <div class="login">
+                        你好，请
+                        <a href="#">登录</a>
+                        |
+                        <a href="#">注册</a>
+                    </div>
+                    <div class="buttonbox">
+                        <a href="#">我的收藏</a>
+                        <a href="#">我的订单</a>
+                    </div>
+                    <i></i>
+                    <a href="#" class="exitBtn"></a>
+                </div>
+            </div>
+            <i></i>
+            <div id="shopCar">
+                <span class="car"></span>
+                <p>购物车</p>
+                <div class="number MsgNum">0</div>
+            </div>
+            <i>
+            </i>
+            <div>
+                <span class="money"></span>
+                <div class="tab">
+                    <i></i> 我的财产
+                </div>
+            </div>
+            <div>
+                <span class="like"></span>
+                <div class="tab">
+                    <i></i> 我的心愿单
+                </div>
+            </div>
+            <div>
+                <span class="foot"></span>
+                <div class="tab">
+                    <i></i> 我的足迹
+                </div>
+            </div>
+            <!--bottom-->
+        </div>
+        <div class="bottom">
+            <div id="erweiImg">
+                <span class="erwei"></span>
+                <div class="erweiImg">
+                    <img src="img/qrcode.png" alt="" />
+                    <i></i>
+                </div>
+            </div>
+            <div>
+                <span class="self"></span>
+                <div class="tab">
+                    <i></i> 客服中心
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!--购物车窗体-->
+    <div class="shopCarBox">
+        <h4 class="title">购物车</h4>
+        <a href="#" class="exitBtn"></a>
+        <div class="main">
+            <h4 class="title">聚美优品</h4>
+            <ul>
+            </ul>
+            <div class="final">
+                <div>
+                    <div>￥<span class="showPrice">0</span></div>
+                    <div>共 <span class="MsgNum">0</span> 件商品</div>
+                </div>
+                <p class="payBtn">
+                    去购物车结算
+                </p>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="top">
+            <div>
+                <ul>
+                    <li>
+                        <a>欢迎来到聚美！</a>
+                    </li>
+                    <li>
+                        <a href="#">请登录</a>
+                    </li>
+                    <li>
+                        <a href="#">快速注册</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">正品保证</a>
+                    </li>
+                    <li>
+                        <a href="#">订单查询</a>
+                    </li>
+                    <li>
+                        <a href="#"><span id="head_heart"></span>收藏的品牌</a>
+                    </li>
+                    <!--下拉菜单切换-->
+                    <div class="change fl">
+                        <a href="#">我的聚美 <i class="fa fa-angle-down fa-lg"></i></a>
+
+                        <div class="bg">
+                            <div></div>
+                            <ul>
+                                <li>
+                                    <a href="">我的产品</a>
+                                </li>
+                                <li>
+                                    <a href="">我的现金券</a>
+                                </li>
+                                <li>
+                                    <a href="">我的红包</a>
+                                </li>
+                                <li>
+                                    <a href="">我的余额</a>
+                                </li>
+                                <li>
+                                    <a href="">我的提现退款</a>
+                                </li>
+                                <li>
+                                    <a href="">我的收藏</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--切换结束-->
+                    <div class="phone"><i class="fa fa-mobile-phone fa-lg"></i> 手机聚美 </div>
+                    <!--下拉菜单切换-->
+                    <div class="change fl more">
+                        <a href="#">更多 <i class="fa fa-angle-down fa-lg"></i></a>
+
+                        <div class="bg">
+                            <div></div>
+                            <ul>
+                                <li>
+                                    <a href="">邀请好友</a>
+                                </li>
+                                <li>
+                                    <a href="">加入收藏</a>
+                                </li>
+                                <li>
+                                    <a href="">新浪微博</a>
+                                </li>
+                                <li>
+                                    <a href="">聚美微信</a>
+                                </li>
+                                <li>
+                                    <a href="">百度贴吧</a>
+                                </li>
+                                <li>
+                                    <a href="">腾讯微博</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--切换结束-->
+                </ul>
+            </div>
+        </div>
+        <div class="middle">
+            <div>
+                <div class="shop">
+                    <img src="img/cart.gif" alt="" />
+                    <div>
+                        云购物车结算
+                    </div>
+                    <div id="number_icon" class="MsgNum">0</div>
+                </div>
+                <div class="icon fl">
+                    <img src="img/logo_new_v1.jpg" alt="" />
+                </div>
+                <div class="search">
+                    <div class="search_box fl">
+                        <input type="text" id="searchIpt" />
+                        <input type="button" value="搜索" />
+                        <div class="search_keyword" id="keyWord">
+                            <ul>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="search_more">
+                        <ul>
+                            <li>
+                                <a href="#">保湿</a>|</li>
+                            <li>
+                                <a href="#">面膜</a>|</li>
+                            <li>
+                                <a href="#">洗面奶</a>|</li>
+                            <li>
+                                <a href="#">补水</a>|</li>
+                            <li>
+                                <a href="#">香水</a>|</li>
+                            <li>
+                                <a href="#">眼霜</a>|</li>
+                            <li>
+                                <a href="#">口红</a>|</li>
+                            <li>
+                                <a href="#">护肤套装</a>|
+                            </li>
+                            <li>
+                                <a href="#">BB霜</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <div>
+                <div class="nav_icon"></div>
+                <div class="nav_icon"></div>
+                <div class="nav_icon"></div>
+                <ul>
+                    <li class="active">
+                        <a href="#">首页</a>
+                    </li>
+                    <li>
+                        <a href="">极速免税店</a>
+                    </li>
+                    <li>
+                        <a href="">母婴特卖</a>
+                    </li>
+                    <li id="nav_shop">
+                        <a href="">美妆商店 <i class="fa fa-angle-down fa-lg"></i></a>
+                        <div class="show_box">
+                            <div class="left fl">
+                                <a href="#"><img src="img/30573_254_135_003-web.jpg" alt="" /></a>
+                                <a href="#">
+                                    <img src="img/30573_254_135_005-web.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="right fl">
+                                <dl>
+                                    <dt><i></i>国际大牌</dt>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><i></i>护肤</dt>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><i></i>彩妆</dt>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><i></i>香氛</dt>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><i></i>男士专区</dt>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><i></i>热门搜索</dt>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">兰蔻</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">国际轻奢</a>
+                    </li>
+                    <li>
+                        <a href="">服装运动</a>
+                    </li>
+                    <li>
+                        <a href="">鞋包配饰</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </header>
+
+
+    <div id="product_detail_top">
+        <!--<img src="../xq_images/5938edc56100e_1920.jpg" alt=""/>-->
+    </div>
+    <div id="nav">
+        <div class="nav_l">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">全部商品</a></li>
+                <li class="three"><a href="#">夏日补水必备</a></li>
+                <li class="fore"><a href="#"> 镇店爆款</a> </li>
+                <li class="fore"><a href="#">经典护肤</a></li>
+                <li><a href="#">“裸妆”出行</a></li>
+            </ul>
+        </div>
+
+       <div class="nav_r">
+           <span class="shou_1">收藏</span>
+           <span class="shou_2">御泥坊聚美官方旗舰店</span>
+       </div>
+    </div>
+    <div id="product_detail_main">
+        <div class="product_detail_main_nav">
+            <span><a href="#"> 美妆商城首页></a></span>
+            <span><a href="#"> 御泥坊聚美官方旗舰店></a></span>
+            <span><a href="#">  护肤套装></a></span>
+            <span> 中国•御泥坊美白嫩肤补水淡斑护肤套装（洁面+水+乳+玫瑰旅行套装）</span>
+        </div>
+        <div class="product_detail_main_main">
+            <div class="gs">
+                中国•御泥坊美白嫩肤补水淡斑护肤套装（洁面+水+乳+玫瑰旅行套装）
+            </div>
+            <div class="main">
+                <div class="pic1">
+                    <div class="product_detil">
+                        <img src="../xq_images/1748503_350_350.jpg" alt=""/>
+                        <div class="mask" id="mask"></div>
+                    </div>
+                </div>
+                <div class="big_product">
+                    <img src="../xq_images/1748503_1000_1000.jpg" alt=""/>
+
+                </div>
+                <div class="img_detail">
+                   <div class="img_detail_1">
+                        <span class="price"><span>¥ </span>109.9</span>
+                        <span class="jm-price">聚美价</span><br/>
+                        <span class="zeng">满赠</span>
+                        <a class="song">御泥坊满199赠芦荟凝胶礼包</a>
+                        <span class="daojishi"></span>
+                    </div>
+                   <div class="public_praise">
+                        <span>口碑</span>
+                        <span class="start">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </span>
+                        <span><a>4.7</a>分 (共 <a href="">8</a>篇口碑 <a href="">12392</a>篇短评)</span>
+                    </div>
+                   <div class="number">
+                        <div class="number_t">
+                            <span class="n">数量</span>
+                            <span class="jian">-</span>
+                            <input type="text" placeholder="1" />
+                            <span class="jia">+</span>
+                        </div >
+                        <div class="number_b">
+                            <div></div>
+                            <a href="#">
+                                <span>收藏</span>
+                                <span class="p">(4485)</span>
+                            </a>
+                        </div>
+                    </div>
+                   <div class="sale">
+                        <span class="one"></span>
+                        <span class="two">月销</span>
+                        <span class="three">9088</span>
+                   </div>
+
+                    <div class="serve">
+
+                        <span class="server_1">服务</span>
+                        <div>
+                        <a href="#">正品保证</a>
+                        <a href="#">质量保险</a>
+                        <a href="#">本商品支持30天拆封无条件退货</a>
+                        <a href="#"> 官方授权 </a>
+                        <a href="#">闪电发货</a>
+                        <a href="#">本商品满299元或2件包邮</a>
+                        </div>
+                        <div class="ooo">
+                            <span class="ooo_1">聚美自营</span>
+                            <span class="ooo_2">本商品由 <span>聚美优品</span> 拥有和销售</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="recommendation">
+        <div class="recommendation_l">
+            <ul>
+                <li class="local_search">
+                    <div class="top">
+                        <span>本店搜索</span>
+                    </div>
+                    <div class="content">
+                        <span>关键词</span>
+                        <input class="text" placeholder="美白" type="text"/>
+                        <input class="button" type="button" value=""/>
+                    </div>
+
+                </li>
+                <li class="hot_sell">
+                    <div class="top">
+                        <span>热销排行榜</span>
+                    </div>
+                    <div class="matter">
+                        <ul>
+                            <li>
+                                <div>
+                                    <img src="../xq_images/1095430_200_200.jpg" alt=""/>
+                                    <span><a href="#">中国•御泥坊双重莹润透亮面膜套装21片</a></span>
+                                    <span class="oooo">¥89.9</span>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="../xq_images/1748503_60_60.jpg" alt=""/>
+                                    <span><a href="">中国•御泥坊美白嫩肤补水淡斑护肤套装（洁面+水+乳+玫瑰旅行套装）</a></span>
+                                    <span class="oooo" >¥109.9</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="../xq_images/2047539_100_100.jpg" alt=""/>
+                                    <span><a href="">中国•御泥坊葡萄籽琉璃亮颜黑面膜21片</a></span>
+                                    <span class="oooo">¥89.9</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="../xq_images/2426347_200_200.jpg" alt=""/>
+                                    <span><a href="">中国•御泥坊光感璀璨皙妍面膜21片</a></span>
+                                    <span class="oooo">¥139.9</span>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div><img src="../xq_images/1890263_200_200.jpg" alt=""/>
+                                    <span><a href="">中国•御泥坊美白嫩肤补水淡斑6件套装（洁面+水+乳+睡眠+养肤霜+身体乳）</a></span>
+                                    <span class="oooo">¥199.9</span>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="../xq_images/1890264_200_200.jpg" alt=""/>
+                                    <span><a href="">中国•御泥坊睡莲奢宠深补水套装（洁面+水+乳液+睡眠）</a></span>
+                                    <span class="oooo">¥229.9</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="../xq_images/647333_200_200.jpg" alt=""/>
+                                    <span><a href="">中国•御泥坊金桂花矿物眼膜贴60片</a></span>
+                                    <span class="oooo">¥89</span>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="../xq_images/647331_200_200.jpg" alt=""/>
+                                    <span><a href="">中国•御泥坊美白嫩肤睡眠面膜180g</a></span>
+                                    <span class="oooo">¥86</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="../xq_images/647328_200_200.jpg" alt=""/>
+                                    <span><a href="">中国•御泥坊芦荟矿物睡眠面膜180g</a></span>
+                                    <span class="oooo">¥79.9</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="../xq_images/1747489_200_200.jpg" alt=""/>
+                                    <span><a href="">中国•御泥坊清爽平衡控油礼盒套装（洁面+水+乳）</a></span>
+                                    <span class="oooo">¥129.9</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="effect">
+                    <div class="top">
+                        <span>按功效</span>
+                    </div>
+                    <div class="yyyy">
+                        <ul>
+                            <li><a href="#">美白</a></li>
+                            <li><a href="#">补水</a></li>
+                            <li><a href="#">清洁</a></li>
+                            <li><a href="#">修护肌肤</a></li>
+                            <li><a href="#">紧致</a></li>
+                            <li><a href="#">祛痘</a></li>
+                            <li><a href="#">保湿</a></li>
+                            <li><a href="#">去黑眼圈</a></li>
+                            <li><a href="#">控油</a></li>
+                            <li><a href="#">收敛毛孔</a></li>
+                            <li><a href="#">去黑头</a></li>
+                            <li><a href="#">抗敏感</a></li>
+                            <li><a href="#">祛痕</a></li>
+                            <li><a href="#">抗氧</a>化</li>
+                            <li><a href="#">柔肤</a></li>
+                            <li><a href="#">温和</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sort">
+
+                    <div class="top">
+                        <span>按分类</span>
+                    </div>
+                    <div class="mmm">
+                        <ul>
+                            <li class="one">
+                                <span><a href="javasript:;">面部护肤</a></span>
+                                <ol class="hide">
+                                     <li><a href="#"> 面部护肤</a></li>
+                                    <li><a href="#"> 洁面</a></li>
+                                    <li><a href="#"> 化妆水/爽肤水</a></li>
+                                    <li><a href="#"> 乳液</a></li>
+                                    <li><a href="#"> 面膜</a></li>
+                                    <li><a href="#"> 面霜</a></li>
+                                    <li><a href="#"> 眼部护理</a></li>
+                                    <li><a href="#"> T区/特殊护理</a></li>
+                                </ol>
+                            </li>
+                            <li class="two">
+                                <span><a href="javasript:;">身体护理</a></span>
+                                <ol class="hide">
+                                    <li><a href="">润肤</a></li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="recommendation_r">
+            <div class="www">
+                <div class="top rrr">
+                    <ul>
+                        <li>商品参数</li>
+                        <li>商品详情</li>
+                        <li>商品实拍</li>
+                        <li>用户口碑</li>
+                        <li>为您推荐</li>
+                    </ul>
+
+                </div>
+                <div class="ppp">
+                    <div>
+                        <span>109.9 <span>￥</span></span>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="recommendation_r_main">
+                <div class="box">
+                    <div class="first">
+                        <img src="../xq_images/baoxian.jpg" alt=""/>
+                    </div>
+                    <div class="title">
+
+                    </div>
+                    <div class="second">
+                        <img src="../xq_images/authorization_245.jpg" alt=""/>
+                    </div>
+                    <div class="third">
+                        <img src="../xq_images/authorization_245_other_domestic_1.jpg" alt=""/>
+                    </div>
+                    <div class="fourth">
+                        <span>御泥坊 防伪码品牌官网验真流程</span>
+                        <ul>
+                            <li>
+                                <div>
+                                    <span>1</span>
+                                    <div>
+                                        <p>SECURITY CODE</p>
+                                        <p> 找到品牌防伪码</p>
+                                    </div>
+
+                                    <div>> </div>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div>
+                                    <span>2</span>
+                                    <div>
+                                        <p>CHECK</p>
+                                        <p>登录品牌官网查询</p>
+                                    </div>
+
+                                    <div>> </div>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div>
+                                    <span>3</span>
+                                    <div><p>RESULT</p>
+                                        <p>查看结果</p></div>
+
+                                    <div>> </div>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fifth">
+                        <img src="../xq_images/245_3.jpg" alt=""/>
+                        
+                    </div>
+                    <div class="sixth">
+                        <img src="../xq_images/14962143318917.jpg" alt=""/>
+                    </div>
+                    <div class="seventh">
+                        <img src="../xq_images/authorization_245_other_domestic_3.jpg" alt=""/>
+                    </div>
+                    <div class="title_1" ></div>
+                    <div class="title_1_content ">
+                        <span>御泥坊美白嫩肤补水淡斑护肤套装（洁面+水+乳+玫瑰旅行套装），
+                            开启你的美肌之旅。 针对暗沉肌肤，提升亮泽度。甄选珍稀百合与优质雪耳，为肌肤层层注入水润营养，
+                            为亮泽水嫩肌肤打下坚实基础。早晚两次基础护理，维持肌肤健康状态，亮泽通 透亮丽出行。</span>
+                        <div >
+                            <ul>
+
+                                <li class="">
+                                    <span class="one">商品名称:</span>
+                                    <span class="two">中国•御泥坊美白嫩肤补水淡斑护肤套装（洁面+水+乳+玫瑰旅行套装）</span>
+                                </li>
+                                <li class="">
+                                    <span class="one">品        牌：	</span>
+                                    <span class="two">御泥坊</span>
+                                 <li class="">
+                                    <span class="one">  功        效：</span>
+                                    <span class="two">清洁,保湿,美白,补水,滋润,嫩肤</span>
+
+                                </li>
+                                <li>
+                                    <span class="one"> 产品规格</span>
+                                    <span class="two">	洁面乳100ml+水150ml+乳120ml+玫瑰滋养旅行套装（洁面乳20ml+润肤水20ml+润肤乳20ml）</span>
+
+                                </li>
+                                <li>
+                                    <span class="one">保质期限</span>
+                                    <span class="two">3年（具体日期请以收到实物为准），建议开瓶后1年内使用</span>
+
+                                </li>
+                                <li>
+                                    <span class="one">原产国家</span>
+                                    <span class="two">中国（具体产地以收到实物为准）</span>
+
+                                </li>
+                                <li>
+                                    <span class="one"> 温馨提示	</span>
+                                    <span class="two">  护肤品成分各有不同，初次使用或敏感性肌肤的人士请先在耳后进行测试后再使用。</span>
+
+                                </li>
+                            </ul>
+                            <div class="pic">
+                                <img src="../xq_images/1748503_200_200 (1).jpg" alt=""/>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="title_2">
+                    </div>
+                    <div class="eighth">
+                        <img src="../xq_images/14920790944731.jpg" alt=""/>
+                        <div>
+                            <img src="../xq_images/14920790954537.jpg" alt=""/>
+                            <img src="../xq_images/14920790958538.jpg" alt=""/>
+                        </div>
+                        <img src="../xq_images/14962143318917.jpg" alt=""/>
+                        <img src="../xq_images/1492497946.9921.jpg" alt=""/>
+                        <img src="../xq_images/1495709364.4168.jpg" alt=""/>
+                        <img src="../xq_images/1495709365.1824.jpg" alt=""/>
+                        <img src="../xq_images/1500273001.6702.jpg" alt=""/>
+                        <img src="../xq_images/1495709366.7756.jpg" alt=""/>
+                        <img src="../xq_images/1500273030.721.jpg" alt=""/>
+                        <img src="../xq_images/1495709368.2409.jpg" alt=""/>
+                        <img src="../xq_images/1495709368.9857.jpg" alt=""/>
+                        <img src="../xq_images/1500426446.8546.jpg" alt=""/>
+                        <img src="../xq_images/1495709370.4883.jpg" alt=""/>
+                        <img src="../xq_images/1495709371.1444.jpg" alt=""/>
+                        <img src="../xq_images/1495709372.5722.jpg" alt=""/>
+                        <img src="../xq_images/1495709373.2784.jpg" alt=""/>
+                        <img src="../xq_images/1495709374.0146.jpg" alt=""/>
+                        <img src="../xq_images/1495709374.691.jpg" alt=""/>
+                        <img src="../xq_images/1495709375.4434.jpg" alt=""/>
+                        <span>
+                            洁面乳：每天早晚使用。润湿脸部，取适量于掌心，用水搓出泡沫，在面部轻轻打圈，再以清水洗净。<br/>
+                            润肤水：早晚洁肤后，取适量本品沾于化妆棉上，由内而外均匀擦拭轻拍全脸及颈部至吸收即可。<br/>
+                            润肤乳：适量乳液均匀涂于面部、颈部轻轻按摩至皮肤完全吸收。<br/>
+                           <span> 温馨提示：护肤品中成分各有不同，敏感性肌肤的人士请先在耳后进行测试后再使用哦！</span>
+                        </span>
+                    </div>
+
+                    <div class="title_3">
+
+                    </div>
+                    <div class="nineth">
+
+                        <img src="../xq_images/1474601528.2535.jpg" alt=""/>
+                        <span>
+                            御泥坊美白嫩肤补水淡斑护肤套装（洁面+水+乳+玫瑰滋养旅行套装），开启你的嫩肤美肌之旅！
+                        </span>
+                        <img src="../xq_images/14883629542319.jpg" alt=""/>
+                        <span>
+                            玫瑰滋养旅行套装（洁面乳20ml+润肤水20ml+润肤乳20ml），精致便携，简装出行
+                        </span>
+                        <img src="../xq_images/1495707504.486.jpg" alt=""/>
+                        <span>
+                            玫瑰滋养矿物洁面乳100ml，绵细泡沫，温和清洁。
+                        </span>
+                        <img src="../xq_images/1474601563.0756.jpg" alt=""/>
+                        <span>
+                            美白嫩肤润肤水150ml，清爽质地，轻轻拍入脸颊，让肌肤水润透亮。
+                        </span>
+                        <img src="../xq_images/1474601570.7818.jpg" alt=""/>
+                        <span>
+                            美白嫩肤润肤乳120ml，深入滋养肌肤，嫩滑绽放。
+                        </span>
+                    </div>
+                    <div class="title_4">
+                        <p>本商品由 聚美优品 拥有和销售</p>
+
+
+                    </div>
+                    <div class="tenth">
+                        <img src="../xq_images/marketprice_pc_660.png" alt=""/>
+                    </div>
+                    <div class="title_5" >
+
+                    </div>
+                    <div class="eleventh">
+                        <img src="../xq_images/1.png" alt=""/>
+                        <img src="../xq_images/2.png" alt=""/>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div  id="nearly_history">
+
+        <div class="nearly_history_top">
+            <span>您最近查看的商品RECENTLY VIEWD ITEMS</span>
+        </div>
+        <div class="nearly_history_main">
+            <div class="nearly_history_main_1">
+                <div class="nearly_history_main_top">
+                    <span>查看记录</span>
+                </div>
+                <div class="nearly_history_main_main_1">
+                    <span>
+                        <img src="../hufu_index-images/1748503_60_60.jpg" alt=""/>
+                    </span>
+                    <div>
+                        <a href="product_detail.html">中国•御泥坊美白嫩肤补水淡斑护肤套装</a>
+                        <p>￥109.9</p>
+                        <div>10424篇评价</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="nearly_history_main_2">
+                <div class="nearly_history_main_top">
+                    <span>根据查看记录推荐</span>
+                    <span  class="link_top">
+                        <a href="#">共0页</a>
+                    </span>
+                    <span class="link_top">
+                        <a href="">第0页，</a>
+                    </span >
+
+                </div>
+                <div class="nearly_history_main_main2">
+                    <p>对不起，暂时没有数据！</p>
+                </div>
+                <div class="nearly_history_main_2_all">
+                    <div class="left">
+                        <img src="../hufu_index-images/search_bread_l_r_new_l.jpg" alt=""/>
+                    </div>
+                    <div class="right">
+                        <img src="../hufu_index-images/search_bread_l_r_new_r.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--尾部-->
+    <footer>
+    <div>
+        <div class="fImg">
+            <ul>
+                <li>
+                    <span class="img"></span>
+							<span>
+								值得信赖美妆电商
+							</span>
+                    <a href="">
+                        四千万用户信赖
+                    </a>
+                </li>
+                <li>
+                    <span class="img"></span>
+							<span>
+								成功在美上市
+							</span>
+                    <a href="">
+                        股票代码NYSE:JMEI
+                    </a>
+                </li>
+                <li>
+                    <span class="img"></span>
+							<span>
+								品牌防伪码
+							</span>
+                    <a href="">
+                        支持品牌官网验真
+                    </a>
+                </li>
+                <li>
+                    <span class="img"></span>
+							<span>
+								30天无理由退货
+							</span>
+                    <a href="">
+                        只要不满意无理由退货
+                    </a>
+                </li>
+                <li>
+                    <span class="img"></span>
+							<span>
+								百万用户口碑
+							</span>
+                    <a href="">
+                        帮你只选对的,不选贵的
+                    </a>
+                </li>
+                <li>
+                    <span class="img"></span>
+							<span>
+								订单闪电发货
+							</span>
+                    <a href="">
+                        1.5小时订单急速出库
+                    </a>
+                </li>
+                <li>
+                    <span class="img"></span>
+							<span>
+								大牌明星热荐
+							</span>
+                    <a href="">
+                        打造精致明星脸
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div class="middle">
+            <dl>
+                <dt>售后服务</dt>
+                <dd>
+                    <a href="">正品承诺</a>
+                </dd>
+                <dd>
+                    <a href="">售后咨询</a>
+                </dd>
+                <dd>
+                    <a href="">退货政策</a>
+                </dd>
+                <dd>
+                    <a href="">退货办理</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>服务保障</dt>
+                <dd>
+                    <a href="">品牌真品防伪码</a>
+                </dd>
+                <dd>
+                    <a href="">正品保证</a>
+                </dd>
+                <dd>
+                    <a href="">30天无条件退货</a>
+                </dd>
+                <dd>
+                    <a href="">7×24小时客服服务</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>使用帮助</dt>
+                <dd>
+                    <a href="">新手指南</a>
+                </dd>
+                <dd>
+                    <a href="">常见问题</a>
+                </dd>
+                <dd>
+                    <a href="">帮助中心</a>
+                </dd>
+                <dd>
+                    <a href="">用户协议</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>支付方式</dt>
+                <dd>
+                    <a href="">货到付款</a>
+                </dd>
+                <dd>
+                    <a href="">在线支付</a>
+                </dd>
+                <dd>
+                    <a href="">余额支付</a>
+                </dd>
+                <dd>
+                    <a href="">现金券支付</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>配送方式</dt>
+                <dd>
+                    <a href="">包邮政策</a>
+                </dd>
+                <dd>
+                    <a href="">配送说明</a>
+                </dd>
+                <dd>
+                    <a href="">运费说明</a>
+                </dd>
+                <dd>
+                    <a href="">验货签收</a>
+                </dd>
+            </dl>
+            <div class="erwei">
+                <dl>
+                    <dt>手机聚美</dt>
+                    <center>
+                        <span class="erwei1"></span>
+                    </center>
+                    <p>下载移动客户端</p>
+                </dl>
+                <dl>
+                    <dt>聚美微信</dt>
+                    <center>
+                        <span class="erwei2"></span>
+                    </center>
+                    <p>聚美官方微信</p>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="middleImg"></div>
+    <div class="bottomlasttwo">
+        <div>
+            <ul>
+                <li>
+                    <a href="#">关于聚美优品</a>
+                </li>
+                <li>
+                    <a href="#">INVESTOR </a>
+                </li>
+                <li>
+                    <a href="#">RELATIONS </a>
+                </li>
+                <li>
+                    <a href="#">获取更新</a>
+                </li>
+                <li>
+                    <a href="#">加入聚美</a>
+                </li>
+                <li>
+                    <a href="#">品牌合作专区</a>
+                </li>
+                <li>
+                    <a href="#">网站联盟</a>
+                </li>
+                <li>
+                    <a href="#">媒体报道</a>
+                </li>
+                <li>
+                    <a href="#">商务合作</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottomlastone">
+        <div>
+            <span>COPYRIGHT © 2010-2017 北京创锐文化传媒有限公司 JUMEI.COM 保留一切权利。 客服热线：400-123-8888 </span><br />
+            <span>京公网安备 11010102001226 | 京ICP证111033号 | 食品流通许可证 SP1101051110165515（1-1） | 营业执照</span><br />
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

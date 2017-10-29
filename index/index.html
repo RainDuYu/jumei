@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>聚美优品</title>
+		<link rel="stylesheet" href="css/comment.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<script src="js/jquery-1.12.2.min.js"></script>
+		<script src="js/comment.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/jquery.fly.min.js"></script>
+		<script src="js/goods.js"></script>
+	</head>
+
+	<body>
+		<!--左侧飘窗-->
+		<div class="left_aside" id="leftAside">
+			<div>
+				聚美
+				<br /> 首页
+			</div>
+			<ul>
+				<li class="active">
+					<a href="#must_check">
+						每日必看
+					</a>
+				</li>
+				<li>
+					<a href="#hot_deal">
+						上新单品
+					</a>
+				</li>
+				<li>
+					<a href="#incoming_deal">
+						品牌团
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--右侧菜单-->
+		<aside>
+			<div class="middle">
+				<div id="Person">
+					<span class="person"></span>
+					<div class="personMessage">
+						<div class="headImg">
+							<img src="img/avatar_nonesign.jpg" alt="" />
+						</div>
+						<div class="login">
+							你好，请
+							<a target="_blank" href="../logn/html/login.html">登录</a>
+							|
+							<a target="_blank" href="../logn/html/enroll.html">注册</a>
+						</div>
+						<div class="buttonbox">
+							<a href="#">我的收藏</a>
+							<a href="#">我的订单</a>
+						</div>
+						<i></i>
+						<a href="#" class="exitBtn"></a>
+					</div>
+				</div>
+				<i></i>
+				<div id="shopCar">
+					<span class="car"></span>
+					<p>购物车</p>
+					<div class="number MsgNum">0</div>
+				</div>
+				<i>
+				</i>
+				<div>
+					<span class="money"></span>
+					<div class="tab">
+						<i></i> 我的财产
+					</div>
+				</div>
+				<div>
+					<span class="like"></span>
+					<div class="tab">
+						<i></i> 我的心愿单
+					</div>
+				</div>
+				<div>
+					<span class="foot"></span>
+					<div class="tab">
+						<i></i> 我的足迹
+					</div>
+				</div>
+				<!--bottom-->
+			</div>
+			<div class="bottom">
+				<div id="erweiImg">
+					<span class="erwei"></span>
+					<div class="erweiImg">
+						<img src="img/qrcode.png" alt="" />
+						<i></i>
+					</div>
+				</div>
+				<div>
+					<span class="self"></span>
+					<div class="tab">
+						<i></i> 客服中心
+					</div>
+				</div>
+				<div id="reTop">
+					<span class="re_top"></span>
+				</div>
+			</div>
+		</aside>
+		<!--购物车窗体-->
+		<div class="shopCarBox">
+			<h4 class="title"><div class="fl">购物车</div><span  class="cleanReTime get20Time"></span><div class="cleanReTime">后清空</div></h4>
+			<a href="#" class="exitBtn"></a>
+			<div class="main">
+				<h4 class="title">聚美优品</h4>
+				<ul>
+				</ul>
+			</div>
+			<div class="final">
+				<div>
+					<div>￥<span class="showPrice">0</span></div>
+					<div>共 <span class="MsgNum">0</span> 件商品</div>
+				</div>
+				<p class="payBtn">
+					去购物车结算
+				</p>
+			</div>
+		</div>
+		<!--头部-->
+		<header>
+			<div class="top">
+				<div>
+					<ul>
+						<li>
+							<a>欢迎来到聚美！</a>
+						</li>
+						<li>
+							<a target="_blank" href="../logn/html/login.html">请登录</a>
+						</li>
+						<li>
+							<a target="_blank" href="../logn/html/enroll.html">快速注册</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="#">正品保证</a>
+						</li>
+						<li>
+							<a href="#">订单查询</a>
+						</li>
+						<li>
+							<a href="#"><span id="head_heart"></span>收藏的品牌</a>
+						</li>
+						<!--下拉菜单切换-->
+						<div class="change fl">
+							<a href="#">我的聚美 <i class="fa fa-angle-down fa-lg"></i></a>
+
+							<div class="bg">
+								<div></div>
+								<ul>
+									<li>
+										<a href="">我的产品</a>
+									</li>
+									<li>
+										<a href="">我的现金券</a>
+									</li>
+									<li>
+										<a href="">我的红包</a>
+									</li>
+									<li>
+										<a href="">我的余额</a>
+									</li>
+									<li>
+										<a href="">我的提现退款</a>
+									</li>
+									<li>
+										<a href="">我的收藏</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--切换结束-->
+						<div class="phone"><i class="fa fa-mobile-phone fa-lg"></i> 手机聚美 </div>
+						<!--下拉菜单切换-->
+						<div class="change fl more">
+							<a href="#">更多 <i class="fa fa-angle-down fa-lg"></i></a>
+
+							<div class="bg">
+								<div></div>
+								<ul>
+									<li>
+										<a href="">邀请好友</a>
+									</li>
+									<li>
+										<a href="">加入收藏</a>
+									</li>
+									<li>
+										<a href="">新浪微博</a>
+									</li>
+									<li>
+										<a href="">聚美微信</a>
+									</li>
+									<li>
+										<a href="">百度贴吧</a>
+									</li>
+									<li>
+										<a href="">腾讯微博</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--切换结束-->
+					</ul>
+				</div>
+			</div>
+			<div class="middle">
+				<div>
+					<div class="shop">
+						<img src="img/cart.gif" alt="" />
+						<div>
+							云购物车结算
+						</div>
+						<div id="number_icon" class="MsgNum">0</div>
+
+						<div class="cloud_shop" id="cloudShop">
+							<div class="title">
+								<img src="img/cart_countdown.jpg" />
+								<span class="get20Time"></span> 后购物车将被清空,请及时结算
+							</div>
+							<div class="shop_main">
+								<ul>
+									<!--云购物车-->
+								</ul>
+								<div class="final">
+									<div class="r">
+										<div class="shop_btn">
+											去购物车结算
+										</div>
+									</div>
+									<div class="l">
+										<div>共 <span class="MsgNum">0</span> 件商品</div><br />
+										<div>共计 <span style="font-size: 18px;">¥<a href="#" class="showPrice">0</a></span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+
+
+					</div>
+					<div class="icon fl">
+						<img src="img/logo_new_v1.jpg" alt="" />
+					</div>
+					<div class="search">
+						<div class="search_box fl">
+							<input type="text" id="searchIpt" />
+							<input type="button" value="搜索" />
+							<div class="search_keyword" id="keyWord">
+								<ul>
+								</ul>
+							</div>
+
+						</div>
+						<div class="search_more">
+							<ul>
+								<li>
+									<a href="#">保湿</a>|</li>
+								<li>
+									<a href="#">面膜</a>|</li>
+								<li>
+									<a href="#">洗面奶</a>|</li>
+								<li>
+									<a href="#">补水</a>|</li>
+								<li>
+									<a href="#">香水</a>|</li>
+								<li>
+									<a href="#">眼霜</a>|</li>
+								<li>
+									<a href="#">口红</a>|</li>
+								<li>
+									<a href="#">护肤套装</a>|
+								</li>
+								<li>
+									<a href="#">BB霜</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav">
+				<div>
+					<div class="nav_icon"></div>
+					<div class="nav_icon"></div>
+					<div class="nav_icon"></div>
+					<ul>
+						<li class="active">
+							<a href="../index/index.html">首页</a>
+						</li>
+						<li>
+							<a href="">极速免税店</a>
+						</li>
+						<li>
+							<a href="../momSon/index.html">母婴特卖</a>
+						</li>
+						<li id="nav_shop">
+							<a href="../dhf/index.html">美妆商店 <i class="fa fa-angle-down fa-lg"></i></a>
+							<div class="show_box">
+								<div class="left fl">
+									<a href="#"><img src="img/30573_254_135_003-web.jpg" alt="" /></a>
+									<a href="#">
+										<img src="img/30573_254_135_005-web.jpg" alt="" />
+									</a>
+								</div>
+								<div class="right fl">
+									<dl>
+										<dt><i></i>国际大牌</dt>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><i></i>护肤</dt>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><i></i>彩妆</dt>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><i></i>香氛</dt>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><i></i>男士专区</dt>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><i></i>热门搜索</dt>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="../gjqs/index.html">国际轻奢</a>
+						</li>
+						<li>
+							<a href="../fzyd/index.html">服装运动</a>
+						</li>
+						<li>
+							<a href="../xbps/index.html">鞋包配饰</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</header>
+		<div class="main">
+			<!--轮换头图-->
+			<div id="headImg">
+				<ul>
+					<li style="display: block;">
+						<a href="#" class="active" style="background-image: url(img/152484_1920_350_002-web.jpg);"></a>
+					</li>
+					<li>
+						<a href="#" class="active" style="background-image: url(img/152744_1920_350_002-web.jpg);"></a>
+					</li>
+				</ul>
+				<ol id="nav">
+					<li class="active"></li>
+					<li></li>
+				</ol>
+			</div>
+			<!--抢购tab栏目-->
+			<div class="qiangGou">
+				<div>
+					<div class="tab">
+						<a href="javascript:;" class="active">今日疯抢</a>
+						<a href="javascript:;">明日预告 </a>
+					</div>
+					<div class="main" style="display: block;">
+						<a href="javascript:;">
+							<img src="img/152488_535_212_003-web.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="img/152492_535_212_002-web.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="img/152494_535_212_002-web.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="img/152498_535_212_002-web.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="img/152506_535_212_002-web.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="img/152508_535_212_002-web.jpg" alt="" />
+						</a>
+					</div>
+					<div class="main">
+						<a href="javascript:;">
+							<img src="img/152544_535_212_003-web.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="img/152546_535_212_003-web.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="img/152548_535_212_003-web.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="img/152552_535_212_002-web.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div>
+				<!---->
+				<div class="middle_img">
+				</div>
+			</div>
+			<div>
+				<a name="must_check"></a>
+				<div>
+					<div class="middle_title"></div>
+				</div>
+			</div>
+			<!--推荐产品-->
+			<div>
+				<div>
+					<ul class="topProduce">
+						<li>
+							<!--左上角标志-->
+							<div class="iconBox">
+								<span class="jisu"></span>
+								<span class="xinpin"></span>
+							</div>
+							<div class="topNumber top1"></div>
+							<div class="introduceBox">
+								<span class="time">距特卖结束 00：00：00：00</span>
+								<p><em>【官方授权】</em>膜王丽得资家的新进人气单品，7效合一拯救各种肌肤问题，做你肌肤的综合护理方案！专利生物纤维纸，抓住的精华是普通面膜的三倍！一片更比3片强！一次性给肌肤补足营养！无论水光肌还是陶瓷肌，一片丽得资统统成就！
+								</p>
+								<!--商品介绍下半部分-->
+								<div class="introduce_bottom">
+									<ul>
+										<li>
+											<div class="addBtn" alt=1>
+												加入购物车
+											</div>
+											<a href="">¥107</a>
+											<del>¥210</del>
+										</li>
+										<li>
+											<div class="hadpay"><span>103</span>人已经购买</div>
+											<img src="img/029_big.jpg" alt="" />
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!--背景图片-->
+							<div class="bg">
+								<img src="img/3789726_dx_1500_400.jpg" alt="" />
+							</div>
+						</li>
+						<li>
+							<!--左上角标志-->
+							<div class="iconBox">
+								<span class="jisu"></span>
+							</div>
+							<div class="topNumber top2"></div>
+							<div class="introduceBox">
+								<span class="time">距特卖结束 00：00：00：00</span>
+								<p> 时光能量，倒流肌肤年龄！韩国LG旗下高端护肤品牌 su:m37（呼吸）时光能量水乳面霜三件套套盒，抚平肌肤问题，找回肌肤年轻状态。添加天然发酵成分Zyen，调整被打乱的皮肤循环，发挥原有的潜在能力，使皮肤光滑柔软、恢复透明光滑。</p>
+								<!--商品介绍下半部分-->
+								<div class="introduce_bottom">
+									<ul>
+										<li>
+											<div class="addBtn" alt=2>
+												加入购物车
+											</div>
+											<a href="">¥569</a>
+											<del>¥647</del>
+										</li>
+										<li>
+											<div class="hadpay"><span>139</span>人已经购买</div>
+											<img src="img/029_big.jpg" alt="" />
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!--背景图片-->
+							<div class="bg">
+								<img src="img/2197959_dx_1500_400.jpg" alt="" />
+							</div>
+						</li>
+						<li>
+							<!--左上角标志-->
+							<div class="iconBox">
+								<span class="jisu"></span>
+								<span class="xinpin"></span>
+							</div>
+							<div class="topNumber top3">
+							</div>
+							<div class="introduceBox">
+								<span class="time">距特卖结束 00：00：00：00</span>
+								<p> <em>【官方授权】</em>【火爆韩国猪鼻贴始祖】Holika ，2017刮来一阵飓风！HOLIKA HOLIKA 强力去黑头鼻贴（黑色版）五片装,带来【全新强力版】 只增内涵 不加价！一个疗程5片过后 黑头从根源杜绝！大尺寸膜纸+全面覆盖，【黑炭升级成分】导出黑头不留痕！</p>
+								<!--商品介绍下半部分-->
+								<div class="introduce_bottom">
+									<ul>
+										<li>
+											<div class="haveNull">
+												已抢光
+											</div>
+											<a href="">¥59</a>
+											<del>¥75</del>
+										</li>
+										<li>
+											<div class="hadpay"><span>383</span>人已经购买</div>
+											<img src="img/029_big.jpg" alt="" />
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!--背景图片-->
+							<div class="bg">
+								<span class="sold_out" style="margin-left: -265px;"></span>
+								<img src="img/3832496_dx_1500_400.jpg" alt="" />
+							</div>
+						</li>
+						<li>
+							<!--左上角标志-->
+							<div class="iconBox">
+								<span id="xinpin"></span>
+							</div>
+							<div class="introduceBox">
+								<span class="time">距特卖结束 00：00：00：00</span>
+								<p>【Oh!Baby出了限量版！】Oh!Baby葡萄柚限量版磨砂膏 350g,多次蝉联COSME大赏榜单,日本妹子几乎人手一罐！圆润饱满的高浓度磨砂+日本温泉水制成,给身体去角质的同时还能补充身体肌肤水分,干燥的肌肤都变得嘭嘭弹润,洗完后会发现身体如Baby般滑滑嫩嫩,保证连你自己都爱上自己！</p>
+								<!--商品介绍下半部分-->
+								<div class="introduce_bottom">
+									<ul>
+										<li>
+											<div class="addBtn" alt=3>
+												加入购物车
+											</div>
+											<a href="#">¥118</a>
+											<del>¥149</del>
+										</li>
+										<li>
+											<div class="hadpay"><span>314</span>人已经购买</div>
+											<img src="img/029_big.jpg" alt="" />
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!--背景图片-->
+							<div class="bg">
+								<img src="img/3504262_dx_1500_400.jpg" alt="" />
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<!--今日新品-->
+			<div>
+				<a name="hot_deal" id="hot_deal"></a>
+				<div class="hot_deal_title">
+					<div class="title_word">
+						<div class="more">
+							<span></span> 每日十点上新
+						</div>
+					</div>
+				</div>
+				<div class="hot_deal_main">
+					<ul>
+						<li>
+							<a href="#">
+								<div class="iconBox">
+									<span class="jisu"></span>
+								</div>
+								<div class="img">
+									<img src="img/1388308_350_350.jpg" />
+									<div class="tit">海外直采 海外价格 闪电发货</div>
+								</div>
+								<p>美国•魅可（MAC）时尚唇膏3g，爆款色号上架，唇色诱惑无法抗拒！</p>
+								<p>
+									¥149
+									<del>¥170</del>
+								</p>
+								<div class="addBtn" alt=4>
+									加入购物车
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="iconBox">
+									<span class="jisu"></span>
+								</div>
+								<div class="img">
+									<img src="img/1308285_350_350.jpg" />
+									<div class="tit">海外直采 海外价格 闪电发货</div>
+								</div>
+								<p>法国•【敏感肌必备】贝德玛舒妍卸妆水,卸除彩妆残留,卸妆+护肤一起搞定!</p>
+								<p>
+									¥95
+									<del>¥228</del>
+								</p>
+								<div class="addBtn" alt=5>
+									加入购物车
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="iconBox">
+									<span class="jisu"></span>
+								</div>
+								<div class="img">
+									<img src="img/2477004_350_350.jpg" />
+									<div class="tit">海外直采 海外价格 闪电发货</div>
+									<span class="sold_out"></span>
+								</div>
+								<p>韩国•【提取蜗牛原液】it's skin晶钻蜗牛1号水乳套装,给你护肤界的修复能力者!</p>
+								<p>
+									¥229
+									<del>¥409</del>
+								</p>
+								<!--<div class="addBtn">
+										加入购物车
+								</div>-->
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="iconBox">
+									<span class="jisu"></span>
+								</div>
+								<div class="img">
+									<img src="img/1590456_350_350.jpg" />
+									<div class="tit">海外直采 海外价格 闪电发货</div>
+									<span class="sold_out"></span>
+								</div>
+								<p>【温和卸妆】蓓昂斯四效合一卸妆水，深层卸妆无刺激，给你水一般的温和力！</p>
+								<p>
+									¥51
+									<del>¥69</del>
+								</p>
+								<!--<div class="addBtn">
+										加入购物车
+								</div>-->
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="iconBox">
+								</div>
+								<div class="img">
+									<img src="img/2894710_350_350.jpg" />
+									<div class="tit">海外直采 海外价格 闪电发货</div>
+								</div>
+								<p>韩国•【10片送5片】自然晨露水库炸弹面膜，水分直达肌底，给肌肤疯狂储水!</p>
+								<p>
+									¥69
+									<del>¥259</del>
+								</p>
+								<div class="addBtn" alt=6>
+									加入购物车
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="iconBox">
+									<span id="fangwei"></span>
+								</div>
+								<div class="img">
+									<img src="img/2250441_350_350.jpg" />
+									<div class="tit">海外直采 海外价格 闪电发货</div>
+								</div>
+								<p>日本•【火爆全网】的熊野油脂洗护发套装来啦！好用到理发师都会夸赞你的发质。</p>
+								<p>
+									¥72
+									<del>¥95</del>
+								</p>
+								<div class="addBtn" alt=7>
+									加入购物车
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div>
+				<a name="incoming_deal" id="incoming_deal"></a>
+				<div class="incoming_deal_title">
+					<div class="title_word">
+						<div class="more">
+							<img src="img/moreicon.png" class="fl" /> 查看更多>>
+						</div>
+					</div>
+					<div class="incoming_deal_main">
+						<div class="left">
+							<img src="img/21619_258_425_001-web.jpg" alt="" />
+						</div>
+						<div class="right">
+							<ul>
+								<li>
+									<a href="#">
+										<img src="img/152766_380_205_002-web.jpg" alt="" />
+										<div>
+											<h4>芙丽芳丝品牌团</h4>
+											<p>告别敏肌 爱上清爽秋日</p>
+											<p>全场满<em>159</em>赠滋肤紧致旅行套</p>
+											<p class="time">00天00时00分00秒</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/152762_380_205_002-web.jpg" alt="" />
+										<div>
+											<h4>科颜氏品牌团</h4>
+											<p>科颜氏 保湿新巅峰</p>
+											<p>全场满<em>29</em>元起</p>
+											<p class="time">00天00时00分00秒</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/152752_380_205_002-web.jpg" alt="" />
+										<div>
+											<h4>聚美-佰草集品牌专场</h4>
+											<p>传撼世古方 集佰草灵性</p>
+											<p>部分<em>199</em>减 <em>100</em>不封顶</p>
+											<p class="time">00天00时00分00秒</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/152750_380_205_002-web.jpg" alt="" />
+										<div>
+											<h4>御泥坊品牌专场</h4>
+											<p>御美有方 明星同款面膜</p>
+											<p>部分满<em>199</em>减 <em>100</em>不封顶</p>
+											<p class="time">00天00时00分00秒</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--尾部-->
+		<footer>
+			<div>
+				<div class="fImg">
+					<ul>
+						<li>
+							<span class="img"></span>
+							<span>
+								值得信赖美妆电商
+							</span>
+							<a href="">
+								四千万用户信赖
+							</a>
+						</li>
+						<li>
+							<span class="img"></span>
+							<span>
+								成功在美上市
+							</span>
+							<a href="">
+								股票代码NYSE:JMEI
+							</a>
+						</li>
+						<li>
+							<span class="img"></span>
+							<span>
+								品牌防伪码
+							</span>
+							<a href="">
+								支持品牌官网验真
+							</a>
+						</li>
+						<li>
+							<span class="img"></span>
+							<span>
+								30天无理由退货
+							</span>
+							<a href="">
+								只要不满意无理由退货
+							</a>
+						</li>
+						<li>
+							<span class="img"></span>
+							<span>
+								百万用户口碑
+							</span>
+							<a href="">
+								帮你只选对的,不选贵的
+							</a>
+						</li>
+						<li>
+							<span class="img"></span>
+							<span>
+								订单闪电发货
+							</span>
+							<a href="">
+								1.5小时订单急速出库
+							</a>
+						</li>
+						<li>
+							<span class="img"></span>
+							<span>
+								大牌明星热荐
+							</span>
+							<a href="">
+								打造精致明星脸
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div>
+				<div class="middle">
+					<dl>
+						<dt>售后服务</dt>
+						<dd>
+							<a href="">正品承诺</a>
+						</dd>
+						<dd>
+							<a href="">售后咨询</a>
+						</dd>
+						<dd>
+							<a href="">退货政策</a>
+						</dd>
+						<dd>
+							<a href="">退货办理</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>服务保障</dt>
+						<dd>
+							<a href="">品牌真品防伪码</a>
+						</dd>
+						<dd>
+							<a href="">正品保证</a>
+						</dd>
+						<dd>
+							<a href="">30天无条件退货</a>
+						</dd>
+						<dd>
+							<a href="">7×24小时客服服务</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>使用帮助</dt>
+						<dd>
+							<a href="">新手指南</a>
+						</dd>
+						<dd>
+							<a href="">常见问题</a>
+						</dd>
+						<dd>
+							<a href="">帮助中心</a>
+						</dd>
+						<dd>
+							<a href="">用户协议</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>支付方式</dt>
+						<dd>
+							<a href="">货到付款</a>
+						</dd>
+						<dd>
+							<a href="">在线支付</a>
+						</dd>
+						<dd>
+							<a href="">余额支付</a>
+						</dd>
+						<dd>
+							<a href="">现金券支付</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>配送方式</dt>
+						<dd>
+							<a href="">包邮政策</a>
+						</dd>
+						<dd>
+							<a href="">配送说明</a>
+						</dd>
+						<dd>
+							<a href="">运费说明</a>
+						</dd>
+						<dd>
+							<a href="">验货签收</a>
+						</dd>
+					</dl>
+					<div class="erwei">
+						<dl>
+							<dt>手机聚美</dt>
+							<center>
+								<span class="erwei1"></span>
+							</center>
+							<p>下载移动客户端</p>
+						</dl>
+						<dl>
+							<dt>聚美微信</dt>
+							<center>
+								<span class="erwei2"></span>
+							</center>
+							<p>聚美官方微信</p>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="middleImg"></div>
+			<div class="bottomlasttwo">
+				<div>
+					<ul>
+						<li>
+							<a href="#">关于聚美优品</a>
+						</li>
+						<li>
+							<a href="#">INVESTOR </a>
+						</li>
+						<li>
+							<a href="#">RELATIONS </a>
+						</li>
+						<li>
+							<a href="#">获取更新</a>
+						</li>
+						<li>
+							<a href="#">加入聚美</a>
+						</li>
+						<li>
+							<a href="#">品牌合作专区</a>
+						</li>
+						<li>
+							<a href="#">网站联盟</a>
+						</li>
+						<li>
+							<a href="#">媒体报道</a>
+						</li>
+						<li>
+							<a href="#">商务合作</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottomlastone">
+				<div>
+					<span>COPYRIGHT © 2010-2017 北京创锐文化传媒有限公司 JUMEI.COM 保留一切权利。 客服热线：400-123-8888 </span><br />
+					<span>京公网安备 11010102001226 | 京ICP证111033号 | 食品流通许可证 SP1101051110165515（1-1） | 营业执照</span><br />
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+				</div>
+			</div>
+		</footer>
+	</body>
+
+</html>

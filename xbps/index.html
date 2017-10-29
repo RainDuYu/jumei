@@ -1,0 +1,2449 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>聚美优品-鞋包配饰</title>
+    <link rel="stylesheet" href="css/shoes.css">
+    <link rel="stylesheet" href="css/comment.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+</head>
+<body>
+    <aside>
+    <div class="middle">
+        <div id="Person">
+            <span class="person"></span>
+            <div class="personMessage">
+                <div class="headImg">
+                    <img src="images/avatar_nonesign.jpg" alt="" />
+                </div>
+                <div class="login">
+                    你好，请
+                    <a href="javascript:void(0)">登录</a>
+                    |
+                    <a href="javascript:void(0)">注册</a>
+                </div>
+                <div class="buttonbox">
+                    <a href="javascript:void(0)">我的收藏</a>
+                    <a href="javascript:void(0)">我的订单</a>
+                </div>
+                <i></i>
+                <a href="javascript:void(0)" class="exitBtn"></a>
+            </div>
+        </div>
+        <i></i>
+        <div id="shopCar">
+            <span class="car"></span>
+            <p>购物车</p>
+            <div class="number MsgNum">0</div>
+        </div>
+        <i>
+        </i>
+        <div>
+            <span class="money"></span>
+            <div class="tab">
+                <i></i> 我的财产
+            </div>
+        </div>
+        <div>
+            <span class="like"></span>
+            <div class="tab">
+                <i></i> 我的心愿单
+            </div>
+        </div>
+        <div>
+            <span class="foot"></span>
+            <div class="tab">
+                <i></i> 我的足迹
+            </div>
+        </div>
+        <!--bottom-->
+    </div>
+    <div class="bottom">
+        <div id="erweiImg">
+            <span class="erwei"></span>
+            <div class="erweiImg">
+                <img src="images/qrcode.png" alt="" />
+                <i></i>
+            </div>
+        </div>
+        <div>
+            <span class="self"></span>
+            <div class="tab">
+                <i></i> 客服中心
+            </div>
+        </div>
+    </div>
+</aside>
+    <!--购物车窗体-->
+    <div class="shopCarBox">
+    <h4 class="title">购物车</h4>
+    <a href="javascript:void(0)" class="exitBtn"></a>
+    <div class="main">
+        <h4 class="title">聚美优品</h4>
+        <ul>
+        </ul>
+        <div class="final">
+            <div>
+                <div>￥<span class="showPrice">0</span></div>
+                <div>共 <span class="MsgNum">0</span> 件商品</div>
+            </div>
+            <p class="payBtn">
+                去购物车结算
+            </p>
+        </div>
+    </div>
+</div>
+    <header>
+    <div class="top">
+        <div>
+            <ul>
+                <li>
+                    <a>欢迎来到聚美！</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">请登录</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">快速注册</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="javascript:void(0)">正品保证</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">订单查询</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><span id="head_heart"></span>收藏的品牌</a>
+                </li>
+                <!--下拉菜单切换-->
+                <div class="change fl">
+                    <a href="javascript:void(0)">我的聚美 <i class="fa fa-angle-down fa-lg"></i></a>
+
+                    <div class="bg">
+                        <div></div>
+                        <ul>
+                            <li>
+                                <a href="">我的产品</a>
+                            </li>
+                            <li>
+                                <a href="">我的现金券</a>
+                            </li>
+                            <li>
+                                <a href="">我的红包</a>
+                            </li>
+                            <li>
+                                <a href="">我的余额</a>
+                            </li>
+                            <li>
+                                <a href="">我的提现退款</a>
+                            </li>
+                            <li>
+                                <a href="">我的收藏</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--切换结束-->
+                <div class="phone"><i class="fa fa-mobile-phone fa-lg"></i> 手机聚美 </div>
+                <!--下拉菜单切换-->
+                <div class="change fl more">
+                    <a href="javascript:void(0)">更多 <i class="fa fa-angle-down fa-lg"></i></a>
+
+                    <div class="bg">
+                        <div></div>
+                        <ul>
+                            <li>
+                                <a href="">邀请好友</a>
+                            </li>
+                            <li>
+                                <a href="">加入收藏</a>
+                            </li>
+                            <li>
+                                <a href="">新浪微博</a>
+                            </li>
+                            <li>
+                                <a href="">聚美微信</a>
+                            </li>
+                            <li>
+                                <a href="">百度贴吧</a>
+                            </li>
+                            <li>
+                                <a href="">腾讯微博</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--切换结束-->
+            </ul>
+        </div>
+    </div>
+    <div class="middle">
+        <div>
+            <div class="shop">
+                <img src="images/cart.gif" alt="" />
+                <div>
+                    云购物车结算
+                </div>
+                <div id="number_icon" class="MsgNum">0</div>
+            </div>
+            <div class="icon fl">
+                <img src="images/logo_new_v1.jpg" alt="" />
+            </div>
+            <div class="search">
+                <div class="search_box fl">
+                    <input type="text" id="searchIpt" />
+                    <input type="button" value="搜索" />
+                    <div class="search_keyword" id="keyWord">
+                        <ul>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="search_more">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">保湿</a>|</li>
+                        <li>
+                            <a href="javascript:void(0)">面膜</a>|</li>
+                        <li>
+                            <a href="javascript:void(0)">洗面奶</a>|</li>
+                        <li>
+                            <a href="javascript:void(0)">补水</a>|</li>
+                        <li>
+                            <a href="javascript:void(0)">香水</a>|</li>
+                        <li>
+                            <a href="javascript:void(0)">眼霜</a>|</li>
+                        <li>
+                            <a href="javascript:void(0)">口红</a>|</li>
+                        <li>
+                            <a href="javascript:void(0)">护肤套装</a>|
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">BB霜</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+			<div class="nav">
+				<div>
+					<div class="nav_icon"></div>
+					<div class="nav_icon"></div>
+					<div class="nav_icon"></div>
+					<ul>
+						<li>
+							<a href="../index/index.html">首页</a>
+						</li>
+						<li>
+							<a href="">极速免税店</a>
+						</li>
+						<li>
+							<a href="../momSon/index.html">母婴特卖</a>
+						</li>
+						<li id="nav_shop">
+							<a href="../dhf/index.html">美妆商店 <i class="fa fa-angle-down fa-lg"></i></a>
+							<div class="show_box">
+								<div class="left fl">
+									<a href="#"><img src="../index/img/30573_254_135_003-web.jpg" alt="" /></a>
+									<a href="#">
+										<img src="../index/img/30573_254_135_005-web.jpg" alt="" />
+									</a>
+								</div>
+								<div class="right fl">
+									<dl>
+										<dt><i></i>国际大牌</dt>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><i></i>护肤</dt>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><i></i>彩妆</dt>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><i></i>香氛</dt>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><i></i>男士专区</dt>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><i></i>热门搜索</dt>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+										<dd>
+											<a href="#">兰蔻</a>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="../gjqs/index.html">国际轻奢</a>
+						</li>
+						<li>
+							<a href="../fzyd/index.html">服装运动</a>
+						</li>
+						<li class="active">
+							<a href="../xbps/index.html">鞋包配饰</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+</header>
+    <!--主体部分-->
+    <div class="main">	</div>
+    <!--轮播图-->
+    <div id="lunbo">
+        <ul class="ul">
+            <li style="display:block"><a href="javascript:void(0)"><img src="images/152612_1920_350_002-web.jpg" alt=""/></a></li>
+            <li><a href="javascript:void(0)"><img src="images/152616_1920_350_003-web.jpg" alt=""/></a></li>
+        </ul>
+        <ol class="ol">
+            <li class="active"></li>
+            <li></li>
+        </ol>
+    </div>
+    <!--四大块-->
+    <div class="layout">
+    <div id="mlb">
+        <ul>
+            <li><a href="javascript:void(0)"><img  class="white" src="images/152360_472_170_003-web.jpg"alt=""/></a></li>
+            <li><a href="javascript:void(0)"><img  class="white" src="images/152368_472_170_002-web.jpg" alt=""/></a></li>
+        </ul>
+        <ul>
+            <li><a href="javascript:void(0)"><img  class="white" src="images/152370_472_170_002-web.jpg" alt=""/></a></li>
+            <li><a href="javascript:void(0)"><img  class="white" src="images/152366_472_170_002-web.jpg" alt=""/></a></li>
+        </ul>
+    </div>
+    </div>
+    <!--单行一个店铺-->
+    <div class="layout">
+    <div id="one">
+        <div class="watch">
+            <strong></strong>
+            <p>每天十点，恭候莅临
+                <span>|正品保证</span>
+            </p>
+        </div>
+        <div class="foreshow">
+            <!--左边栏的上边盒子-->
+            <div class="tfshow">
+                <div class="show">品牌预告 FORESHOW</div>
+                <div class="day">
+                    <span class="d_active">明天 <br/><i>09.03</i></span>
+                    <span>后天 <br/><i>09.04</i></span>
+                    <span>周二 <br/><i>09.05</i></span>
+                </div>
+                <ul class="rightul">
+                    <li class="d_selected">
+                            <a href="javascript:void(0)">
+                                <img class="bb" src="images/12063.jpg" alt=""/>
+                                <img src="images/aa.png" alt=""/>
+                                <div class="rfloat">
+                                    <img src="images/59a3cf6b75104_310_200.jpg" alt=""/>
+                                    <p>蛟蓓VOGUE狂欢盛典</p>
+                                    <p>满99减5上不封顶</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img class="bb" src="images/13334.jpg" alt=""/>
+                                <img src="images/aa.png" alt=""/>
+                                <div class="rfloat">
+                                    <img src="images/591d7e235819b_310_200.jpg" alt=""/>
+                                    <p>蛟蓓VOGUE狂欢盛典</p>
+                                    <p>满199-30不封顶</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img class="bb" src="images/12462.jpg" alt=""/>
+                                <img src="images/aa.png" alt=""/>
+                                <div class="rfloat">
+                                    <img src="images/58997ad31b845_310_200.jpg" alt=""/>
+                                    <p>蛟蓓VOGUE狂欢盛典</p>
+                                    <p>全场5.1折起</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img  class="bb" src="images/4287.jpg" alt=""/>
+                                <img src="images/aa.png" alt=""/>
+                                <div class="rfloat">
+                                    <img src="images/59a67d7a75c5b_310_200.jpg" alt=""/>
+                                    <p>蛟蓓VOGUE狂欢盛典</p>
+                                    <p>全场29元包邮起</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img  class="bb" src="images/1798.jpg" alt=""/>
+                                <img src="images/aa.png" alt=""/>
+                                <div class="rfloat">
+                                    <img src="images/59a629c78624d_310_200.jpg" alt=""/>
+                                    <p>蛟蓓VOGUE狂欢盛典</p>
+                                    <p>满199减30，上不封顶</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img  class="bb" src="images/9189.jpg" alt=""/>
+                                <img src="images/aa.png" alt=""/>
+                                <div class="rfloat">
+                                    <img src="images/59a62526e8140_310_200.jpg" alt=""/>
+                                    <p>蛟蓓VOGUE狂欢盛典</p>
+                                    <p>全场低至39元两件起</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img  class="bb" src="images/2228.jpg" alt=""/>
+                                <img src="images/aa.png" alt=""/>
+                                <div class="rfloat">
+                                    <img src="images/599f93b352d8e_310_200.jpg" alt=""/>
+                                    <p>蛟蓓VOGUE狂欢盛典</p>
+                                    <p>秋季小白鞋59元两双</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img  class="bb" src="images/4561.jpg" alt=""/>
+                                <img src="images/aa.png" alt=""/>
+                                <div class="rfloat">
+                                    <img src="images/5976ada76615b_310_200.jpg" alt=""/>
+                                    <p>蛟蓓VOGUE狂欢盛典</p>
+                                    <p>满199减20 上不封顶</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img  class="bb" src="images/4884.jpg" alt=""/>
+                                <img src="images/aa.png" alt=""/>
+                                <div class="rfloat">
+                                    <img src="images/59a5048c2833b_310_200.jpg" alt=""/>
+                                    <p>蛟蓓VOGUE狂欢盛典</p>
+                                    <p>59元两件起</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img  class="bb" src="images/7121.jpg" alt=""/>
+                                <img src="images/aa.png" alt=""/>
+                                <div class="rfloat">
+                                    <img src="images/599d37d1bb00a_310_200.jpg" alt=""/>
+                                    <p>蛟蓓VOGUE狂欢盛典</p>
+                                    <p>全场2折起</p>
+                                </div>
+                            </a>
+                        </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img class="bb" src="images/14094.jpg" alt=""/>
+                            <img src="images/aa.png" alt=""/>
+                            <div class="rfloat">
+                                <img src="images/599e88c3e0535_310_200.jpg" alt=""/>
+                                <p>蛟蓓VOGUE狂欢盛典</p>
+                                <p>一件9折 两件8折</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img class="bb" src="images/15724.jpg" alt=""/>
+                            <img src="images/aa.png" alt=""/>
+                            <div class="rfloat">
+                                <img src="images/59a8b0d767da8_310_200.jpg" alt=""/>
+                                <p>蛟蓓VOGUE狂欢盛典</p>
+                                <p>全场满99元两双</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img class="bb" src="images/12967.jpg" alt=""/>
+                            <img src="images/aa.png" alt=""/>
+                            <div class="rfloat">
+                                <img src="images/599e7014f0c10_310_200.jpg" alt=""/>
+                                <p>蛟蓓VOGUE狂欢盛典</p>
+                                <p>凉鞋清仓29元起</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img  class="bb" src="images/15936.jpg" alt=""/>
+                            <img src="images/aa.png" alt=""/>
+                            <div class="rfloat">
+                                <img src="images/59a8f84d66800_310_200.jpg" alt=""/>
+                                <p>蛟蓓VOGUE狂欢盛典</p>
+                                <p>全场109元起</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img  class="bb" src="images/7613.jpg" alt=""/>
+                            <img src="images/aa.png" alt=""/>
+                            <div class="rfloat">
+                                <img src="images/59a4c39c824e6_310_200.jpg" alt=""/>
+                                <p>蛟蓓VOGUE狂欢盛典</p>
+                                <p>初秋尚新 海量美包</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img  class="bb" src="images/15896.jpg" alt=""/>
+                            <img src="images/aa.png" alt=""/>
+                            <div class="rfloat">
+                                <img src="images/59a50b9854ba5_310_200.jpg" alt=""/>
+                                <p>蛟蓓VOGUE狂欢盛典</p>
+                                <p>3件9折 5件8.5折</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img  class="bb" src="images/3446.jpg" alt=""/>
+                            <img src="images/aa.png" alt=""/>
+                            <div class="rfloat">
+                                <img src="images/59a529bd70e8f_310_200.jpg" alt=""/>
+                                <p>蛟蓓VOGUE狂欢盛典</p>
+                                <p>低至59元</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img  class="bb" src="images/4024.jpg" alt=""/>
+                            <img src="images/aa.png" alt=""/>
+                            <div class="rfloat">
+                                <img src="images/59a6239b0c3e7_310_200.jpg" alt=""/>
+                                <p>蛟蓓VOGUE狂欢盛典</p>
+                                <p>1.5折起</p>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img  class="bb" src="images/12477.jpg" alt=""/>
+                            <img src="images/aa.png" alt=""/>
+                            <div class="rfloat">
+                                <img src="images/59a65d0a2a1cd_310_200.jpg" alt=""/>
+                                <p>蛟蓓VOGUE狂欢盛典</p>
+                                <p>69元两件专区</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img  class="bb" src="images/16062.jpg" alt=""/>
+                            <img src="images/aa.png" alt=""/>
+                            <div class="rfloat">
+                                <img src="images/59a66da00dfae_310_200.jpg" alt=""/>
+                                <p>蛟蓓VOGUE狂欢盛典</p>
+                                <p>全场9.9元起</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img class="bb" src="images/13150.jpg" alt=""/>
+                            <img src="images/aa.png" alt=""/>
+                            <div class="rfloat">
+                                <img src="images/59a78777b8d3a_310_200.jpg" alt=""/>
+                                <p>蛟蓓VOGUE狂欢盛典</p>
+                                <p>美洲野牛真皮男女包混合专场</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img class="bb" src="images/12063.jpg" alt=""/>
+                            <img src="images/aa.png" alt=""/>
+                            <div class="rfloat">
+                                <img src="images/59a7760061c88_310_200.jpg" alt=""/>
+                                <p>蛟蓓VOGUE狂欢盛典</p>
+                                <p>满一件8.5折两件8折</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img class="bb" src="images/15082.jpg" alt=""/>
+                            <img src="images/aa.png" alt=""/>
+                            <div class="rfloat">
+                                <img src="images/59a7b2bbe802c_310_200.jpg" alt=""/>
+                                <p>蛟蓓VOGUE狂欢盛典</p>
+                                <p>全场降价包邮</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img  class="bb" src="images/15176.jpg" alt=""/>
+                            <img src="images/aa.png" alt=""/>
+                            <div class="rfloat">
+                                <img src="images/59a91ed84aa85_310_200.jpg" alt=""/>
+                                <p>蛟蓓VOGUE狂欢盛典</p>
+                                <p>低至4.7折</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img  class="bb" src="images/3507.jpg" alt=""/>
+                            <img src="images/aa.png" alt=""/>
+                            <div class="rfloat">
+                                <img src="images/59a8cc7d1a88b_310_200.jpg" alt=""/>
+                                <p>蛟蓓VOGUE狂欢盛典</p>
+                                <p>99元任选两件</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img  class="bb" src="images/14991.jpg" alt=""/>
+                            <img src="images/aa.png" alt=""/>
+                            <div class="rfloat">
+                                <img src="images/59a8cb91234d6_310_200.jpg" alt=""/>
+                                <p>蛟蓓VOGUE狂欢盛典</p>
+                                <p>满999减150</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img  class="bb" src="images/5418.jpg" alt=""/>
+                            <img src="images/aa.png" alt=""/>
+                            <div class="rfloat">
+                                <img src="images/59a91ac0deee0_310_200.jpg" alt=""/>
+                                <p>蛟蓓VOGUE狂欢盛典</p>
+                                <p>1件9折，两件8折</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img  class="bb" src="images/3519.jpg" alt=""/>
+                            <img src="images/aa.png" alt=""/>
+                            <div class="rfloat">
+                                <img src="images/59a3cf6b75104_310_200.jpg" alt=""/>
+                                <p>蛟蓓VOGUE狂欢盛典</p>
+                                <p>满99减5上不封顶</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tfbshow">
+                    <img src="images/updown.png" alt=""/>
+                </div>
+            </div>
+            <!--左边栏的中间盒子-->
+            <div class="cfshow">
+                <div class="show">贴心为您 FORMISE</div>
+                <div class="cficon">
+                    <em class="icon"><img src="images/1.png" alt=""/></em>
+                    <p>
+                        <span>一切为您，精心甄选品牌正品,<br/><span>所售商品接受专柜验货</span></span>
+                    </p>
+                </div>
+                <div class="cficon">
+                    <em class="icon"><img src="images/2.png" alt=""/></em>
+                    <p>
+                        <span>每天10点上新</span>
+                    </p>
+                </div>
+                <div class="cficon">
+                    <em class="icon"><img src="images/3.png" alt=""/></em>
+                    <p>
+                        <span>名品特卖单商家满159包邮</span>
+                    </p>
+                </div>
+                <div class="cficon">
+                    <em class="icon"><img src="images/4.png" alt=""/></em>
+                    <p>
+                        <span>7天 无条件退货</span>
+                    </p>
+                </div>
+                <div class="cficon">
+                    <em class="icon"><img src="images/6.png" alt=""/></em>
+                    <p>
+                    <span>
+                        <strong>400-123-8888</strong><br/>
+                        <span>24小时长途热线(免长途费)</span>
+                    </span>
+                    </p>
+                </div>
+                <div class="cficon">
+                    <p>
+                        <span class="lian"><a target="_blank" href="fwzz.html" id="lian">点击查看详情>></a></span>
+                    </p>
+                </div>
+
+            </div>
+            <!--左边栏的下边盒子-->
+            <div class="bfshow">
+                <div class="show">品牌伙伴 MERCHANT</div>
+                <img src="images/7.png" alt=""/>
+                <p>为顾客奉献优质商品</p>
+                <input type="button" value="查看入驻详情"/>
+            </div>
+        </div>
+        <!--此处为一行一个店铺的所有简介-->
+        <ul>
+            <li>
+            <a href="javascript:void(0)">
+                <div class="bigdiv">
+                    <div class="start"></div>
+                    <div class="oneleft">
+                        <img src="images/9978.jpg" alt=""/>
+                        <p>秋季新款休闲鞋79两双</p>
+                        <p>全场49元起</p>
+                        <p class="date">8月31日-9月3日</p>
+                        <div class="olbottom">时尚秋季帆布鞋等你来抢</div>
+                    </div>
+                    <img class="white"  src="images/5978049eba573_500_245.jpg" alt=""/>
+                    <div class="bdbottom">
+                        <span class="countdown">剩余00天00时00分00秒</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="start"></div>
+                        <div class="oneleft">
+                            <img src="images/2133.jpg" alt=""/>
+                            <p>艾薇妮 换季低价促销</p>
+                            <p>新品79元两双 爆款128元两双</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">新品79元两双</div>
+                        </div>
+                        <img  class="white" src="images/59a5288ac8bdc_500_245.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span class="countdown">剩余00天00时00分00秒</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="end"></div>
+                        <div class="oneleft">
+                            <img src="images/14835.jpg" alt=""/>
+                            <p>MLB棒球帽专场</p>
+                            <p>低至179元</p>
+                            <p class="date">9月1日-9月4日</p>
+                            <div class="olbottom">潮品速递 时尚街头</div>
+                        </div>
+                        <img  class="white" src="images/59a52076c5c87_500_245.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span class="countdown">剩余00天00时00分00秒</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="end"></div>
+                        <div class="oneleft">
+                            <img src="images/15282.jpg" alt=""/>
+                            <p>蓝月亮品牌专场</p>
+                            <p>每满99减50</p>
+                            <p class="date">9月1日-9月4日</p>
+                            <div class="olbottom">品质换新 至尊升级</div>
+                        </div>
+                        <img  class="white" src="images/59a3d8108e59e_500_245.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span class="countdown">剩余00天00时00分00秒</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="end"></div>
+                        <div class="oneleft">
+                            <img src="images/15940.jpg" alt=""/>
+                            <p>耐克运动品牌团</p>
+                            <p>全场49折起</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">动感街头 能量上线</div>
+                        </div>
+                        <img  class="white" src="images/59a62d60828b4_500_245.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span class="countdown">剩余00天00时00分00秒</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="oneleft">
+                            <img src="images/14579.jpg" alt=""/>
+                            <p>来伊份品牌团</p>
+                            <p>不止50%OFF</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">味爱吃狂 幸福食光</div>
+                        </div>
+                        <img  class="white"  src="images/59a67d1ce01f0_500_245.jpg" alt=""/>
+                        <div class="bdbottom">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="end"></div>
+                        <div class="oneleft">
+                            <img class="adidas" src="images/1821.jpg" alt=""/>
+                            <p>开学季 新品首发</p>
+                            <p>全场79元两双起 低至19元</p>
+                            <p class="date">8月31日-9月3日</p>
+                            <div class="olbottom">开学季 新品首发</div>
+                        </div>
+                        <img  class="white" src="images/599bcc753ce3d_500_245.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span class="countdown">剩余00天00时00分00秒</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="oneleft">
+                            <img src="images/9431.jpg" alt=""/>
+                            <p>千黛名媛 时髦入秋</p>
+                            <p>99元两件 全场29元起</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">时髦入秋 Get潮包</div>
+                        </div>
+                        <img  class="white" src="images/59a6a6c2b471c_500_245.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span class="countdown">剩余00天00时00分00秒</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="end"></div>
+                        <div class="oneleft">
+                            <img class="shuke" src="images/16192.jpg" alt=""/>
+                            <p>舒克联合品牌团</p>
+                            <p>拍下减5元</p>
+                            <p class="date">9月1日-9月4日</p>
+                            <div class="olbottom">美食过后 留下清新</div>
+                        </div>
+                        <img  class="white" src="images/59a530c095352_500_245.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span class="countdown">剩余00天00时00分00秒</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="end"></div>
+                        <div class="oneleft">
+                            <img class="adidas" src="images/15045.jpg" alt=""/>
+                            <p>阿迪达斯运动鞋专场831</p>
+                            <p>全场269元</p>
+                            <p class="date">8月31日-9月3日</p>
+                            <div class="olbottom">阿迪达斯运动鞋专场</div>
+                        </div>
+                        <img  class="white" src="images/59a529e8ea63a_500_245.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span class="countdown">剩余00天00时00分00秒</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="end"></div>
+                        <div class="oneleft">
+                            <img class="adidas" src="images/15370.jpg" alt=""/>
+                            <p>凯斯奇潮酷品牌团</p>
+                            <p>全场五折起</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">摩登运动 城市主义</div>
+                        </div>
+                        <img  class="white" src="images/599663571b6d5_500_245.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span class="countdown"></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+            <a href="javascript:void(0)">
+                <div class="bigdiv">
+                    <div class="oneleft">
+                        <img class="adidas" src="images/15372.jpg" alt=""/>
+                        <p>摩登运动品牌团</p>
+                        <p>全场2.5折起</p>
+                        <p class="date">9月2日-9月5日</p>
+                        <div class="olbottom">2017当季热销潮货</div>
+                    </div>
+                    <img  class="white" src="images/59a8e0b6be2e9_500_245.jpg" alt=""/>
+                    <div class="bdbottom">
+                        <span class="countdown"></span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">
+                <div class="bigdiv">
+                    <div class="start"></div>
+                    <div class="oneleft">
+                        <img class="adidas" src="images/1870.jpg" alt=""/>
+                        <p>卡洛美早秋新品专场</p>
+                        <p>满239减50不封顶</p>
+                        <p class="date">9月2日-9月5日</p>
+                        <div class="olbottom">解锁初秋潮流 新姿饰</div>
+                    </div>
+                    <img  class="white" src="images/599fefd102bd2_500_245.jpg" alt=""/>
+                    <div class="bdbottom">
+                        <span class="countdown">剩余00天00时00分00秒</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+         <li>
+             <a href="javascript:void(0)">
+                 <div class="bigdiv">
+                     <div class="start"></div>
+                     <div class="oneleft">
+                         <img class="adidas" src="images/9568.jpg" alt=""/>
+                         <p>杜蕾斯 开学季钜惠</p>
+                         <p>全场9.9元起</p>
+                         <p class="date">8月31日-9月3日</p>
+                         <div class="olbottom">杜蕾斯 你开学我放"价" 新姿饰</div>
+                     </div>
+                     <img  class="white" src="images/59a53282c87af_500_245.jpg" alt=""/>
+                     <div class="bdbottom">
+                         <span class="countdown">剩余00天00时00分00秒</span>
+                     </div>
+                 </div>
+             </a>
+         </li>
+         <li>
+             <a href="javascript:void(0)">
+                 <div class="bigdiv">
+                     <div class="start"></div>
+                     <div class="oneleft">
+                         <img class="adidas" src="images/14683.jpg" alt=""/>
+                         <p>特百惠 开学季钜惠</p>
+                         <p>满99元减5元</p>
+                         <p class="date">9月1日-9月4日</p>
+                         <div class="olbottom">开学之旅 有我伴行</div>
+                     </div>
+                     <img  class="white" src="images/59a67cdf54fb6_500_245.jpg" alt=""/>
+                     <div class="bdbottom">
+                         <span class="countdown">剩余00天00时00分00秒</span>
+                     </div>
+                 </div>
+             </a>
+         </li>
+         <li>
+             <a href="javascript:void(0)">
+                 <div class="bigdiv">
+                     <div class="start"></div>
+                     <div class="oneleft">
+                         <img class="adidas" src="images/14929.jpg" alt=""/>
+                         <p>瑞曼助力开学特惠场</p>
+                         <p>买一送十 全场3折起</p>
+                         <p class="date">9月1日-9月4日</p>
+                         <div class="olbottom">开学换新 伴你出行</div>
+                     </div>
+                     <img  class="white" src="images/59a646f9a87e5_500_245.jpg" alt=""/>
+                     <div class="bdbottom">
+                         <span class="countdown">剩余00天00时00分00秒</span>
+                     </div>
+                 </div>
+             </a>
+         </li>
+         <li>
+             <a href="javascript:void(0)">
+                 <div class="bigdiv">
+                     <div class="oneleft">
+                         <img class="adidas" src="images/2134.jpg" alt=""/>
+                         <p>名将 秋季帆布鞋发布汇</p>
+                         <p>39元两双</p>
+                         <p class="date">9月1日-9月4日</p>
+                         <div class="olbottom">全场最低19元</div>
+                     </div>
+                     <img  class="white" src="images/599ec9cbbfefe_500_245.jpg" alt=""/>
+                     <div class="bdbottom">
+                         <span class="countdown">剩余00天00时00分00秒</span>
+                     </div>
+                 </div>
+             </a>
+         </li>
+         <li>
+             <a href="javascript:void(0)">
+                 <div class="bigdiv">
+                     <div class="end"></div>
+                     <div class="oneleft">
+                         <img class="adidas" src="images/15372.jpg" alt=""/>
+                         <p>鬼冢虎品牌团</p>
+                         <p>全场6折起</p>
+                         <p class="date">9月2日-9月5日</p>
+                         <div class="olbottom">多彩世界 时尚原色</div>
+                     </div>
+                     <img  class="white" src="images/59966058aace3_500_245.jpg" alt=""/>
+                     <div class="bdbottom">
+                         <span class="countdown">剩余00天00时00分00秒</span>
+                     </div>
+                 </div>
+             </a>
+         </li>
+         <li>
+             <a href="javascript:void(0)">
+                 <div class="bigdiv">
+                     <div class="start"></div>
+                     <div class="oneleft">
+                         <img class="adidas" src="images/15061.jpg" alt=""/>
+                         <p>阿尔皮纳袋鼠新品首发</p>
+                         <p>全场2折起</p>
+                         <p class="date">9月2日-9月5日</p>
+                         <div class="olbottom">邂逅初秋 心动呈现</div>
+                     </div>
+                     <img  class="white" src="images/59a7edfe2467a_500_245.jpg" alt=""/>
+                     <div class="bdbottom">
+                         <span class="countdown">剩余00天00时00分00秒</span>
+                     </div>
+                 </div>
+             </a>
+         </li>
+         <li>
+             <a href="javascript:void(0)">
+                 <div class="bigdiv">
+                     <div class="oneleft">
+                         <img class="adidas" src="images/3032.jpg" alt=""/>
+                         <p>荻嘉茂家访换新特卖</p>
+                         <p>满199减20 399减50封顶</p>
+                         <p class="date">8月31日-9月3日</p>
+                         <div class="olbottom">睡好棉 好睡眠</div>
+                     </div>
+                     <img  class="white" src="images/5991592c0f997_500_245.jpg" alt=""/>
+                     <div class="bdbottom">
+                         <span class="countdown">剩余00天00时00分00秒</span>
+                     </div>
+                 </div>
+             </a>
+         </li>
+         <li>
+             <a href="javascript:void(0)">
+                 <div class="bigdiv">
+                     <div class="end"></div>
+                     <div class="oneleft">
+                         <img class="adidas" src="images/14089.jpg" alt=""/>
+                         <p>Dickies包包专场</p>
+                         <p>满199减10不封顶</p>
+                         <p class="date">8月31日-9月3日</p>
+                         <div class="olbottom">元气满满大换新</div>
+                     </div>
+                     <img  class="white" src="images/59a4d9d3e0f06_500_245.jpg" alt=""/>
+                     <div class="bdbottom">
+                         <span class="countdown">剩余00天00时00分00秒</span>
+                     </div>
+                 </div>
+             </a>
+         </li>
+         <li>
+            <a href="javascript:void(0)">
+                <div class="bigdiv">
+                    <div class="oneleft">
+                        <img class="adidas" src="images/3384.jpg" alt=""/>
+                        <p>罗兰院长女包专场</p>
+                        <p>满199减50不封顶</p>
+                        <p class="date">9月1日-9月4日</p>
+                        <div class="olbottom">开学包到 启程新学期</div>
+                    </div>
+                    <img  class="white" src="images/59a2ec43e7b47_500_245.jpg" alt=""/>
+                    <div class="bdbottom">
+                        <span class="countdown">剩余00天00时00分00秒</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">
+                <div class="bigdiv">
+                    <div class="start"></div>
+                    <div class="oneleft">
+                        <img class="adidas" src="images/13957.jpg" alt=""/>
+                        <p>羽博数码电子专场</p>
+                        <p>两件9折 三件8.8折</p>
+                        <p class="date">9月1日-9月4日</p>
+                        <div class="olbottom">羽博随性 蓄电无忧</div>
+                    </div>
+                    <img  class="white" src="images/59a618630506b_500_245.jpg" alt=""/>
+                    <div class="bdbottom">
+                        <span></span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">
+                <div class="bigdiv">
+                    <div class="oneleft">
+                        <img class="adidas" src="images/10494.jpg" alt=""/>
+                        <p>HEAD运动鞋秋季上新专场</p>
+                        <p>全场2折起</p>
+                        <p class="date">9月1日-9月4日</p>
+                        <div class="olbottom">新主张 敢不同</div>
+                    </div>
+                    <img  class="white" src="images/59a7b2210b15f_500_245.jpg" alt=""/>
+                    <div class="bdbottom">
+                        <span class="countdown">剩余00天00时00分00秒</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">
+                <div class="bigdiv">
+                    <div class="oneleft">
+                        <img class="adidas" src="images/15996.jpg" alt=""/>
+                        <p>YMER时尚品牌专场</p>
+                        <p>满99元减5元 全场包邮</p>
+                        <p class="date">9月1日-9月4日</p>
+                        <div class="olbottom">品质生活 从新开始</div>
+                    </div>
+                    <img  class="white" src="images/59a50b29b9a73_500_245.jpg" alt=""/>
+                    <div class="bdbottom">
+                        <span class="countdown">剩余00天00时00分00秒</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">
+                <div class="bigdiv">
+                    <div class="end"></div>
+                    <div class="oneleft">
+                        <img class="adidas" src="images/3519.jpg" alt=""/>
+                        <p>斯加艇女鞋上新专场</p>
+                        <p>全场满两件69元起</p>
+                        <p class="date">9月1日-9月4日</p>
+                        <div class="olbottom">全场满两件69元起</div>
+                    </div>
+                    <img  class="white" src="images/59a379d4ca488_500_245.jpg" alt=""/>
+                    <div class="bdbottom">
+                        <span></span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">
+                <div class="bigdiv">
+                    <div class="oneleft">
+                        <img class="adidas" src="images/6154.jpg" alt=""/>
+                        <p>简佰格秋季新品大促</p>
+                        <p>全场1折起</p>
+                        <p class="date">9月1日-9月4日</p>
+                        <div class="olbottom">定义新优雅</div>
+                    </div>
+                    <img  class="white" src="images/59a7ba5d5b351_500_245.jpg" alt=""/>
+                    <div class="bdbottom">
+                        <span></span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="start"></div>
+                        <div class="oneleft">
+                            <img class="adidas" src="images/1313.jpg" alt=""/>
+                            <p>秋款尚新 钜惠来袭</p>
+                            <p>满199-30上不封顶</p>
+                            <p class="date">9月1日-9月4日</p>
+                            <div class="olbottom">秋款尚新 钜惠来袭</div>
+                        </div>
+                        <img  class="white" src="images/595f2ffb927c9_500_245.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="oneleft">
+                            <img class="adidas" src="images/1608.jpg" alt=""/>
+                            <p>古奇天伦潮鞋特惠</p>
+                            <p>满169-30 上不封顶</p>
+                            <p class="date">9月1日-9月4日</p>
+                            <div class="olbottom">初秋潮鞋 优雅随行</div>
+                        </div>
+                        <img  class="white" src="images/59a7950831cce_500_245.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="start"></div>
+                        <div class="oneleft">
+                            <img class="adidas" src="images/6322.jpg" alt=""/>
+                            <p>罗西尼开学贺礼</p>
+                            <p>满499-80 上不封顶</p>
+                            <p class="date">9月1日-9月4日</p>
+                            <div class="olbottom">满499-80 上不封顶</div>
+                        </div>
+                        <img  class="white" src="images/59a11436b5813_500_245.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="oneleft">
+                            <img class="adidas" src="images/16112.jpg" alt=""/>
+                            <p>卡密拉开学特惠</p>
+                            <p>全场低至6.8元起</p>
+                            <p class="date">9月1日-9月4日</p>
+                            <div class="olbottom">开学特惠 饰不可挡</div>
+                        </div>
+                        <img  class="white" src="images/59a3cee01c582_500_245.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="end"></div>
+                        <div class="oneleft">
+                            <img class="adidas" src="images/3713.jpg" alt=""/>
+                            <p>实惠到家 换季也疯狂</p>
+                            <p>全场直降 裸价等你</p>
+                            <p class="date">9月1日-9月4日</p>
+                            <div class="olbottom">实惠到家 换季也疯狂</div>
+                        </div>
+                        <img  class="white" src="images/59a6233a7b20b_500_245.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="oneleft">
+                            <img class="adidas" src="images/5222.jpg" alt=""/>
+                            <p>啄木鸟夏末专场</p>
+                            <p>低至19.9元</p>
+                            <p class="date">9月1日-9月4日</p>
+                            <div class="olbottom">季末优惠 包包更美</div>
+                        </div>
+                        <img  class="white" src="images/59a7d3298acad_500_245.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="oneleft">
+                            <img class="adidas" src="images/4760.jpg" alt=""/>
+                            <p>惊喜开学季</p>
+                            <p>满199减30</p>
+                            <p class="date">9月1日-9月4日</p>
+                            <div class="olbottom">实力上颜值</div>
+                        </div>
+                        <img  class="white" src="images/599e826675d71_500_245.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="oneleft">
+                            <img class="adidas" src="images/4557.jpg" alt=""/>
+                            <p>精品皮具特卖专场</p>
+                            <p>低至38元，部分两件7折</p>
+                            <p class="date">9月1日-9月4日</p>
+                            <div class="olbottom">品牌钜惠 时尚精品</div>
+                        </div>
+                        <img  class="white" src="images/5975b152b8860_500_245.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="oneleft">
+                            <img class="adidas" src="images/2497.jpg" alt=""/>
+                            <p>悠家良品全场包邮</p>
+                            <p>新生开学季</p>
+                            <p class="date">9月1日-9月4日</p>
+                            <div class="olbottom">囤货趁早开学正好</div>
+                        </div>
+                        <img  class="white" src="images/59a915991bee4_500_245.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+            <a href="javascript:void(0)">
+                <div class="bigdiv">
+                    <div class="end"></div>
+                    <div class="oneleft">
+                        <img class="adidas" src="images/15866.jpg" alt=""/>
+                        <p>欧朵思开学换新</p>
+                        <p>9.9元起</p>
+                        <p class="date">9月1日-9月4日</p>
+                        <div class="olbottom">欧朵思 从此恋上床</div>
+                    </div>
+                    <img  class="white" src="images/59a81cdaa512d_500_245.jpg" alt=""/>
+                    <div class="bdbottom">
+                        <span></span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">
+                <div class="bigdiv">
+                    <div class="end"></div>
+                    <div class="oneleft">
+                        <img class="adidas" src="images/13660.jpg" alt=""/>
+                        <p>合百益益生菌专场</p>
+                        <p>买一赠一</p>
+                        <p class="date">9月1日-9月4日</p>
+                        <div class="olbottom">"肠"活动 常年轻"益起来"</div>
+                    </div>
+                    <img  class="white" src="images/599cea0ad2c8a_500_245.jpg" alt=""/>
+                    <div class="bdbottom">
+                        <span></span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">
+                <div class="bigdiv">
+                    <div class="oneleft">
+                        <img class="adidas" src="images/16104.jpg" alt=""/>
+                        <p>日本人气加湿器推荐</p>
+                        <p>全场2件8折</p>
+                        <p class="date">9月1日-9月4日</p>
+                        <div class="olbottom">告别干燥 开启水润生活</div>
+                    </div>
+                    <img  class="white" src="images/59a8f71a14423_500_245.jpg" alt=""/>
+                    <div class="bdbottom">
+                        <span></span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+             <a href="javascript:void(0)">
+                 <div class="bigdiv">
+                     <div class="oneleft">
+                         <img class="adidas" src="images/9223.jpg" alt=""/>
+                         <p>JUST MODE防晒晴雨伞</p>
+                         <p>满159减20 满199减50</p>
+                         <p class="date">9月1日-9月4日</p>
+                         <div class="olbottom">陪伴你 晴雨无阻</div>
+                     </div>
+                     <img  class="white" src="images/59a3cd627dac5_500_245.jpg" alt=""/>
+                     <div class="bdbottom">
+                         <span></span>
+                     </div>
+                 </div>
+             </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">
+                <div class="bigdiv">
+                    <div class="start"></div>
+                    <div class="oneleft">
+                        <img class="adidas" src="images/16154.jpg" alt=""/>
+                        <p>碧然德2.4L新品套装 </p>
+                        <p>满249减50起</p>
+                        <p class="date">9月1日-9月4日</p>
+                        <div class="olbottom">净水没有杂质 解渴先除垢</div>
+                    </div>
+                    <img  class="white" src="images/599fe9398cf25_500_245.jpg" alt=""/>
+                    <div class="bdbottom">
+                        <span></span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">
+                <div class="bigdiv">
+                    <div class="oneleft">
+                        <img class="adidas" src="images/12463.jpg" alt=""/>
+                        <p>花样年华 相约美饰</p>
+                        <p>满79减5 满119减10</p>
+                        <p class="date">9月1日-9月4日</p>
+                        <div class="olbottom">花样年华 相约美饰 </div>
+                    </div>
+                    <img  class="white" src="images/59a4fb989e857_500_245.jpg" alt=""/>
+                    <div class="bdbottom">
+                        <span></span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">
+                <div class="bigdiv">
+                    <div class="oneleft">
+                        <img class="adidas" src="images/13154.jpg" alt=""/>
+                        <p>兰博丹尼女包秋上新</p>
+                        <p>全场低至29元</p>
+                        <p class="date">9月1日-9月4日</p>
+                        <div class="olbottom">女包秋上新 美丽抢先购 </div>
+                    </div>
+                    <img  class="white" src="images/59a3cec9a7561_500_245.jpg" alt=""/>
+                    <div class="bdbottom">
+                        <span></span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">
+                <div class="bigdiv">
+                    <div class="oneleft">
+                        <img class="adidas" src="images/15838.jpg" alt=""/>
+                        <p>OOU!厨具特卖专场</p>
+                        <p>满99减10不封顶</p>
+                        <p class="date">9月1日-9月4日</p>
+                        <div class="olbottom">幸福厨房 一套搞定 </div>
+                    </div>
+                    <img  class="white" src="images/59a7b51638c18_500_245.jpg" alt=""/>
+                    <div class="bdbottom">
+                        <span></span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">
+                <div class="bigdiv">
+                    <div class="oneleft">
+                        <img class="adidas" src="images/5285.jpg" alt=""/>
+                        <p>倍轻松开学季专场</p>
+                        <p>全场1.6折起</p>
+                        <p class="date">9月1日-9月4日</p>
+                        <div class="olbottom">开学季 从爱护双眼开始 </div>
+                    </div>
+                    <img  class="white" src="images/59a7b81a0fd44_500_245.jpg" alt=""/>
+                    <div class="bdbottom">
+                        <span></span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">
+                <div class="bigdiv">
+                    <div class="end"></div>
+                    <div class="oneleft">
+                        <img class="adidas" src="images/1997.jpg" alt=""/>
+                        <p>卡昂秋季特卖</p>
+                        <p>全场满99减10,199-30</p>
+                        <p class="date">9月1日-9月4日</p>
+                        <div class="olbottom">卡昂给你不一样的秋天</div>
+                    </div>
+                    <img  class="white" src="images/59a4011b0a253_500_245.jpg" alt=""/>
+                    <div class="bdbottom">
+                        <span></span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">
+                <div class="bigdiv">
+                    <div class="end"></div>
+                    <div class="oneleft">
+                        <img class="adidas" src="images/12222.jpg" alt=""/>
+                        <p>VNP塑形美体轻装备</p>
+                        <p>满109减5 上不封顶</p>
+                        <p class="date">9月1日-9月4日</p>
+                        <div class="olbottom">VNP塑形美体轻装备</div>
+                    </div>
+                    <img  class="white" src="images/59a507c995229_500_245.jpg" alt=""/>
+                    <div class="bdbottom">
+                        <span></span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        </ul>
+    </div>
+</div>
+    <!--插曲图片-->
+    <div class="layout">
+    <img class="onseal" src="images/sale.png" alt=""/>
+    </div>
+    <!--单行两个店铺-->
+    <div class="layout">
+    <div id="two">
+        <ul>
+            <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="tworight">
+                            <img src="images/15416.jpg" alt=""/>
+                            <p>慕斯维 健康睡眠</p>
+                            <p>全场3.5折起</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">慕斯维 健康睡眠</div>
+                        </div>
+                        <img  class="white" src="images/59a7ac03ccc96_320_210.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="tworight">
+                            <img class="adidas" src="images/16106.jpg" alt=""/>
+                            <p>Magic Face 鬼脸 831促销</p>
+                            <p>鬼脸夏季狂欢，全场包邮</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">只为把最好的给你</div>
+                        </div>
+                        <img  class="white" class="bdright" src="images/59a699855c711_320_210.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="tworight">
+                            <img class="shishang" src="images/1722.jpg" alt=""/>
+                            <p>时尚太阳镜 开学大放假</p>
+                            <p>全场低至15元</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">炫彩时尚太阳镜</div>
+                        </div>
+                        <img  class="white" src="images/58db501da0eb3_320_210.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="tworight">
+                            <img class="adidas" src="images/5668.jpg" alt=""/>
+                            <p>亿珊全场包邮</p>
+                            <p>畅享开学季</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">新生驾到而爱而生</div>
+                        </div>
+                        <img  class="white" class="bdright" src="images/59a8cdeddd833_320_210.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="tworight">
+                            <img class="shishang" src="images/16240.jpg" alt=""/>
+                            <p>Missrain潮流伞限量开售</p>
+                            <p>顺丰包邮</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">潮流雨具 匠心传承</div>
+                        </div>
+                        <img  class="white" src="images/599e9b5918b4a_320_210.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="tworight">
+                            <img class="adidas" src="images/15268.jpg" alt=""/>
+                            <p>谷的家专场</p>
+                            <p>满128减30不封顶</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">每一件都是玉米的艺术</div>
+                        </div>
+                        <img  class="white" class="bdright" src="images/59a61679b8a70_320_210.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="tworight">
+                            <img class="shishang" src="images/15920.jpg" alt=""/>
+                            <p>盛世美颜 倾城为你</p>
+                            <p>松下满299减30</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">盛世美颜 倾城为你</div>
+                        </div>
+                        <img  class="white" src="images/59a50fb5b3206_320_210.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="tworight">
+                            <img class="adidas" src="images/15380.jpg" alt=""/>
+                            <p>茵宝运动品牌团</p>
+                            <p>全场5折起</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">天生热血 点燃绿茵场</div>
+                        </div>
+                        <img  class="white" class="bdright" src="images/59a65c6775c2d_320_210.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="tworight">
+                            <img class="shishang" src="images/14063.jpg" alt=""/>
+                            <p>造型个护工具特惠专场</p>
+                            <p>满100减5元上不封顶</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">造型工具8月大促</div>
+                        </div>
+                        <img  class="white" src="images/593e67908501c_320_210.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="tworight">
+                            <img class="adidas" src="images/14407.jpg" alt=""/>
+                            <p>马登男鞋尖货上线</p>
+                            <p>满199减50 多件多折</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">初秋尚新 玩转时尚</div>
+                        </div>
+                        <img  class="white" class="bdright" src="images/597ec3ef90da9_320_210.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="tworight">
+                            <img class="tiss" src="images/16270.jpg" alt=""/>
+                            <p>菲仕乐德国精品厨具</p>
+                            <p>2.5折 满再减200</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">127年 只做好厨具</div>
+                        </div>
+                        <img  class="white" src="images/59a53250715b2_320_210.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="tworight">
+                            <img class="adidas" src="images/16010.jpg" alt=""/>
+                            <p>FILA手表专场新品首发</p>
+                            <p>1-3折起</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">有一种优雅 叫意式优雅</div>
+                        </div>
+                        <img  class="white" class="bdright" src="images/5983e76e042e0_320_210.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="tworight">
+                            <img class="shishang" src="images/4969.jpg" alt=""/>
+                            <p>易帝秋季开学焕新档</p>
+                            <p>秋季新品买三免一</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">开学新气象 重新开始</div>
+                        </div>
+                        <img  class="white" src="images/59a6548d2b7fd_320_210.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="tworight">
+                            <img class="adidas" src="images/15378.jpg" alt=""/>
+                            <p>DC潮流品牌团</p>
+                            <p>全场5折起</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">燃爆街头 型范由我</div>
+                        </div>
+                        <img  class="white" class="bdright" src="images/5996b13fbfdb4_320_210.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="tworight">
+                            <img class="adidas" src="images/15780.jpg" alt=""/>
+                            <p>港德养生专场</p>
+                            <p>全场满200减10元</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">秋季养生 港德帮您</div>
+                        </div>
+                        <img  class="white" src="images/59a52b97038a8_320_210.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <div class="bigdiv">
+                        <div class="tworight">
+                            <img class="adidas" src="images/16106.jpg" alt=""/>
+                            <p>开学典礼 魔声嗨翻天</p>
+                            <p>全场9折起 再送运动大礼</p>
+                            <p class="date">9月2日-9月5日</p>
+                            <div class="olbottom">开学典礼 魔声嗨翻天</div>
+                        </div>
+                        <img  class="white" class="bdright" src="images/59a6286931959_320_210.jpg" alt=""/>
+                        <div class="bdbottom">
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+    <!--插曲图片-->
+    <div class="layout">
+    <img class="onseal" src="images/coming.png" alt=""/>
+</div>
+    <!--单行三个店铺-->
+    <div class="layout">
+    <div id="three">
+        <ul>
+            <li>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/58997ad31b845_310_200.jpg" alt=""/>
+                    <div class="tgray">2017秋上新</div>
+                    <div class="tbottom">
+                        <img src="images/12462.jpg" alt=""/>
+                        <p class="rbottom">全场5.1折起</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a67d7a75c5b_310_200.jpg" alt=""/>
+                    <div class="tgray">夏末初秋 换季换新</div>
+                    <div class="tbottom">
+                        <img src="images/4287.jpg" alt=""/>
+                        <p class="rbottom">全场29元包邮起</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/591d7e235819b_310_200.jpg" alt=""/>
+                    <div class="tgray">安婕妤夏季换新</div>
+                    <div class="tbottom">
+                        <img src="images/13334.jpg" alt=""/>
+                        <p class="rbottom">满199-30不封顶</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a629c78624d_310_200.jpg" alt=""/>
+                    <div class="tgray">舒适睡眠，由此开始</div>
+                    <div class="tbottom">
+                        <img src="images/1798.jpg" alt=""/>
+                        <p class="rbottom">满199减30，上不封顶</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a62526e8140_310_200.jpg" alt=""/>
+                    <div class="tgray">满99减30上不封顶</div>
+                    <div class="tbottom">
+                        <img src="images/9189.jpg" alt=""/>
+                        <p class="rbottom">全场低至39元两件起</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/599f93b352d8e_310_200.jpg" alt=""/>
+                    <div class="tgray">小白鞋59元两双</div>
+                    <div class="tbottom">
+                        <img src="images/2228.jpg" alt=""/>
+                        <p class="rbottom">秋季小白鞋59元两双</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/5976ada76615b_310_200.jpg" alt=""/>
+                    <div class="tgray">夏季清仓大促</div>
+                    <div class="tbottom">
+                        <img src="images/4561.jpg" alt=""/>
+                        <p class="rbottom">满199减20 上不封顶</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a5048c2833b_310_200.jpg" alt=""/>
+                    <div class="tgray">雅诗罗 初秋新体验</div>
+                    <div class="tbottom">
+                        <img src="images/4884.jpg" alt=""/>
+                        <p class="rbottom">59元两件起</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/599d37d1bb00a_310_200.jpg" alt=""/>
+                    <div class="tgray">ZHR牛皮女鞋秋上新</div>
+                    <div class="tbottom">
+                        <img src="images/7121.jpg" alt=""/>
+                        <p class="rbottom">全场2折起</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/599e88c3e0535_310_200.jpg" alt=""/>
+                    <div class="tgray">帅气上脚 新鲜启程</div>
+                    <div class="tbottom">
+                        <img src="images/14094.jpg" alt=""/>
+                        <p class="rbottom">一件9折 两件8折</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a8b0d767da8_310_200.jpg" alt=""/>
+                    <div class="tgray">全场满99元两双起</div>
+                    <div class="tbottom">
+                        <img src="images/15724.jpg" alt=""/>
+                        <p class="rbottom">全场满99元两双起</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/599e7014f0c10_310_200.jpg" alt=""/>
+                    <div class="tgray">品牌女鞋低价钜惠</div>
+                    <div class="tbottom">
+                        <img src="images/12967.jpg" alt=""/>
+                        <p class="rbottom">凉鞋清仓29元起</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a8f84d66800_310_200.jpg" alt=""/>
+                    <div class="tgray">匡威运动鞋服专场</div>
+                    <div class="tbottom">
+                        <img src="images/15936.jpg" alt=""/>
+                        <p class="rbottom">全场109元起</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a3cf6b75104_310_200.jpg" alt=""/>
+                    <div class="tgray">潮酷玩搭，我的风格首饰</div>
+                    <div class="tbottom">
+                        <img src="images/12462.jpg" alt=""/>
+                        <p class="rbottom">满99减5上不封顶</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a6374b98aec_310_200.jpg" alt=""/>
+                    <div class="tgray">好睡眠 "枕"的舒服</div>
+                    <div class="tbottom">
+                        <img src="images/16324.jpg" alt=""/>
+                        <p class="rbottom">满299减50</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a4c39c824e6_310_200.jpg" alt=""/>
+                    <div class="tgray">初秋尚新</div>
+                    <div class="tbottom">
+                        <img src="images/7613.jpg" alt=""/>
+                        <p class="rbottom">初秋尚新 海量美包</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a50b9854ba5_310_200.jpg" alt=""/>
+                    <div class="tgray">态美，您身边的居家伴侣</div>
+                    <div class="tbottom">
+                        <img src="images/15896.jpg" alt=""/>
+                        <p class="rbottom">3件9折 5件8.5折</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a529bd70e8f_310_200.jpg" alt=""/>
+                    <div class="tgray">灵动初秋 时尚换新</div>
+                    <div class="tbottom">
+                        <img src="images/3446.jpg" alt=""/>
+                        <p class="rbottom">低至59元</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a6239b0c3e7_310_200.jpg" alt=""/>
+                    <div class="tgray">开学季电动牙刷专场</div>
+                    <div class="tbottom">
+                        <img src="images/4024.jpg" alt=""/>
+                        <p class="rbottom">1.5折起</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a65d0a2a1cd_310_200.jpg" alt=""/>
+                    <div class="tgray">MAO77-引领初秋潮流范</div>
+                    <div class="tbottom">
+                        <img src="images/12477.jpg" alt=""/>
+                        <p class="rbottom">69元两件专区</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a66da00dfae_310_200.jpg" alt=""/>
+                    <div class="tgray">相信持久的力量</div>
+                    <div class="tbottom">
+                        <img src="images/16062.jpg" alt=""/>
+                        <p class="rbottom">全场9.9元起</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a78777b8d3a_310_200.jpg" alt=""/>
+                    <div class="tgray">美洲野牛男女包混合专场</div>
+                    <div class="tbottom">
+                        <img src="images/13150.jpg" alt=""/>
+                        <p class="rbottom">美洲野牛真皮男女包混合专场</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a7760061c88_310_200.jpg" alt=""/>
+                    <div class="tgray">Lonel不期而遇的美丽</div>
+                    <div class="tbottom">
+                        <img src="images/12063.jpg" alt=""/>
+                        <p class="rbottom">满一件8.5折两件8折</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a7b2bbe802c_310_200.jpg" alt=""/>
+                    <div class="tgray">果'燃'如此 芬芳入室</div>
+                    <div class="tbottom">
+                        <img src="images/15082.jpg" alt=""/>
+                        <p class="rbottom">全场降价包邮</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a91ed84aa85_310_200.jpg" alt=""/>
+                    <div class="tgray">餐具大放价</div>
+                    <div class="tbottom">
+                        <img src="images/15176.jpg" alt=""/>
+                        <p class="rbottom">低至4.7折</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a8cc7d1a88b_310_200.jpg" alt=""/>
+                    <div class="tgray">季节在变 时尚不变</div>
+                    <div class="tbottom">
+                        <img src="images/3507.jpg" alt=""/>
+                        <p class="rbottom">99元任选两件</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a8cb91234d6_310_200.jpg" alt=""/>
+                    <div class="tgray">初秋尝鲜 欢乐尽享</div>
+                    <div class="tbottom">
+                        <img src="images/14991.jpg" alt=""/>
+                        <p class="rbottom">满999减150</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a8f71564572_310_200.jpg" alt=""/>
+                    <div class="tgray">时尚出街 有魔有young</div>
+                    <div class="tbottom">
+                        <img src="images/12462.jpg" alt=""/>
+                        <p class="rbottom">全场满299 即享8折优惠</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0)">
+                    <img  class="white" src="images/59a91ac0deee0_310_200.jpg" alt=""/>
+                    <div class="tgray">时尚·源于搭配</div>
+                    <div class="tbottom">
+                        <img src="images/5418.jpg" alt=""/>
+                        <p class="rbottom">1件9折，两件8折</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+    <!--最底一栏-->
+    <div class="blackbot">
+    <span>每天10点上新</span>
+    <span>7天无条件退货</span>
+    <span>名品特卖单商家满159包邮</span>
+</div>
+    <!--尾部-->
+    <footer>
+        <div>
+            <div class="fImg">
+                <ul>
+                    <li>
+                        <span class="img"></span>
+							<span>
+								值得信赖美妆电商
+							</span>
+                        <a href="">
+                            四千万用户信赖
+                        </a>
+                    </li>
+                    <li>
+                        <span class="img"></span>
+							<span>
+								成功在美上市
+							</span>
+                        <a href="">
+                            股票代码NYSE:JMEI
+                        </a>
+                    </li>
+                    <li>
+                        <span class="img"></span>
+							<span>
+								品牌防伪码
+							</span>
+                        <a href="">
+                            支持品牌官网验真
+                        </a>
+                    </li>
+                    <li>
+                        <span class="img"></span>
+							<span>
+								30天无理由退货
+							</span>
+                        <a href="">
+                            只要不满意无理由退货
+                        </a>
+                    </li>
+                    <li>
+                        <span class="img"></span>
+							<span>
+								百万用户口碑
+							</span>
+                        <a href="">
+                            帮你只选对的,不选贵的
+                        </a>
+                    </li>
+                    <li>
+                        <span class="img"></span>
+							<span>
+								订单闪电发货
+							</span>
+                        <a href="">
+                            1.5小时订单急速出库
+                        </a>
+                    </li>
+                    <li>
+                        <span class="img"></span>
+							<span>
+								大牌明星热荐
+							</span>
+                        <a href="">
+                            打造精致明星脸
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="middle">
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd>
+                        <a href="">正品承诺</a>
+                    </dd>
+                    <dd>
+                        <a href="">售后咨询</a>
+                    </dd>
+                    <dd>
+                        <a href="">退货政策</a>
+                    </dd>
+                    <dd>
+                        <a href="">退货办理</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>服务保障</dt>
+                    <dd>
+                        <a href="">品牌真品防伪码</a>
+                    </dd>
+                    <dd>
+                        <a href="">正品保证</a>
+                    </dd>
+                    <dd>
+                        <a href="">30天无条件退货</a>
+                    </dd>
+                    <dd>
+                        <a href="">7×24小时客服服务</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>使用帮助</dt>
+                    <dd>
+                        <a href="">新手指南</a>
+                    </dd>
+                    <dd>
+                        <a href="">常见问题</a>
+                    </dd>
+                    <dd>
+                        <a href="">帮助中心</a>
+                    </dd>
+                    <dd>
+                        <a href="">用户协议</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd>
+                        <a href="">货到付款</a>
+                    </dd>
+                    <dd>
+                        <a href="">在线支付</a>
+                    </dd>
+                    <dd>
+                        <a href="">余额支付</a>
+                    </dd>
+                    <dd>
+                        <a href="">现金券支付</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd>
+                        <a href="">包邮政策</a>
+                    </dd>
+                    <dd>
+                        <a href="">配送说明</a>
+                    </dd>
+                    <dd>
+                        <a href="">运费说明</a>
+                    </dd>
+                    <dd>
+                        <a href="">验货签收</a>
+                    </dd>
+                </dl>
+                <div class="erwei">
+                    <dl>
+                        <dt>手机聚美</dt>
+                        <center>
+                            <span class="erwei1"></span>
+                        </center>
+                        <p>下载移动客户端</p>
+                    </dl>
+                    <dl>
+                        <dt>聚美微信</dt>
+                        <center>
+                            <span class="erwei2"></span>
+                        </center>
+                        <p>聚美官方微信</p>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="middleImg"></div>
+        <div class="bottomlasttwo">
+            <div>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">关于聚美优品</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">INVESTOR </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">RELATIONS </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">获取更新</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">加入聚美</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">品牌合作专区</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">网站联盟</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">媒体报道</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">商务合作</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottomlastone">
+            <div>
+                <span>COPYRIGHT © 2010-2017 北京创锐文化传媒有限公司 JUMEI.COM 保留一切权利。 客服热线：400-123-8888 </span><br />
+                <span>京公网安备 11010102001226 | 京ICP证111033号 | 食品流通许可证 SP1101051110165515（1-1） | 营业执照</span><br />
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/jquery-1.12.2.min.js"></script>
+<script src="js/comment.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/shoes.js"></script>
+</html>

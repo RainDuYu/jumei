@@ -1,0 +1,807 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*���*/
+
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: block;
+
+}
+.clearfix :after{
+    clear: both;
+}
+.clearfix{
+    *zoom:1;
+}
+ul li {
+    list-style: none;
+}
+li a{
+    color:#666666;
+}
+/*����Ϊ1100*/
+html{
+
+}
+body{
+    background-color: #F7F7F7;
+}
+a{
+    text-decoration:none;
+
+}
+input{
+    outline-style: none;
+}
+#bbbbb_box{
+    width: 1100px;
+    margin: 10px auto;
+    /*height: 6000px;*/
+
+}
+.now{
+    color: #ed149d;
+}
+
+#box_2,
+#box_3,
+#box_main{
+    background-color: #fff;
+}
+/*�ڶ����� ����*/
+#in_1{
+    /*margin-top: 180px;*/
+    height: 53px;
+    /*width: 164px;*/
+    line-height: 53px;
+    background-color: #f7f7f7;
+    font-size: 14px;
+
+}
+#in_1 a{
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+#in_1 input{
+    width: 164px;
+    height: 23px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background: url(../hufu_index-images/right_fdj.jpg) no-repeat 137px;
+    padding-right: 10px;
+    font-size: 14px;
+
+}
+/*����� ���*/
+/*ɸѡ*/
+ #box_2{
+     height: 45px;
+     background-color: #fff;
+     border: 1px solid #edecec;
+     line-height: 45px;
+     box-sizing: border-box;
+     padding-left: 17px;
+     font-size: 15px;
+     font-weight: 600;
+     
+ }
+ #box_2 p span{
+     color:#ed149d;
+ }
+
+ /*Ʒ��*/
+#brand{
+    height: 84px;
+    border-bottom: 1px solid #edecec;
+    border-left: 1px solid #edecec;
+    border-right: 1px solid #edecec;
+}
+#brand .head{
+    background-color: #fcfcfc;
+    padding-left: 18px;
+    padding-top: 20px;
+    width: 90px;
+    height: 84px;
+    float: left;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 600;
+}
+#brand .link_1{
+    float: left;
+}
+#brand .link_1 ul{
+    display: block;
+    padding-top: 8px;
+    padding-left: 16px;
+    list-style: none;
+    font-size: 13px;
+    height: 67px;
+    /*width: 999px;*/
+}
+#brand .link_1 ul li{
+    float: left;
+    width: 90px;
+    height: 45px;
+    overflow: hidden;
+}
+#brand .link_1 ul li a{
+    display: block;
+    width:65px ;
+    height: 12px;
+    color: #666;
+
+}
+#brand .link_r{
+    padding-top:18px;
+    padding-right: 10px;
+    font-size:13px;
+    float: right;
+
+}
+#brand .link_r button{
+    /*float: right;*/
+}
+.link_r a{
+    color: #666;
+     width:30px;
+    height: 10px;
+    /*display: block;*/
+    float: right;
+    background: url("../hufu_index-images/index_icons1.png") no-repeat 33px 10px;
+    padding: 5px;
+
+}
+ol {
+    display: block;
+    height: 182px;
+    width: 1008px;
+    position: absolute;
+    top: 374px;
+    left: 215px;
+    padding-left: 10px;
+    overflow: auto;
+    background-color: #fff;z-index: 11;
+    display: none;
+}
+ol li{
+    float: left;
+    display: block;
+    width:70px;
+    height: 50px;
+    /*background-color: yellowgreen;*/
+    margin-right: 13px;
+    margin-left: 20px;
+}
+ol li a {
+    font-size: 12px;
+    color: #9999B1;
+}
+
+
+
+/*����*/
+#sort{
+     height: 60px;
+     border-bottom: 1px solid #edecec;
+     border-left: 1px solid #edecec;
+     border-right: 1px solid #edecec;
+    overflow:hidden;
+ }
+#sort .head{
+    background-color: #fcfcfc;
+    padding-left: 18px;
+    padding-top: 20px;
+    width: 90px;
+    height: 60px;
+    float: left;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 600;
+}
+#sort .link_1{
+    float: left;
+}
+#sort .link_1 ul{
+    display: block;
+    padding-top: 20px;
+    padding-left: 16px;
+    list-style: none;
+    font-size: 13px;
+}
+#sort .link_1 ul li{
+    float: left;
+    width: 90px;
+    height: 45px;
+    overflow: hidden;
+}
+#sort .link_1 ul li a{
+    display: block;
+    width:65px ;
+    height: 12px;
+    color: #666;
+}
+#sort .link_r{
+    padding-top:18px;
+    padding-right: 10px;
+    font-size:13px;
+    float: right;
+}
+#sort .link_r a{
+    color: #666;
+}
+/*��Ч*/
+#effect{
+    height: 84px;
+    border-bottom: 1px solid #edecec;
+    border-left: 1px solid #edecec;
+    border-right: 1px solid #edecec;
+}
+#effect .head{
+    background-color: #fcfcfc;
+    padding-left: 18px;
+    padding-top: 20px;
+    width: 90px;
+    height: 84px;
+    float: left;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 600;
+}
+#effect .link_1{
+    float: left;
+}
+#effect .link_1 ul{
+    display: block;
+    padding-top: 20px;
+    padding-left: 16px;
+    list-style: none;
+    font-size: 13px;
+
+    /*width: 999px;*/
+}
+#effect .link_1 ul li{
+    float: left;
+    width: 90px;
+    height: 45px;
+    overflow: hidden;
+}
+#effect .link_1 ul li a{
+    display: block;
+    width:65px ;
+    height: 12px;
+    color: #666;
+
+}
+#effect .link_r{
+    padding-top:18px;
+    padding-right: 10px;
+    font-size:13px;
+    float: right;
+
+}
+#effect .link_r a{
+    color: #666;
+}
+/*�۸�*/
+
+#price{
+    height: 60px;
+    border-bottom: 1px solid #edecec;
+    border-left: 1px solid #edecec;
+    border-right: 1px solid #edecec;
+    overflow: hidden;
+}
+#price .head{
+    background-color: #fcfcfc;
+    padding-left: 18px;
+    padding-top: 20px;
+    width: 90px;
+    height: 84px;
+    float: left;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 600;
+}
+#price .link_1{
+    float: left;
+}
+#price .link_1 ul{
+    display: block;
+    padding-top: 20px;
+    padding-left: 16px;
+    list-style: none;
+    font-size: 13px;
+}
+#price .link_1 ul li{
+    float: left;
+    width: 90px;
+    height: 45px;
+    overflow: hidden;
+}
+#price .link_1 ul li a{
+    display: block;
+    width:65px ;
+    height: 12px;
+    color: #666;
+}
+#price .link_r{
+    padding-top:18px;
+    padding-right: 10px;
+    font-size:13px;
+    float: right;
+}
+#price .link_r a{
+    color: #666;
+}
+
+/*��Ʒչʾ����*/
+#box_main{
+    margin-top: 24px;
+
+    /*padding-left: 34px;*/
+}
+
+/*ͷ��*/
+#box_main .box_main_top{
+    height: 30px;
+    background-color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+    width: 1100px;
+    z-index: 56;
+   
+}
+#box_main .box_main_top .head{
+    width: 90px;
+    line-height: 30px;
+    float: left;
+    border-top: 1px solid #E7E3E3;
+    border-right: 1px solid #E7E3E3;
+    font-weight: 600;
+    font-size: 15px;
+
+}
+
+#box_main .box_main_top .sort_1 li{
+    float: left;
+    display: block;
+    width: 80px;
+    border-top: 1px solid #E7E3E3;
+    border-right: 1px solid #E7E3E3;
+    padding-top:6px;
+
+}
+#box_main .box_main_top .sort_1 li a{
+    /*font-weight: 600;*/
+    font-size: 13px;
+    color: #6A6F74;
+}
+#box_main .box_main_top .sort_1 li:nth-child(1){
+    background: url("../hufu_index-images/desc_selected_hover.png") no-repeat 60px 10px;
+}
+#box_main .box_main_top .sort_1 li:nth-child(2){
+    background: url("../hufu_index-images/price_sort_default_2.png") no-repeat 60px 10px;
+}
+
+#box_main .box_main_top .sort_1 li:nth-child(3),
+#box_main .box_main_top .sort_1 li:nth-child(4),
+#box_main .box_main_top .sort_1 li:nth-child(5){
+    background: url("../hufu_index-images/desc_enable2.png") no-repeat 60px 10px;
+}
+#box_main .box_main_top .sort_1 li:nth-child(5){
+    background: url("../hufu_index-images/desc_enable2.png") no-repeat 72px 10px;
+}
+
+#box_main .box_main_top span{
+    color: #666666;
+}
+#box_main .box_main_top span a{
+    color: #666666;
+}
+#box_main .box_main_top .top_right{
+    float: right;
+    padding:6px 25px;
+}
+#box_main .box_main_top .top_right .top_ri_1{
+    display: block;
+    float: left;
+    border-right: 1px solid #666666;
+    padding-right: 10px;
+    font-size: 13px;
+}
+#box_main .box_main_top .top_right .top_ri_1 span,
+#box_main .box_main_top .top_right .top_ri_2 span{
+    color: #ed149d;
+    font-size: 13px;
+}
+#box_main .box_main_top .top_right .top_ri_2{
+    display: block;
+    float: left;
+    padding-left: 10px;
+    
+}
+#box_main .box_main_top .top_right .top_ri_3{
+    float: right;
+    display: block;
+    margin-left: 15px;
+
+}
+#box_main .box_main_top .top_right .top_ri_4{
+    float: right;display: block;
+    margin-right:15px;
+    margin-left:15px;
+}
+
+/*����*/
+.box_main_main .box_main_first{
+    height: 475px;
+    background-color: #fff;
+    padding:10px;
+
+
+}
+.box_main_main img {
+    width: 250px;
+    margin-bottom: 30px;
+}
+.box_main_main .box_main_first .box_f_f{
+    width: 250px;
+    height: 474px;
+    float:left;
+    margin-left: 8px;
+    margin-right: 8px;
+    overflow: hidden;
+    position: relative;
+
+}
+.box_main_main .box_main_first .box_f_f .back
+
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    background: url("../hufu_index-images/search_jisu1.png") no-repeat 1px 1px;
+    width: 75px;
+    height: 80px;
+    border:0px;
+
+}
+.box_main_main .box_main_first .box_f_f .go{
+    position: absolute;
+    top:0;
+    left: 0;
+    background: url("../hufu_index-images/sou_icon2.png") no-repeat 1px 1px;
+    width: 75px;
+    height: 60px;
+    border:0px;
+
+}
+.box_main_main .box_main_first .box_f_f .you{
+    position: absolute;
+    top:0;
+    left: 0;
+    background: url("../hufu_index-images/sou_icon2.png") no-repeat 0px -68px;
+    width: 75px;
+    height: 80px;
+    border:0px;
+
+}
+.box_main_main .box_main_first .box_f_f .ggg{
+    margin-left: 20px;
+    margin-top: -4px;
+    height: 20px;
+
+    line-height: 20px;
+}
+.box_main_main .box_main_first .box_f_f .ggg .hhh {
+    height: 20px;
+}
+.box_main_main .box_main_first .box_f_f .ggg .hhh  li{
+    float: left;
+    display: block;
+    margin-right: 6px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #666;
+    display: none;
+
+}
+.box_main_main .box_main_first .box_f_f .box_describe{
+    display: block;
+    font-size: 13px;
+    margin-left: 30px;
+    height: 30px;
+    overflow: hidden;
+
+}
+.box_describe a{
+    color: #000;
+}
+.box_main_main .box_main_first .box_f_f .box_price,
+.box_main_main .box_main_first .box_f_f .box_interval
+{
+    margin-left: 30px;
+    height: 20px;
+}
+.box_main_main .box_main_first .box_f_f .box_price{
+    height: 58px;
+    line-height: 58px;
+}
+ .box_price span{
+    font-size: 20px;
+     color: #ED145B;
+     font-weight: 600;
+}
+
+.box_main_main .box_main_first .box_f_f .box_interval p{
+    color: #666666;
+    display: block;
+    font-size: 13px;
+    float: left;
+}
+.box_main_main .box_main_first .box_f_f .box_interval .dingshiqi,
+.box_main_main .box_main_first .box_f_f .box_interval .dingshiqi_1{
+    color: #666666;
+    font-weight: bold;
+}
+.box_main_main .box_main_first .box_f_f .box_interval p:last-child{
+    color: #666666;
+    display: block;
+    width: 130px;
+    height: 20px;
+    /*background-color: pink;*/
+    font-size: 13px;
+    float: left;
+}
+
+.box_main_main .box_main_first .box_f_f .bbb {
+    width: 200px;
+    height: 40px;
+    /*background-color: hotpink;*/
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.box_main_main .box_main_first .box_f_f .bbb span{
+    display: block;
+    float: left;
+    width: 90px;
+    height: 40px;
+}
+.box_main_main .box_main_first .box_f_f .bbb span:first-child{
+    background: url("../hufu_index-images/selectListChange.png") no-repeat 0 0;
+
+}
+.box_main_main .box_main_first .box_f_f .bbb span:last-child{
+
+    background: url("../hufu_index-images/selectListChange.png") no-repeat 0 -47px;
+    margin-left: 20px;
+}
+
+.box_main_main .box_main_first .box_f_f .aaa{
+    width: 200px;
+    height: 40px;
+
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.box_main_main .box_main_first .box_f_f .aaa span{
+    display: block;
+    width: 90px;
+    height: 30px;
+    background: url("../hufu_index-images/zuhe_zhifu_dingjing.jpg") no-repeat ;
+}
+
+
+    /*���岿�ֵײ�*/
+.curent_div{
+    background-color: #6D6D6D;
+}
+#box_main .box_main_bottom{
+    height: 100px;
+    background-color: #fff;
+    position: relative;
+}
+#box_main .box_main_bottom div{
+    width: 590px;
+    height: 40px;
+    background-color: #fff;
+    position: absolute;
+    top:33px;
+    right: 15px;
+
+}
+#box_main .box_main_bottom span{
+    display: block;
+    padding:10px;
+    box-sizing:border-box;
+    font-size: 16px;
+    /*width: 30px;*/
+    height: 30px;
+    float: left;
+    border: 1px solid #E2E0E0;
+    text-align: center;
+    line-height: 10px;
+    margin-right: 8px;
+  
+}
+
+/*����ȫ��*/
+#all_search {
+    margin-top: 15px;
+    background-color: #EEEEEE;
+    box-sizing:border-box;
+    padding-left: 20px;
+    height: 125px;
+    padding-top: 45px;
+    margin-bottom: 20px;
+}
+#all_search .all_search_top{
+    height: 40px;
+
+}
+#all_search .all_search_top span{
+    font-size: 17px;
+    display: block;
+    margin-right: 10px;
+    margin-top: 10px;
+    float: left;
+}
+#all_search .all_search_top input{
+    width: 545px;
+    height: 29px;
+    float: left;
+}
+#all_search .all_search_top .all_search_top_search{
+    width: 40px;
+    height: 33px;
+    margin-top:0;
+    padding:0;
+    background: url("../hufu_index-images/mallsearchbg_v3.jpg" ) no-repeat -31px 0;
+}
+#all_search  .all_search_bottom{
+    margin-left: 77px;
+    margin-top: 5px;
+    font-size: 12px;
+
+}
+#all_search  .all_search_bottom a{
+    color: #666666;
+}
+
+
+/*���������¼*/
+#nearly_history{
+    height: 405px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+#nearly_history .nearly_history_top{
+    height: 40px;
+    background-color: #2B2B2B;
+    color: #ffffff;
+    font-weight: 900;
+    line-height: 40px;
+    /*text-align: center;*/
+    padding-left: 20px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+#nearly_history .nearly_history_main{
+    height: 350px;
+    width: 1070px;
+    margin: 0 auto;
+}
+
+#nearly_history .nearly_history_main .nearly_history_main_1{
+    width: 240px;
+    height: 330px;
+
+}
+
+.nearly_history_main_1 .nearly_history_main_main_1{
+    height: 100px;
+    margin:0 20px;
+    border-bottom: 1px dashed #666666;
+}
+.nearly_history_main_1 .nearly_history_main_main_1 span{
+    display: block;
+    width: 75px;
+    height: 100px;
+    float: left;
+}
+.nearly_history_main_1 .nearly_history_main_main_1 div{
+    padding-top:10px;
+    float: left;
+    width: 125px;;
+}
+.nearly_history_main_1 .nearly_history_main_main_1 div a{
+    font-size: 12px;
+    height: 33px;
+    display: block;
+    overflow: hidden;
+    color: #333333;
+}
+.nearly_history_main_1 .nearly_history_main_main_1 div p{
+    color: #ED147E;
+    font-weight: 800;
+
+}
+.nearly_history_main_1 .nearly_history_main_main_1 img{
+    width: 75px;
+    height: 100px;
+}
+.nearly_history_main_1 .nearly_history_main_main_1 div div{
+    font-size: 14px;color:#999999;
+}
+.nearly_history_main_1 .nearly_history_main_top,
+.nearly_history_main_2 .nearly_history_main_top {
+    background-color: #EEEEEE;
+
+    height: 30px;
+   padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+.nearly_history_main_1 ,
+.nearly_history_main_2{
+    float: left;
+    border:1px solid #ccc;
+}
+.nearly_history_main_2{
+    height: 330px;
+    width:815px;
+    position: relative;
+
+}
+.nearly_history_main_2 .nearly_history_main_main2 p{
+    display: block;
+    position: absolute;
+    top:50%;
+    left: 36%;
+}
+.nearly_history_main  span{
+    font-weight: 800;
+    color: #906666;
+    font-size: 14px;
+}
+.nearly_history_main_2 .nearly_history_main_top{
+    position: relative;
+}
+.nearly_history_main_2 .nearly_history_main_top .link_top{
+    display:block;
+    float: right;
+}
+.nearly_history_main_top .link_top a{
+    color:#906666;
+    font-size: 14px;
+}
+.nearly_history_main_2_all{
+    position: relative;
+}
+.nearly_history_main_2_all .left img,
+.nearly_history_main_2_all .right img{
+    height: 50px;
+    width: 30px;
+
+}
+.nearly_history_main_2_all .left{
+
+    position: absolute;
+    top:110px;
+    left:0;
+}
+.nearly_history_main_2_all .right{
+
+    position: absolute;
+    top:110px;
+    right:0;
+}

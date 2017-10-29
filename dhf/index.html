@@ -1,0 +1,2355 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--<link rel="stylesheet" href="css/style.css" />-->
+    <link rel="stylesheet" href="style.css"/>
+    <script src="js/jquery-1.12.2.min.js"></script>
+    <script src="js/comment.js"></script>
+</head>
+
+<body>
+<aside>
+    <div class="middle">
+        <div id="Person">
+            <span class="person"></span>
+
+            <div class="personMessage">
+                <div class="headImg">
+                    <img src="images/avatar_nonesign.jpg" alt=""/>
+                </div>
+                <div class="login">
+                    你好，请
+                    <a href="#">登录</a>
+                    |
+                    <a href="#">注册</a>
+                </div>
+                <div class="buttonbox">
+                    <a href="#">我的收藏</a>
+                    <a href="#">我的订单</a>
+                </div>
+                <i></i>
+                <a href="#" class="exitBtn"></a>
+            </div>
+        </div>
+        <i></i>
+
+        <div id="shopCar">
+            <span class="car"></span>
+
+            <p>购物车</p>
+
+            <div class="number">10</div>
+        </div>
+        <i></i>
+
+        <div>
+            <span class="money"></span>
+
+            <div class="tab">
+                <i></i> 我的财产
+            </div>
+        </div>
+        <div>
+            <span class="like"></span>
+
+            <div class="tab">
+                <i></i> 我的心愿单
+            </div>
+        </div>
+        <div>
+            <span class="foot"></span>
+
+            <div class="tab">
+                <i></i> 我的足迹
+            </div>
+        </div>
+        <!--bottom-->
+    </div>
+    <div class="bottom">
+        <div id="erweiImg">
+            <span class="erwei"></span>
+
+            <div class="erweiImg">
+                <img src="images/qrcode.png" alt=""/>
+                <i></i>
+            </div>
+        </div>
+        <div>
+            <span class="self"></span>
+
+            <div class="tab">
+                <i></i> 客服中心
+            </div>
+        </div>
+    </div>
+</aside>
+<!--购物车窗体-->
+<div class="shopCarBox">
+    <h4 class="title">购物车</h4>
+    <a href="#" class="exitBtn"></a>
+</div>
+<header>
+    <div class="top">
+        <div>
+            <ul>
+                <li>
+                    <a>欢迎来到聚美！</a>
+                </li>
+                <li>
+                    <a href="#">请登录</a>
+                </li>
+                <li>
+                    <a href="#">快速注册</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">正品保证</a>
+                </li>
+                <li>
+                    <a href="#">订单查询</a>
+                </li>
+                <li>
+                    <a href="#"><span id="head_heart"></span>收藏的品牌</a>
+                </li>
+                <!--下拉菜单切换-->
+                <div class="change fl">
+                    <a href="#">我的聚美<span></span></a>
+
+                    <div class="bg">
+                        <div></div>
+                        <ul>
+                            <li>
+                                <a href="">我的订单</a>
+                            </li>
+                            <li>
+                                <a href="">我的现金券</a>
+                            </li>
+                            <li>
+                                <a href="">我的红包</a>
+                            </li>
+                            <li>
+                                <a href="">我的余额</a>
+                            </li>
+                            <li>
+                                <a href="">我的收藏</a>
+                            </li>
+                            <li>
+                                <a href="">我的心愿单</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--切换结束-->
+                <div class="phone">手机聚美</div>
+                <!--下拉菜单切换-->
+                <div class="change fl more">
+                    <a href="#">更多<span id="down_icon"></span></a>
+
+                    <div class="bg">
+                        <div></div>
+                        <ul>
+                            <li>
+                                <a href="">邀请好友</a>
+                            </li>
+                            <li>
+                                <a href="">加入收藏</a>
+                            </li>
+                            <li>
+                                <a href="">新浪微博</a>
+                            </li>
+                            <li>
+                                <a href="">聚美微信</a>
+                            </li>
+                            <li>
+                                <a href="">百度贴吧</a>
+                            </li>
+                            <li>
+                                <a href="">腾讯微博</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--切换结束-->
+            </ul>
+        </div>
+    </div>
+    <div class="middle">
+        <div>
+            <div class="shop">
+                <img src="images/cart.gif" alt=""/>
+
+                <div>
+                    云购物车结算
+                </div>
+                <div id="number_icon">10</div>
+            </div>
+            <div class="icon fl">
+                <img src="images/logo_new_v1.jpg" alt=""/>
+            </div>
+            <div class="search">
+                <div class="search_box fl">
+                    <input type="text" id="searchIpt"/>
+                    <input type="button" value="搜索"/>
+
+                    <div class="search_keyword" id="keyWord">
+                        <ul>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="search_more">
+                    <ul>
+                        <li>
+                            <a href="#">保湿</a>|
+                        </li>
+                        <li>
+                            <a href="#">面膜</a>|
+                        </li>
+                        <li>
+                            <a href="#">洗面奶</a>|
+                        </li>
+                        <li>
+                            <a href="#">补水</a>|
+                        </li>
+                        <li>
+                            <a href="#">香水</a>|
+                        </li>
+                        <li>
+                            <a href="#">眼霜</a>|
+                        </li>
+                        <li>
+                            <a href="#">口红</a>|
+                        </li>
+                        <li>
+                            <a href="#">护肤套装</a>|
+                        </li>
+                        <li>
+                            <a href="#">BB霜</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div>
+            <div class="nav-show">
+                <div class="c">
+                    <a href=" #">美妆商城首页</a>
+                    <a href=" ../BLM/code/MZ_hf.html">个人护理</a>
+                    <a href=" #">护肤</a>
+                    <a href=" #">彩妆</a>
+                    <a href=" #">香氛</a>
+                </div>
+            </div>
+            <div class="nav_icon"></div>
+            <div class="nav_icon"></div>
+            <div class="nav_icon"></div>
+            <ul>
+                <li>
+                   <a href="../index/index.html">首页</a>
+                </li>
+                <li>
+                    <a href="">极速免税店</a>
+                </li>
+                <li>
+                   <a href="../momSon/index.html">母婴特卖</a>
+                </li>
+                <li id="nav_shop" class="active">
+                    <a href="">美妆商店</a>
+                </li>
+
+                <li>
+                   <a href="../gjqs/index.html">国际轻奢</a>
+                </li>
+                <li>
+                    <a href="../fzyd/index.html">服装运动</a>
+                </li>
+                <li>
+                    <a href="../xbps/index.html">鞋包配饰</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</header>
+<div class="c">
+    <!--主体部分开始-->
+    <div class="zhuti">
+        <!--左边部分开始-->
+        <div class=left>
+            <div class="he"><h4>全部分类</h4></div>
+            <ul id="tab-a">
+                <li><h4>推荐品牌</h4>
+                    <a href="">欧莱雅</a>
+                    <a href="#">菲诗小铺</a>
+                    <a href="#"> 雅诗兰黛</a>
+                    <a href="#"> 兰蔻 </a>
+                    <a href="#">韩束 </a>
+                    <a href="#">倩碧 </a>
+                    <a href="#">雅顿</a>
+                    <a href="#"> 佰草集</a>
+                </li>
+                <li><h4>护肤 </h4>
+                    <a href="#">洁面 </a>
+                    <a href="#">化妆水</a>
+                    <a href="#"> 精华</a>
+                    <a href="#"> 乳液 </a>
+                    <a href="#">面霜</a><br>
+                    <a href="#"> 眼霜</a>
+                    <a href="#"> 面膜</a>
+                    <a href="#"> 护肤套装</a>
+                </li>
+                <li><h4> 彩妆 </h4>
+                    <a href="#">卸妆</a>
+                    <a href="#"> 防晒 </a>
+                    <a href="#">BB霜</a>
+                    <a href="#"> 粉饼</a>
+                    <a href="#"> 眼影 </a><br>
+                    <a href="#">睫毛膏</a>
+                    <a href="#"> 唇彩 </a>
+                    <a href="#"> 彩妆套装</a>
+                </li>
+                <li><h4> 香氛</h4>
+                    <a href="#"> 女士香水</a>
+                    <a href="#"> 男士香水 </a>
+                    <a href="#">中性香水</a><br>
+                    <a href="#"> Q版香水</a>
+                    <a href="#"> 香水套装 </a>
+                </li>
+                <li><h4>个人护理</h4>
+                    <a href="#"> 洗发 </a>
+                    <a href="#">护发 </a>
+                    <a href="#">沐浴</a>
+                    <a href="#"> 润肤乳</a>
+                    <a href="#"> 牙膏</a><br>
+                    <a href="#"> 发膜 </a>
+                    <a href="#">脱毛 </a>
+                    <a href="#">护理套装</a>
+                </li>
+                <li><h4> 男士专区</h4>
+                    <a href="#"> 洁面 </a>
+                    <a href="#">爽肤水</a>
+                    <a href="#"> 乳液</a>
+                    <a href="#"> 面霜 </a><br>
+                    <a href="#">精华 </a>
+                    <a href="#">洗发</a>
+                    <a href="#"> 沐浴 </a>
+                    <a href="#">男香</a>
+                </li>
+                <li><h4> 奢品美妆</h4>
+                    <a href="/#"> 雅诗兰黛 </a>
+                    <a href="/#">迪奥 </a>
+                    <a href="/#">海蓝之谜</a>
+                    <a href="/#"> 希思黎</a>
+                </li>
+                <ol id="tab-b">
+                    <li>
+                        <div class="a1">
+                            <div class="a3">
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="a4">
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a2">
+                            <h5>推荐品牌</h5>
+                            <img src="images/a10.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a1.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a2.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a3.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a4.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a5.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a6.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a7.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a8.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a9.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a10.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a11.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a12.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a13.jpg" alt="" height="36" width="88"/>
+
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="b1">
+
+                            <div class="b3">
+                                <div class="b5">
+                                    <h5>日常护肤</h5>
+
+                                    <div class="b6">
+                                        <div class="b7">面膜</div>
+                                        <div class="b8">
+                                            <a href="#">面膜贴<span>丨</span></a>
+                                            <a href="#">免洗面膜<span>丨</span></a>
+                                            <a href="#">水洗面膜<span>丨</span></a>
+                                            <a href="#">撒拉面膜</a>
+                                        </div>
+                                    </div>
+                                    <div class="b6">
+                                        <div class="b7">洁面</div>
+                                        <div class="b8">
+                                            <a href="#">洁面乳<span>丨</span></a>
+                                            <a href="#">洁面膏<span>丨</span></a>
+                                            <a href="#">洁面磨砂<span>丨</span></a>
+                                            <a href="#">洁面去角<span>丨</span></a>
+                                            <a href="#">洁面胶<span></span></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="b6">
+                                        <div class="b7">化妆水</div>
+                                        <div class="b8">
+                                            <a href="#">爽肤水<span>丨</span></a>
+                                            <a href="#">柔肤水<span>丨</span></a>
+                                            <a href="#">精华水<span>丨</span></a>
+                                            <a href="#">喷雾<span>丨</span></a>
+                                            <a href="#">收敛水<span></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="b6">
+                                        <div class="b7">乳液/面霜</div>
+                                        <div class="b8">
+                                            <a href="#">乳液<span>丨</span></a>
+                                            <a href="#">面霜<span>丨</span></a>
+                                            <a href="#">按摩霜<span>丨</span></a>
+                                            <a href="#">面部咖喱<span>丨</span></a>
+                                            <a href="#">凝胶<span></span></a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="b6">
+                                        <div class="b7">唇部护理</div>
+                                        <div class="b8">
+                                            <a href="#">唇膏<span>丨</span></a>
+                                            <a href="#">唇膜<span>丨</span></a>
+                                            <a href="#">唇部精华<span>丨</span></a>
+                                            <a href="#">唇部凝胶<span></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="b6">
+                                        <div class="b7">防晒</div>
+                                        <div class="b8">
+                                            <a href="#">防晒乳液<span>丨</span></a>
+                                            <a href="#">防晒霜<span>丨</span></a>
+                                            <a href="#">晒后修复<span>丨</span></a>
+                                            <a href="#">眼膜<span>丨</span></a>
+                                            <a href="#">洁面胶<span></span></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="b6">
+                                        <div class="b7">精油放疗</div>
+                                        <div class="b8">
+                                            <a href="#">单方精油<span>丨</span></a>
+                                            <a href="#">复方精油<span>丨</span></a>
+                                            <a href="#">基础精油<span>丨</span></a>
+                                            <a href="#">春露/花水</a>
+                                        </div>
+                                    </div>
+                                    <div class="b6">
+                                        <div class="b7">护肤工具</div>
+                                        <div class="b8">
+                                            <a href="#">化妆棉<span>丨</span></a>
+                                            <a href="#">洁面仪<span>丨</span></a>
+                                            <a href="#">纸膜</a>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="b2">
+
+                            <h5>推荐品牌</h5>
+                            <img src="images/a10.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a1.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a2.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a3.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a4.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a5.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a6.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a7.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a8.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a9.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a10.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a11.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a12.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a13.jpg" alt="" height="36" width="88"/>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="a1">
+                            <div class="a3">
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="a4">
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a2">
+                            <h5>推荐品牌</h5>
+                            <img src="images/a10.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a1.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a2.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a3.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a4.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a5.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a6.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a7.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a8.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a9.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a10.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a11.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a12.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a13.jpg" alt="" height="36" width="88"/>
+
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="b1">
+
+                            <div class="b3">
+                                <div class="b5">
+                                    <h5>日常护肤</h5>
+
+                                    <div class="b6">
+                                        <div class="b7">面膜</div>
+                                        <div class="b8">
+                                            <a href="#">面膜贴<span>丨</span></a>
+                                            <a href="#">免洗面膜<span>丨</span></a>
+                                            <a href="#">水洗面膜<span>丨</span></a>
+                                            <a href="#">撒拉面膜</a>
+                                        </div>
+                                    </div>
+                                    <div class="b6">
+                                        <div class="b7">洁面</div>
+                                        <div class="b8">
+                                            <a href="#">洁面乳<span>丨</span></a>
+                                            <a href="#">洁面膏<span>丨</span></a>
+                                            <a href="#">洁面磨砂<span>丨</span></a>
+                                            <a href="#">洁面去角<span>丨</span></a>
+                                            <a href="#">洁面胶<span></span></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="b6">
+                                        <div class="b7">化妆水</div>
+                                        <div class="b8">
+                                            <a href="#">爽肤水<span>丨</span></a>
+                                            <a href="#">柔肤水<span>丨</span></a>
+                                            <a href="#">精华水<span>丨</span></a>
+                                            <a href="#">喷雾<span>丨</span></a>
+                                            <a href="#">收敛水<span></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="b6">
+                                        <div class="b7">乳液/面霜</div>
+                                        <div class="b8">
+                                            <a href="#">乳液<span>丨</span></a>
+                                            <a href="#">面霜<span>丨</span></a>
+                                            <a href="#">按摩霜<span>丨</span></a>
+                                            <a href="#">面部咖喱<span>丨</span></a>
+                                            <a href="#">凝胶<span></span></a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="b6">
+                                        <div class="b7">唇部护理</div>
+                                        <div class="b8">
+                                            <a href="#">唇膏<span>丨</span></a>
+                                            <a href="#">唇膜<span>丨</span></a>
+                                            <a href="#">唇部精华<span>丨</span></a>
+                                            <a href="#">唇部凝胶<span></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="b6">
+                                        <div class="b7">防晒</div>
+                                        <div class="b8">
+                                            <a href="#">防晒乳液<span>丨</span></a>
+                                            <a href="#">防晒霜<span>丨</span></a>
+                                            <a href="#">晒后修复<span>丨</span></a>
+                                            <a href="#">眼膜<span>丨</span></a>
+                                            <a href="#">洁面胶<span></span></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="b6">
+                                        <div class="b7">精油放疗</div>
+                                        <div class="b8">
+                                            <a href="#">单方精油<span>丨</span></a>
+                                            <a href="#">复方精油<span>丨</span></a>
+                                            <a href="#">基础精油<span>丨</span></a>
+                                            <a href="#">春露/花水</a>
+                                        </div>
+                                    </div>
+                                    <div class="b6">
+                                        <div class="b7">护肤工具</div>
+                                        <div class="b8">
+                                            <a href="#">化妆棉<span>丨</span></a>
+                                            <a href="#">洁面仪<span>丨</span></a>
+                                            <a href="#">纸膜</a>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="b2">
+
+                            <h5>推荐品牌</h5>
+                            <img src="images/a10.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a1.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a2.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a3.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a4.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a5.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a6.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a7.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a8.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a9.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a10.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a11.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a12.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a13.jpg" alt="" height="36" width="88"/>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="a1">
+                            <div class="a3">
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="a4">
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a2">
+                            <h5>推荐品牌</h5>
+                            <img src="images/a10.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a1.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a2.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a3.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a4.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a5.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a6.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a7.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a8.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a9.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a10.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a11.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a12.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a13.jpg" alt="" height="36" width="88"/>
+
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="b1">
+
+                            <div class="b3">
+                                <div class="b5">
+                                    <h5>日常护肤</h5>
+
+                                    <div class="b6">
+                                        <div class="b7">面膜</div>
+                                        <div class="b8">
+                                            <a href="#">面膜贴<span>丨</span></a>
+                                            <a href="#">免洗面膜<span>丨</span></a>
+                                            <a href="#">水洗面膜<span>丨</span></a>
+                                            <a href="#">撒拉面膜</a>
+                                        </div>
+                                    </div>
+                                    <div class="b6">
+                                        <div class="b7">洁面</div>
+                                        <div class="b8">
+                                            <a href="#">洁面乳<span>丨</span></a>
+                                            <a href="#">洁面膏<span>丨</span></a>
+                                            <a href="#">洁面磨砂<span>丨</span></a>
+                                            <a href="#">洁面去角<span>丨</span></a>
+                                            <a href="#">洁面胶<span></span></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="b6">
+                                        <div class="b7">化妆水</div>
+                                        <div class="b8">
+                                            <a href="#">爽肤水<span>丨</span></a>
+                                            <a href="#">柔肤水<span>丨</span></a>
+                                            <a href="#">精华水<span>丨</span></a>
+                                            <a href="#">喷雾<span>丨</span></a>
+                                            <a href="#">收敛水<span></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="b6">
+                                        <div class="b7">乳液/面霜</div>
+                                        <div class="b8">
+                                            <a href="#">乳液<span>丨</span></a>
+                                            <a href="#">面霜<span>丨</span></a>
+                                            <a href="#">按摩霜<span>丨</span></a>
+                                            <a href="#">面部咖喱<span>丨</span></a>
+                                            <a href="#">凝胶<span></span></a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="b6">
+                                        <div class="b7">唇部护理</div>
+                                        <div class="b8">
+                                            <a href="#">唇膏<span>丨</span></a>
+                                            <a href="#">唇膜<span>丨</span></a>
+                                            <a href="#">唇部精华<span>丨</span></a>
+                                            <a href="#">唇部凝胶<span></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="b6">
+                                        <div class="b7">防晒</div>
+                                        <div class="b8">
+                                            <a href="#">防晒乳液<span>丨</span></a>
+                                            <a href="#">防晒霜<span>丨</span></a>
+                                            <a href="#">晒后修复<span>丨</span></a>
+                                            <a href="#">眼膜<span>丨</span></a>
+                                            <a href="#">洁面胶<span></span></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="b6">
+                                        <div class="b7">精油放疗</div>
+                                        <div class="b8">
+                                            <a href="#">单方精油<span>丨</span></a>
+                                            <a href="#">复方精油<span>丨</span></a>
+                                            <a href="#">基础精油<span>丨</span></a>
+                                            <a href="#">春露/花水</a>
+                                        </div>
+                                    </div>
+                                    <div class="b6">
+                                        <div class="b7">护肤工具</div>
+                                        <div class="b8">
+                                            <a href="#">化妆棉<span>丨</span></a>
+                                            <a href="#">洁面仪<span>丨</span></a>
+                                            <a href="#">纸膜</a>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="b2">
+
+                            <h5>推荐品牌</h5>
+                            <img src="images/a10.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a1.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a2.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a3.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a4.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a5.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a6.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a7.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a8.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a9.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a10.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a11.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a12.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a13.jpg" alt="" height="36" width="88"/>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="a1">
+                            <div class="a3">
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="a4">
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                                <div class="a5">
+                                    <h5>国际品牌</h5>
+
+                                    <div class="a6">
+                                        <a href="#">伊丽莎白雅顿<span>丨</span></a>
+                                        <a href="#">兰蔻<span>丨</span></a>
+                                        <a href="#">科颜<span>丨</span></a>
+                                        <a href="#">迪奥</a>
+                                        <a href="#">倩碧<span>丨</span></a>
+                                        <a href="#">娇韵诗<span>丨</span></a>
+                                        <a href="#">雅诗兰黛<span>丨</span></a>
+                                        <a href="#">SK-ll</a>
+                                        <a href="#">欧舒丹<span>丨</span></a>
+                                        <a href="#">雪肌精<span>丨</span></a>
+                                        <a href="#">碧欧泉<span>丨</span></a>
+                                        <a href="#">娇兰</a>
+                                        <a href="#">贝玲妃</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a2">
+                            <h5>推荐品牌</h5>
+                            <img src="images/a10.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a1.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a2.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a3.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a4.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a5.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a6.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a7.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a8.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a9.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a10.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a11.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a12.jpg" alt="" height="36" width="88"/>
+                            <img src="images/a13.jpg" alt="" height="36" width="88"/>
+
+
+                        </div>
+                    </li>
+
+                </ol>
+            </ul>
+            <div class="left-h">
+                <img src="images/01.jpg" alt=""/>
+            </div>
+        </div>
+        <!--左侧部分结束-->
+        <!--中间部分开始-->
+        <div class="all" id="all">
+            <div class="screen" id="screen">
+                <!---->
+                <ul id="ul">
+                    <li style="display: block;"><img src="images/02.jpg" alt="" width="678" height="435"/></li>
+                    <li><img src="images/03.jpg" alt="" width="678" height="435"/></li>
+                    <li><img src="images/04.jpg" alt="" width="678" height="435"/></li>
+                </ul>
+                <ol id="nav">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+                <!--小三角-->
+                <a href="JavaScript:;" id="left"></a>
+                <a href="JavaScript:;" id="right"></a>
+
+            </div>
+        </div>
+        <!--中间部分结束-->
+        <div class="right">
+            <div class=right-r>
+                <img src="images/05.jpg" alt=""/>
+                <img src="images/06.jpg" alt=""/>
+                <img src="images/07.jpg" alt=""/>
+            </div>
+        </div>
+        <!--小导航栏开始-->
+        <div class="smallbar">
+            <a href="#">推荐品牌</a>
+            <a href="#">独家品牌</a>
+            <a href="#">欧美品牌</a>
+            <a href="#">日韩品牌</a>
+            <a href="#">国货品牌</a>
+            <a href="#">洗护品牌</a>
+        </div>
+        <!--<img src="images/b1.jpg" alt=""/>-->
+        <!--主体部分底部开始-->
+        <div class="z-head">
+
+            <div class="z-h"><img src="images/b1.jpg" alt=""/></div>
+            <div class="z-h"><img src="images/b2.jpg" alt=""/></div>
+            <div class="z-h"><img src="images/b3.jpg" alt=""/></div>
+            <div class="z-h"><img src="images/b4.jpg" alt=""/></div>
+            <div class="z-h"><img src="images/b5.jpg" alt=""/></div>
+            <div class="z-h"><img src="images/b6.jpg" alt=""/></div>
+            <div class="z-h"><img src="images/b7.jpg" alt=""/></div>
+            <div class="z-h"><img src="images/b8.jpg" alt=""/></div>
+            <div class="z-h"><img src="images/b9.jpg" alt=""/></div>
+            <div class="z-h"><img src="images/b10.jpg" alt=""/></div>
+            <div class="z-h"><img src="images/b11.jpg" alt=""/></div>
+            <div class="z-h"><img src="images/b12.jpg" alt=""/></div>
+        </div>
+        <!--主体部分底部结束-->
+        <!--主题部分底部右侧栏开始-->
+        <div class="z-r">
+            <div class="z-rg">
+                <img src="images/c2.jpg" alt="" width=228/>
+            </div>
+            <div class="z-rh">
+                <img src="images/c1.jpg" alt="" width=228/>
+
+                <div class="z-rh1"><img src="images/c3.jpg" alt=""/></div>
+                <div class="z-rh2"><img src="images/c4.jpg" alt=""/></div>
+            </div>
+
+        </div>
+        <!--主体部分底部右侧栏结束-->
+
+
+    </div>
+</div>
+<!--主体部分结束-->
+<!--大中间部分开始-->
+<div class="c">
+    <div class="cen">精选活动&nbsp;&nbsp;&nbsp;ACTIVITY</div>
+    <div class="c-box1">
+        <div class="box1-l">
+            <img src="images/ff1.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>御泥坊旗舰店</h4>
+
+                <p>我的御用面膜</p>
+                <a>满<span>199</span>赠芦荟礼包</a>
+
+                <div class="bt-tr">
+
+                </div>
+
+                <div class="bt-tt">
+                    <img src="images/e8.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="box1-r">
+
+            <img src="images/f1.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>兰芝旗舰店</h4>
+
+                <p>闪耀水漾美肌</p>
+                <a>满<span>599</span>赠<span>4</span>件套</a>
+
+                <div class="bt-tr"></div>
+                <div class="bt-tt">
+                    <img src="images/e1.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-box1">
+        <div class="box1-l">
+            <img src="images/f2.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>欧莱雅坊旗舰店</h4>
+
+                <p>你指的拥有</p>
+                <a>全场满<span>179</span>赠<span>179</span></a>
+
+                <div class="bt-tr">
+
+                </div>
+
+                <div class="bt-tt">
+                    <img src="images/e2.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="box1-r">
+
+            <img src="images/f3.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>自然堂旗舰店</h4>
+
+                <p>你本来就很美</p>
+                <a>满<span>599</span>赠<span>158</span></a>
+
+                <div class="bt-tr"></div>
+                <div class="bt-tt">
+                    <img src="images/e3.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-box1">
+        <div class="box1-l">
+            <img src="images/f5.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>玛丽黛佳旗舰店</h4>
+
+                <p>新艺术彩妆品牌</p>
+                <a>满<span>199</span>赠<span>99</span>元化妆包</a>
+
+                <div class="bt-tr">
+
+                </div>
+
+                <div class="bt-tt">
+                    <img src="images/e4.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="box1-r">
+
+            <img src="images/f6.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>美宝莲旗舰店</h4>
+
+                <p>美就现在</p>
+                <a>满<span>89</span>赠送<span>3</span>件套</a>
+
+                <div class="bt-tr"></div>
+                <div class="bt-tt">
+                    <img src="images/e6.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-box1">
+        <div class="box1-l">
+            <img src="images/f7.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>菲诗小铺旗舰店</h4>
+
+                <p>韩妆护肤旗舰店</p>
+                <a>满<span>199</span>赠<span>89</span></a>
+
+                <div class="bt-tr">
+
+                </div>
+
+                <div class="bt-tt">
+                    <img src="images/e7.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="box1-r">
+
+            <img src="images/f8.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>卡姿兰舰店</h4>
+
+                <p>时尚就是卡姿兰</p>
+                <a>满<span>109</span>赠眼部套装</a>
+
+                <div class="bt-tr"></div>
+                <div class="bt-tt">
+                    <img src="images/e8.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-box1">
+        <div class="box1-l">
+            <img src="images/f9.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>姬芮旗舰店</h4>
+
+                <p>青春肌肤无穷尽</p>
+                <a>满<span>199</span>赠芦荟礼包</a>
+
+                <div class="bt-tr">
+
+                </div>
+
+                <div class="bt-tt">
+                    <img src="images/e9.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="box1-r">
+
+            <img src="images/f10.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>韩束旗舰店</h4>
+
+                <p>释放你的美</p>
+                <a>满<span>599</span>赠<span>4</span>件套</a>
+
+                <div class="bt-tr"></div>
+                <div class="bt-tt">
+                    <img src="images/e10.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="c-box1">
+        <div class="box1-l">
+            <img src="images/f11.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>伊蒂之屋旗舰店</h4>
+
+                <p>百变公主的魔法盒</p>
+                <a>满<span>199</span>赠<span>199</span></a>
+
+                <div class="bt-tr">
+
+                </div>
+
+                <div class="bt-tt">
+                    <img src="images/e11.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="box1-r">
+
+            <img src="images/f12.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>谜尚旗舰店</h4>
+
+                <p>韩国BB专业</p>
+                <a>满<span>188</span>赠<span>6</span>件套礼包</a>
+
+                <div class="bt-tr"></div>
+                <div class="bt-tt">
+                    <img src="images/e12.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-box1">
+        <div class="box1-l">
+            <img src="images/f13.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>御泥坊旗舰店</h4>
+
+                <p>我的御用面膜</p>
+                <a>满<span>199</span>赠芦荟礼包</a>
+
+                <div class="bt-tr">
+
+                </div>
+
+                <div class="bt-tt">
+                    <img src="images/e13.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="box1-r">
+
+            <img src="images/f14.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>膜法世家旗舰店</h4>
+
+                <p>开启膜法美肤之旅</p>
+                <a>满<span>599</span>赠<span>4</span>件套</a>
+
+                <div class="bt-tr"></div>
+                <div class="bt-tt">
+                    <img src="images/e14.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-box1">
+        <div class="box1-l">
+            <img src="images/f15.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>百雀羚旗舰店</h4>
+
+                <p>天然不刺激百雀羚草本</p>
+                <a>满<span>69</span>赠黑色化妆包</a>
+
+                <div class="bt-tr">
+
+                </div>
+
+                <div class="bt-tt">
+                    <img src="images/e15.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="box1-r">
+
+            <img src="images/f16.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>珀莱雅旗舰店</h4>
+
+                <p>魅力源自深海</p>
+                <a>满<span>69</span>赠<span>99</span></a>
+
+                <div class="bt-tr"></div>
+                <div class="bt-tt">
+                    <img src="images/e16.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-box1">
+        <div class="box1-l">
+            <img src="images/ff1.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>御泥坊旗舰店</h4>
+
+                <p>我的御用面膜</p>
+                <a>满<span>199</span>赠芦荟礼包</a>
+
+                <div class="bt-tr">
+
+                </div>
+
+                <div class="bt-tt">
+                    <img src="images/e8.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="box1-r">
+
+            <img src="images/f1.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>兰芝旗舰店</h4>
+
+                <p>闪耀水漾美肌</p>
+                <a>满<span>599</span>赠<span>4</span>件套</a>
+
+                <div class="bt-tr"></div>
+                <div class="bt-tt">
+                    <img src="images/e1.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-box1">
+        <div class="box1-l">
+            <img src="images/f2.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>欧莱雅坊旗舰店</h4>
+
+                <p>你指的拥有</p>
+                <a>全场满<span>179</span>赠<span>179</span></a>
+
+                <div class="bt-tr">
+
+                </div>
+
+                <div class="bt-tt">
+                    <img src="images/e2.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="box1-r">
+
+            <img src="images/f3.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>自然堂旗舰店</h4>
+
+                <p>你本来就很美</p>
+                <a>满<span>599</span>赠<span>158</span></a>
+
+                <div class="bt-tr"></div>
+                <div class="bt-tt">
+                    <img src="images/e3.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="c-box1">
+        <div class="box1-l">
+            <img src="images/f5.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>玛丽黛佳旗舰店</h4>
+
+                <p>新艺术彩妆品牌</p>
+                <a>满<span>199</span>赠<span>99</span>元化妆包</a>
+
+                <div class="bt-tr">
+
+                </div>
+
+                <div class="bt-tt">
+                    <img src="images/e4.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="box1-r">
+
+            <img src="images/f6.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>美宝莲旗舰店</h4>
+
+                <p>美就现在</p>
+                <a>满<span>89</span>赠送<span>3</span>件套</a>
+
+                <div class="bt-tr"></div>
+                <div class="bt-tt">
+                    <img src="images/e6.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-box1">
+        <div class="box1-l">
+            <img src="images/f7.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>菲诗小铺旗舰店</h4>
+
+                <p>韩妆护肤旗舰店</p>
+                <a>满<span>199</span>赠<span>89</span></a>
+
+                <div class="bt-tr">
+
+                </div>
+
+                <div class="bt-tt">
+                    <img src="images/e7.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="box1-r">
+
+            <img src="images/f8.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>卡姿兰舰店</h4>
+
+                <p>时尚就是卡姿兰</p>
+                <a>满<span>109</span>赠眼部套装</a>
+
+                <div class="bt-tr"></div>
+                <div class="bt-tt">
+                    <img src="images/e8.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-box1">
+        <div class="box1-l">
+            <img src="images/f9.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>姬芮旗舰店</h4>
+
+                <p>青春肌肤无穷尽</p>
+                <a>满<span>199</span>赠芦荟礼包</a>
+
+                <div class="bt-tr">
+
+                </div>
+
+                <div class="bt-tt">
+                    <img src="images/e9.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="box1-r">
+
+            <img src="images/f10.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>韩束旗舰店</h4>
+
+                <p>释放你的美</p>
+                <a>满<span>599</span>赠<span>4</span>件套</a>
+
+                <div class="bt-tr"></div>
+                <div class="bt-tt">
+                    <img src="images/e10.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-box1">
+        <div class="box1-l">
+            <img src="images/f11.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>伊蒂之屋旗舰店</h4>
+
+                <p>百变公主的魔法盒</p>
+                <a>满<span>199</span>赠<span>199</span></a>
+
+                <div class="bt-tr">
+
+                </div>
+
+                <div class="bt-tt">
+                    <img src="images/e11.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="box1-r">
+
+            <img src="images/f12.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>谜尚旗舰店</h4>
+
+                <p>韩国BB专业</p>
+                <a>满<span>188</span>赠<span>6</span>件套礼包</a>
+
+                <div class="bt-tr"></div>
+                <div class="bt-tt">
+                    <img src="images/e12.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-box1">
+        <div class="box1-l">
+            <img src="images/f13.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>御泥坊旗舰店</h4>
+
+                <p>我的御用面膜</p>
+                <a>满<span>199</span>赠芦荟礼包</a>
+
+                <div class="bt-tr">
+
+                </div>
+
+                <div class="bt-tt">
+                    <img src="images/e13.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="box1-r">
+
+            <img src="images/f14.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>膜法世家旗舰店</h4>
+
+                <p>开启膜法美肤之旅</p>
+                <a>满<span>599</span>赠<span>4</span>件套</a>
+
+                <div class="bt-tr"></div>
+                <div class="bt-tt">
+                    <img src="images/e14.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="c-box1">
+        <div class="box1-l">
+            <img src="images/f15.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>百雀羚旗舰店</h4>
+
+                <p>天然不刺激百雀羚草本</p>
+                <a>满<span>69</span>赠黑色化妆包</a>
+
+                <div class="bt-tr">
+
+                </div>
+
+                <div class="bt-tt">
+                    <img src="images/e15.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="box1-r">
+
+            <img src="images/f16.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>珀莱雅旗舰店</h4>
+
+                <p>魅力源自深海</p>
+                <a>满<span>69</span>赠<span>99</span></a>
+
+                <div class="bt-tr"></div>
+                <div class="bt-tt">
+                    <img src="images/e16.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-box1">
+        <div class="box1-l">
+            <img src="images/f7.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>菲诗小铺旗舰店</h4>
+
+                <p>韩妆护肤旗舰店</p>
+                <a>满<span>199</span>赠<span>89</span></a>
+
+                <div class="bt-tr">
+
+                </div>
+
+                <div class="bt-tt">
+                    <img src="images/e7.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="box1-r">
+
+            <img src="images/f8.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>卡姿兰舰店</h4>
+
+                <p>时尚就是卡姿兰</p>
+                <a>满<span>109</span>赠眼部套装</a>
+
+                <div class="bt-tr"></div>
+                <div class="bt-tt">
+                    <img src="images/e8.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-box1">
+        <div class="box1-l">
+            <img src="images/f9.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>姬芮旗舰店</h4>
+
+                <p>青春肌肤无穷尽</p>
+                <a>满<span>199</span>赠芦荟礼包</a>
+
+                <div class="bt-tr">
+
+                </div>
+
+                <div class="bt-tt">
+                    <img src="images/e9.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="box1-r">
+
+            <img src="images/f10.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>韩束旗舰店</h4>
+
+                <p>释放你的美</p>
+                <a>满<span>599</span>赠<span>4</span>件套</a>
+
+                <div class="bt-tr"></div>
+                <div class="bt-tt">
+                    <img src="images/e10.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-box1">
+        <div class="box1-l">
+            <img src="images/f11.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>伊蒂之屋旗舰店</h4>
+
+                <p>百变公主的魔法盒</p>
+                <a>满<span>199</span>赠<span>199</span></a>
+
+                <div class="bt-tr">
+
+                </div>
+
+                <div class="bt-tt">
+                    <img src="images/e11.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="box1-r">
+
+            <img src="images/f12.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>谜尚旗舰店</h4>
+
+                <p>韩国BB专业</p>
+                <a>满<span>188</span>赠<span>6</span>件套礼包</a>
+
+                <div class="bt-tr"></div>
+                <div class="bt-tt">
+                    <img src="images/e12.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-box1">
+        <div class="box1-l">
+            <img src="images/f13.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>御泥坊旗舰店</h4>
+
+                <p>我的御用面膜</p>
+                <a>满<span>199</span>赠芦荟礼包</a>
+
+                <div class="bt-tr">
+
+                </div>
+
+                <div class="bt-tt">
+                    <img src="images/e13.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="box1-r">
+
+            <img src="images/f14.jpg" alt=""/>
+
+            <div class="bl-t">
+                <div class="fangwei"><img src="images/fangwei.png" alt=""/></div>
+                <h4>膜法世家旗舰店</h4>
+
+                <p>开启膜法美肤之旅</p>
+                <a>满<span>599</span>赠<span>4</span>件套</a>
+
+                <div class="bt-tr"></div>
+                <div class="bt-tt">
+                    <img src="images/e14.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!--大中间部分结束-->
+
+
+<footer>
+    <div>
+        <div class="fImg">
+            <ul>
+                <li>
+                    <span class="img"></span>
+							<span>
+								值得信赖美妆电商
+							</span>
+                    <a href="">
+                        四千万用户信赖
+                    </a>
+                </li>
+                <li>
+                    <span class="img"></span>
+							<span>
+								成功在美上市
+							</span>
+                    <a href="">
+                        股票代码NYSE:JMEI
+                    </a>
+                </li>
+                <li>
+                    <span class="img"></span>
+							<span>
+								品牌防伪码
+							</span>
+                    <a href="">
+                        支持品牌官网验真
+                    </a>
+                </li>
+                <li>
+                    <span class="img"></span>
+							<span>
+								30天无理由退货
+							</span>
+                    <a href="">
+                        只要不满意无理由退货
+                    </a>
+                </li>
+                <li>
+                    <span class="img"></span>
+							<span>
+								百万用户口碑
+							</span>
+                    <a href="">
+                        帮你只选对的,不选贵的
+                    </a>
+                </li>
+                <li>
+                    <span class="img"></span>
+							<span>
+								订单闪电发货
+							</span>
+                    <a href="">
+                        1.5小时订单急速出库
+                    </a>
+                </li>
+                <li>
+                    <span class="img"></span>
+							<span>
+								大牌明星热荐
+							</span>
+                    <a href="">
+                        打造精致明星脸
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div class="middle">
+            <dl>
+                <dt>售后服务</dt>
+                <dd>
+                    <a href="">正品承诺</a>
+                </dd>
+                <dd>
+                    <a href="">售后咨询</a>
+                </dd>
+                <dd>
+                    <a href="">退货政策</a>
+                </dd>
+                <dd>
+                    <a href="">退货办理</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>服务保障</dt>
+                <dd>
+                    <a href="">品牌真品防伪码</a>
+                </dd>
+                <dd>
+                    <a href="">正品保证</a>
+                </dd>
+                <dd>
+                    <a href="">30天无条件退货</a>
+                </dd>
+                <dd>
+                    <a href="">7×24小时客服服务</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>使用帮助</dt>
+                <dd>
+                    <a href="">新手指南</a>
+                </dd>
+                <dd>
+                    <a href="">常见问题</a>
+                </dd>
+                <dd>
+                    <a href="">帮助中心</a>
+                </dd>
+                <dd>
+                    <a href="">用户协议</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>支付方式</dt>
+                <dd>
+                    <a href="">货到付款</a>
+                </dd>
+                <dd>
+                    <a href="">在线支付</a>
+                </dd>
+                <dd>
+                    <a href="">余额支付</a>
+                </dd>
+                <dd>
+                    <a href="">现金券支付</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>配送方式</dt>
+                <dd>
+                    <a href="">包邮政策</a>
+                </dd>
+                <dd>
+                    <a href="">配送说明</a>
+                </dd>
+                <dd>
+                    <a href="">运费说明</a>
+                </dd>
+                <dd>
+                    <a href="">验货签收</a>
+                </dd>
+            </dl>
+            <div class="erwei">
+                <dl>
+                    <dt>手机聚美</dt>
+                    <center>
+                        <span class="erwei1"></span>
+                    </center>
+                    <p>下载移动客户端</p>
+                </dl>
+                <dl>
+                    <dt>聚美微信</dt>
+                    <center>
+                        <span class="erwei2"></span>
+                    </center>
+                    <p>聚美官方微信</p>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="middleImg"></div>
+    <div class="bottomlasttwo">
+        <div>
+            <ul>
+                <li>
+                    <a href="#">关于聚美优品</a>
+                </li>
+                <li>
+                    <a href="#">INVESTOR </a>
+                </li>
+                <li>
+                    <a href="#">RELATIONS </a>
+                </li>
+                <li>
+                    <a href="#">获取更新</a>
+                </li>
+                <li>
+                    <a href="#">加入聚美</a>
+                </li>
+                <li>
+                    <a href="#">品牌合作专区</a>
+                </li>
+                <li>
+                    <a href="#">网站联盟</a>
+                </li>
+                <li>
+                    <a href="#">媒体报道</a>
+                </li>
+                <li>
+                    <a href="#">商务合作</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottomlastone">
+        <div>
+            <span>COPYRIGHT © 2010-2017 北京创锐文化传媒有限公司 JUMEI.COM 保留一切权利。 客服热线：400-123-8888 </span><br/>
+            <span>京公网安备 11010102001226 | 京ICP证111033号 | 食品流通许可证 SP1101051110165515（1-1） | 营业执照</span><br/>
+
+            <p></p>
+
+            <p></p>
+
+            <p></p>
+
+            <p></p>
+
+            <p></p>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
